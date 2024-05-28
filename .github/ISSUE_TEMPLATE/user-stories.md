@@ -7,11 +7,11 @@ assignees: ''
 
 ---
 
-EPIC: 
+**EPIC:  **
 
-<Text>
+**<Text>**
 
-Acceptance Criteria (AC)
+**Acceptance Criteria (AC)**
 
 - [ ] AC-1: 
 
@@ -21,7 +21,7 @@ Acceptance Criteria (AC)
 
 - [ ] AC-4: 
 
-Tasks
+**Tasks**
 
 - [ ] Task 1: 
 
