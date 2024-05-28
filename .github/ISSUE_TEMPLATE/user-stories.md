@@ -11,16 +11,17 @@ Paste user story here.
 
 Acceptance Criteria (AC)
 
-AC-1: [ ]
+- [ ] AC-1: 
 
-AC-2: [ ]
+- [ ] AC-2: 
 
-AC-3: [ ]
+- [ ] AC-3: 
 
-AC-4: [ ]
+- [ ] AC-4: 
 
 Tasks
-- 1 [ ]
-- 2 [ ]
-- 3 [ ]
-- 4 [ ]
+
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ]
