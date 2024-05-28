@@ -7,7 +7,9 @@ assignees: ''
 
 ---
 
-Paste user story here.
+EPIC: 
+
+<Text>
 
 Acceptance Criteria (AC)
 
