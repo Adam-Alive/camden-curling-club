@@ -7,7 +7,8 @@ assignees: ''
 
 ---
 
-**Issue** <text>
+**Issue:** 
+<text>
 
 
 **Tasks**
