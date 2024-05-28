@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-**EPIC:  **
+**EPIC:** 
 
 **<Text>**
 
