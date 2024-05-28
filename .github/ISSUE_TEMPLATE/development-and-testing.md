@@ -10,8 +10,7 @@ assignees: ''
 **Issue:** 
 <text>
 
-
-**Tasks**
+**Tasks:**
 - [ ]
 - [ ]
 - [ ]
