@@ -11,6 +11,10 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+import os
+import dj_database_url
+if os.path.isfile('env.py'):
+    import env
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,10 +24,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-!)7x!x0u8ud*cq+gwo5g&g#=c^9-8*h9n63z#g@kkr2nz*r$kw'
+#SECRET_KEY = 'django-insecure-!)7x!x0u8ud*cq+gwo5g&g#=c^9-8*h9n63z#g@kkr2nz*r$kw'
+
+# Call from env.py
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['8000-adamalive-camdencurling-pp6yt89mz85.ws-eu114.gitpod.io',
                 '.herokuapp.com']
@@ -85,6 +92,10 @@ WSGI_APPLICATION = 'camdencurlingclub.wsgi.application'
 #        'NAME': BASE_DIR / 'db.sqlite3',
 #    }
 #}
+
+DATABASES = {
+    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+}
 
 
 # Password validation
