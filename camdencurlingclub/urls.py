@@ -19,6 +19,6 @@ from django.urls import path, include
 from faqs import views as faqs_views
 
 urlpatterns = [
-    path("faqs/", faqs_views.my_faqs, name='faqs'),
+    path('faqs/', faqs_views.my_faqs, name='faqs'),
     path('admin/', admin.site.urls),
 ]
