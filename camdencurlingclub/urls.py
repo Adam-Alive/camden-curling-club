@@ -16,9 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from faqs import views as faqs_views
+# from faqs import views as faqs_views
+# Delete later, once urls work okay.
+
 
 urlpatterns = [
-    path('faqs/', faqs_views.my_faqs, name='faqs'),
+    path('', include('faqs.urls'), name='faqs-urls'),
     path('admin/', admin.site.urls),
 ]
