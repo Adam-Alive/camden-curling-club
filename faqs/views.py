@@ -8,5 +8,6 @@ from .models import Faq
 #	return HttpResponse("Hello, curlers!")
 
 class FaqList(generic.ListView):
-    model = Faq
-
+    #model = Faq
+	queryset = Faq.objects.all()
+	template_name = 'faq_list.html'
