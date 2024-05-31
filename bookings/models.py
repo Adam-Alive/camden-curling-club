@@ -29,7 +29,7 @@ class Booking(models.Model):
     )
     date = models.DateField()
     session = models.CharField(choices=SESSION)
-    wheelchair_lane = models.Charfield(choices=WHEELCHAIR_LANE)
+    wheelchair_lane = models.CharField(choices=WHEELCHAIR_LANE)
 
 
     def __str__(self):
