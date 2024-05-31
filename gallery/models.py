@@ -1,13 +1,14 @@
 from django.db import models
 from django.contrib.auth.models import User
+from cloudinary.models import CloudinaryField
 
 # Create your models here.
-class AddGalleryImage(models.Model):
+class GalleryImage(models.Model):
     """
     *** TBC Stores an image and caption entry.
     """
     username = models.ForeignKey(
-    User, on_delete=models.CASCADE, related_name='TBC XXX'
+    User, on_delete=models.CASCADE, related_name='TBC+'
     )
     gallery_image = CloudinaryField('image', default='placeholder')
     caption = models.CharField(max_length=250, unique=True)
