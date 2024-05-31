@@ -51,7 +51,6 @@ INSTALLED_APPS = [
     'gallery',
     'faqs',
     'network',
-
 ]
 
 MIDDLEWARE = [
