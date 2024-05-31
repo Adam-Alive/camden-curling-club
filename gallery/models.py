@@ -12,8 +12,8 @@ class GalleryImage(models.Model):
     )
     gallery_image = CloudinaryField('image', default='placeholder')
     caption = models.CharField(max_length=250, unique=True)
-    added_on = models.DateTimeField(auto_now_add=True)
-    caption_updated_on = models.DateTimeField(auto_now=True)
+    added_on = models.DateField(auto_now_add=True)
+    caption_updated_on = models.DateField(auto_now=True)
     approved = models.BooleanField(default=False)
 
     class Meta:
