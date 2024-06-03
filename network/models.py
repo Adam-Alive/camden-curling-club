@@ -2,6 +2,14 @@ from django.db import models
 from django.contrib.auth.models import User
 
 # Create your models here.
+
+
+WHEELCHAIR_ACCESS = (
+('Wheelchair Lanes Available', 'Wheelchair Lanes Available'), 
+('No Wheelchair Lanes', 'No Wheelchair Lanes')
+)
+
+
 class Network(models.Model):
     """
     Allows administrator to upload information about
@@ -11,7 +19,7 @@ class Network(models.Model):
     location = models.CharField(max_length=200)
     website = models.CharField(max_length=200)
     email = models.EmailField(max_length=200)
-    wheelchair_access =models.CharField()
+    wheelchair_access =models.CharField(choices=WHEELCHAIR_ACCESS)
 
     def __str__(self):
         return self.club_name
