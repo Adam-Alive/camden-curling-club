@@ -14,7 +14,7 @@ SESSION = (
 )
 
 
-WHEELCHAIR_LANE = (
+WHEELCHAIR_SHEET = (
 ('Not Required', 'Not Required'), 
 ('Required', 'Required')
 )
@@ -29,7 +29,7 @@ class Booking(models.Model):
     )
     date = models.DateField()
     session = models.CharField(choices=SESSION)
-    wheelchair_lane = models.CharField(choices=WHEELCHAIR_LANE)
+    wheelchair_sheet = models.CharField(choices=WHEELCHAIR_SHEET)
 
 
     def __str__(self):
