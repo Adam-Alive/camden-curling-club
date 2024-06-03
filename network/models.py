@@ -5,15 +5,15 @@ from django.contrib.auth.models import User
 
 
 WHEELCHAIR_ACCESS = (
-('Wheelchair Lanes Available', 'Wheelchair Lanes Available'), 
-('No Wheelchair Lanes', 'No Wheelchair Lanes')
+('Wheelchair Sheets Available', 'Wheelchair Sheets Available'), 
+('No Wheelchair Sheets', 'No Wheelchair Sheets')
 )
 
 
 class Network(models.Model):
     """
     Allows administrator to upload information about
-    other curling clubs.
+    other curling clubs in England.
     """
     club_name = models.CharField(max_length=200, unique=True)
     location = models.CharField(max_length=200)
