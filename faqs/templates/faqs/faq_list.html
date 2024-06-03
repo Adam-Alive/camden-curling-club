@@ -1,19 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
+{% load static %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Camden Curling Club</title>
-</head>
-
-<body>
-    <h1>This is the FAQS page!</h1>
+{% block content %}
+<body class="body-faqs">
+    <h2>Faqs text is now added with bgc yellow.</h2>
     {% for faq in object_list %}
     <h2>{{faq.question}}</h2>
     <h2>{{faq.answer}}<h2>
     {% endfor %}
 </body>
 
-</html>
+{% endblock content %}
