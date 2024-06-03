@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 # Create your models here.
 class Faq(models.Model):
     """
-    TBC Stores a single.... 
+    TBC Stores a single value for faqs.
     """
     question = models.TextField()
     answer = models.TextField()
