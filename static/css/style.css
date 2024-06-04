@@ -25,5 +25,9 @@
 }
 
 header, footer {
-    background-color: rgb(99, 15, 235);
+    background-color: rgb(126, 145, 230);
+}
+
+.footer, p {
+    margin-bottom: .1rem;
 }
