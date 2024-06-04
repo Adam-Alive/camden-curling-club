@@ -2,29 +2,26 @@
 {% load static %}
 
 {% block content %}
-<body class="body-home">
-<h2>Home page text is now added with bgc.</h2>
 
-</body>
+<!--Intro section-->
+<section class="container-fluid">
+    <p>
+        Founded in 2010, we are based at Camden Ice Rink where curlers of all ages, backgrounds and abilities are always
+        welcome.
+    </p>
+    <p>
+        The curling season runs from October to March and during this period we hold practice sessions every Tuesday and
+        Thursday evening, with league games taking place every Sunday.
+    </p>
+
+</section>
+
+<!--Information section-->
+<section class="container-fluid">
+    For more information, please register to access our member's hub where you can make bookings, upload images to the
+    gallery and connect with other curling clubs.
+
+</section>
+
 
 {% endblock content %}
-
-<div class="masthead">
-    <div class="container">
-        <div class="row g-0">
-            <div class="col-md-6 masthead-text">
-                <!-- Post title goes in these h1 tags -->
-                <h1 class="post-title">{{ post.title }}</h1>
-                <!-- Post author goes before the | the post's created date goes after -->
-                <p class="post-subtitle">{{ post.author }} | {{ post.created_on }}</p>
-            </div>
-            <div class="d-none d-md-block col-md-6 masthead-image">
-              {% if "placeholder" in post.featured_image.url %}
-              <img src="{% static 'images/default.jpg' %}" class="scale" alt="placeholder image">
-              {% else %}
-              <img src="{{ post.featured_image.url }}" class="scale" alt="{{ post.title }}">
-              {% endif %}
-            </div>
-        </div>
-    </div>
-</div>
