@@ -1,33 +1,37 @@
-/* Test styles */
-
-/*body {
-    background-color: rgb(176, 196, 222);
-}*/
-
-.body-home {
-    background-color: rgb(149, 226, 146);
+/* Wildcard selector to override browser default styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.body-bookings {
-    background-color: rgb(233, 111, 12);
-}
-
-.body-faqs {
-    background-color: rgb(255, 230, 2);
-}
-
-.body-gallery {
-    background-color: rgb(231, 19, 19);
-}
-
-.body-network {
-    background-color: rgb(202, 92, 18);
-}
+/* General styles */
+body {
+    min-height: 100vh;
+    font-family: "Montserrat", sans-serif;
+  }
 
 header, footer {
     background-color: rgb(126, 145, 230);
 }
 
+
+
+/* Footer */
 .footer, p {
     margin-bottom: .1rem;
 }
+
+#social-networks {
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-evenly;
+    }
+
+  #social-networks i {
+    font-size: 140%;
+    padding: 5%;
+    color: #000000;
+  }
+
