@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block content %}
-<body class="body-gallery">
+<section class="body-gallery">
     <h2>Gallery text is now added with bgc red.</h2>
     {% for galleryimage in object_list %}
     <h2>{{galleryimage.username}}</h2>
@@ -12,6 +12,6 @@
     <h2>{{galleryimage.caption_updated_on}}<h2>
     <h2>{{galleryimage.approved}}<h2>
     {% endfor %}
-</body>
+</section>
 
 {% endblock content %}

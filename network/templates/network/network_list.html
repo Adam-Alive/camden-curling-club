@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block content %}
-<body class="body-network">
+<section class="body-network">
     <h2>Network text is now added with bgc blue.</h2>
     {% for network in object_list %}
     <h2>{{network.club_name}}</h2>
@@ -11,6 +11,6 @@
     <h2>{{network.email}}</h2>
     <h2>{{network.wheelchair_access}}</h2>
     {% endfor %}
-</body>
+</section>
 
 {% endblock content %}
