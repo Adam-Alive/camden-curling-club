@@ -6,20 +6,37 @@
 }
 
 /* General styles */
+html,
+body {
+    height: 100%;
+}
+
 body {
     min-height: 100vh;
     font-family: "Montserrat", sans-serif;
+    text-align: center;
   }
 
-header, footer {
+
+header {
     background-color: rgb(126, 145, 230);
 }
+
+body>footer {
+    position: sticky;
+    top: 100vh;
+}
+
 
 
 
 /* Footer */
 .footer, p {
     margin-bottom: .1rem;
+}
+
+footer {
+  background-color: rgb(126, 145, 230);
 }
 
 #social-networks {
