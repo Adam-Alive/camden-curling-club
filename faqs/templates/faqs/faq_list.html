@@ -2,12 +2,21 @@
 {% load static %}
 
 {% block content %}
-<section class="body-faqs">
-    <h2>Faqs text is now added with bgc.</h2>
-    {% for faq in object_list %}
-    <h2>{{faq.question}}</h2>
-    <h2>{{faq.answer}}<h2>
-    {% endfor %}
+<!--Main section-->
+<main>
+    <!--Intro section-->
+    <section>
+        <h2>FAQs</h2>
     </section>
 
+
+    <section class="container-fluid">
+        <div class="row">
+            {% for faq in object_list %}
+            <p class="question">Q: {{faq.question}}</p>
+            <p class="answer">A: {{faq.answer}}<p>
+            {% endfor %}
+        </div>
+    </section>
+</main>
 {% endblock content %}

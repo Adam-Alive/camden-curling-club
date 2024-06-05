@@ -54,6 +54,15 @@ img {
   padding: 10px 0 10px;
 }
 
+/*faq_list.html*/
+
+.question {
+  color: blue;
+}
+
+.answer {
+  color: green;
+}
 
 
 /* Footer */
