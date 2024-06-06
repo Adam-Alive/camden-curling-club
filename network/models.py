@@ -5,8 +5,8 @@ from django.contrib.auth.models import User
 
 
 WHEELCHAIR_ACCESS = (
-('Wheelchair Sheets Available', 'Wheelchair Sheets Available'), 
-('No Wheelchair Sheets', 'No Wheelchair Sheets')
+('Yes', 'Yes'), 
+('No', 'No')
 )
 
 

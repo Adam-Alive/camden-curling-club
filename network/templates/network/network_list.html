@@ -10,7 +10,7 @@
         Here you will find contact details for England's growing curling club network.
     </p>
     <p>
-    To connect with our friends in Scotland, the birthplace of curling, please see: <a
+        To connect with our friends in Scotland, the birthplace of curling, please see: <a
             href=" https://www.scottishcurling.org/" target="_blank" rel="noopener"
             aria-label="Visit Scottish Curling website (opens in a new tab)">Scottish Curling</a>
     </p>
@@ -18,69 +18,53 @@
 <!--
 Club details section-->
 <section>
-<div class="test-container text-start">
-    <div class="row row-cols-4">
-      <div class="col"></div>
-      <div class="col">Club Name:</div>
-      <div class="col">{{network.club_name}}</div>
-      <div class="col"></div>
-    </div>
-  </div>
-
-  <div class="test-container text-start">
-    <div class="row row-cols-4">
-      <div class="col"></div>
-      <div class="col">Location:</div>
-      <div class="col">{{network.location}}</div>
-      <div class="col"></div>
-    </div>
-  </div>
-
-  <div class="test-container text-start">
-    <div class="row row-cols-4">
-      <div class="col"></div>
-      <div class="col">Website:</div>
-      <div class="col">{{network.website}}</div>
-      <div class="col"></div>
-    </div>
-  </div>
-
-  <div class="test-container text-start">
-    <div class="row row-cols-4">
-      <div class="col"></div>
-      <div class="col">Email:</div>
-      <div class="col">{{network.email}}</div>
-      <div class="col"></div>
-    </div>
-  </div>
-
-  <div class="test-container text-start">
-    <div class="row row-cols-4">
-      <div class="col"></div>
-      <div class="col">Wheelchair access:</div>
-      <div class="col">{{network.wheelchair_access}}</div>
-      <div class="col"></div>
-    </div>
-  </div>
-
-  {% endfor %}
-</section>
-
-
-
-
-
-
-
-
-<!--<section>
     {% for network in object_list %}
-    <h2>{{network.club_name}}</h2>
-    <h2>{{network.location}}</h2>
-    <h2>{{network.website}}</h2>
-    <h2>{{network.email}}</h2>
-    <h2>{{network.wheelchair_access}}</h2>
+    <div class="test-container text-start">
+        <div class="row row-cols-4">
+            <div class="col"></div>
+            <div class="col">Club Name:</div>
+            <div class="col">{{network.club_name}}</div>
+            <div class="col"></div>
+        </div>
+    </div>
+
+    <div class="test-container text-start">
+        <div class="row row-cols-4">
+            <div class="col"></div>
+            <div class="col">Location:</div>
+            <div class="col">{{network.location}}</div>
+            <div class="col"></div>
+        </div>
+    </div>
+
+    <div class="test-container text-start">
+        <div class="row row-cols-4">
+            <div class="col"></div>
+            <div class="col">Website:</div>
+            <div class="col">{{network.website}}</div>
+            <div class="col"></div>
+        </div>
+    </div>
+
+    <div class="test-container text-start">
+        <div class="row row-cols-4">
+            <div class="col"></div>
+            <div class="col">Email:</div>
+            <div class="col">{{network.email}}</div>
+            <div class="col"></div>
+        </div>
+    </div>
+
+    <div class="test-container text-start">
+        <div class="row row-cols-4">
+            <div class="col"></div>
+            <div class="col">Wheelchair access:</div>
+            <div class="col">{{network.wheelchair_access}}</div>
+            <div class="col"></div>
+        </div>
+    </div>
+
     {% endfor %}
-</section>-->
+</section>
 
 {% endblock content %}
