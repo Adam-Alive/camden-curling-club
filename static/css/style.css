@@ -43,6 +43,18 @@ section {
   padding: 10px 0px;
 }
 
+
+
+
+/*Test Styles*/
+.test-container {
+  width: 85%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 /*Images*/
 img {
   height: 75%;
