@@ -54,6 +54,10 @@ section {
   margin-right: auto;
 }
 
+.break-div {
+  padding: 10px 0px;
+}
+
 
 /*Images*/
 img {
