@@ -2,13 +2,24 @@
 {% load static %}
 
 {% block content %}
-<section class="body-bookings">
-    <h2>Bookings text is now added with bgc.</h2>
-    {% for booking in object_list %}
-    <h2>{{booking.username}}</h2>
-    <h2>{{booking.date}}<h2>
-    <h2>{{booking.session}}<h2>
-    <h2>{{booking.wheelchair_lane}}<h2>
-    {% endfor %}
+
+<!--Main section.-->
+<main>
+
+    <!--Intro section.-->
+    <section>
+        <h2>Practice Session Bookings</h2>
+        <p>Make your bookings here.</p>
     </section>
+
+    <section>
+        {% for booking in object_list %}
+        <h2>{{booking.username}}</h2>
+        <h2>{{booking.date}}<h2>
+                <h2>{{booking.session}}<h2>
+                        <h2>{{booking.wheelchair_lane}}<h2>
+                                {% endfor %}
+    </section>
+
+</main>
 {% endblock content %}

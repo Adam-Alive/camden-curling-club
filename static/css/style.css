@@ -39,6 +39,13 @@ body>footer {
   top: 100vh;
 }
 
+main {
+  width: 85%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 section {
   padding: 10px 0px;
 }
@@ -51,20 +58,17 @@ section {
 }
 
 /*Test Styles*/
-.test-container {
+/*Delete test-container when all pages have had main styling added.*/
+/*.test-container {
   width: 85%;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-}
-/*
-Gallery page*/
-.main-gallery {
-  width: 85%;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
+}*/
+
+
+
+
 
 
 /*End of Test Styles*/
