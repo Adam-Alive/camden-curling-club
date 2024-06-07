@@ -66,7 +66,9 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mx-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+                                <!--<a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>-->
+                                <a class="nav-link {% if request.path == home_url %}active" aria-current="page{% endif %}"
+                            href="{% url 'home' %}">Home</a>
                             </li>
                             <!--<li class="nav-item">
                     <a class="nav-link" href="#">Register</a>
@@ -75,6 +77,22 @@
                     <a class="nav-link" href="#">Login</a>
                 </li>-->
                             {% if user.is_authenticated %}
+                            <li class="nav-item">
+                                <a class="nav-link {% if request.path == bookings_url %}active{% endif %}"
+                                    aria-current="page" href="{% url 'bookings' %}">Bookings</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link {% if request.path == faqs_url %}active{% endif %}"
+                                    aria-current="page" href="{% url 'faqs' %}">Faqs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link {% if request.path == gallery_url %}active{% endif %}"
+                                    aria-current="page" href="{% url 'gallery' %}">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link {% if request.path == network_url %}active{% endif %}"
+                                    aria-current="page" href="{% url 'network' %}">Network</a>
+                            </li>
                             <li class="nav-item">
                                 <a class="nav-link {% if request.path == logout_url %}active{% endif %}"
                                     aria-current="page" href="{% url 'account_logout' %}">Logout</a>

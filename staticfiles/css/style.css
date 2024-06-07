@@ -43,6 +43,13 @@ section {
   padding: 10px 0px;
 }
 
+/*Navigation*/
+.nav-link:hover,
+.nav-link:active {
+    color: blue;
+    text-decoration: underline;
+}
+
 
 
 
