@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.views import generic
+from django.contrib import messages
 from .models import GalleryImage
 from .forms import GalleryForm
 
@@ -22,6 +23,7 @@ def add_image(request):
             )
 
     gallery_form = GalleryForm()
+
 
     return render(
         request,
