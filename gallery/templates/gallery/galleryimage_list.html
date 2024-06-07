@@ -15,11 +15,11 @@
 <!--Upload image and caption with crispy forms-->
 <section>
     <div class="card mb-3 mt-3">
-        <div class="card-body">
+        <div>
           {% if user.is_authenticated %}
           <h3> Upload image:</h3>
           <p>Added by: {{ user.username }}</p>
-          <form id="galleryForm" method="post"
+          <form id="GalleryForm" method="post"
             style="margin-top: 1.3em;">
             {{ gallery_form | crispy }}
             <!--A csrf_token tag is required for each form-->
