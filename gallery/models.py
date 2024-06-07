@@ -7,13 +7,13 @@ from cloudinary.models import CloudinaryField
 
 class GalleryImage(models.Model):
     """
-    *** TBC Stores an image and caption entry.
+    *** Stores an image and caption entry.
     """
     username = models.ForeignKey(
     User, on_delete=models.CASCADE, related_name='TBC+'
     )
     gallery_image = CloudinaryField('image', default='placeholder')
-    caption = models.CharField(max_length=250, unique=True)
+    caption = models.CharField(max_length=100, unique=True)
     added_on = models.DateTimeField(auto_now_add=True)
     caption_updated_on = models.DateTimeField(auto_now=True)
     approved = models.BooleanField(default=False)
