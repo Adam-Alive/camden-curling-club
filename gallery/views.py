@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views import generic
 from .models import GalleryImage
-from .models import GalleryForm
+from .forms import GalleryForm
 
 
 # Create your views here.
