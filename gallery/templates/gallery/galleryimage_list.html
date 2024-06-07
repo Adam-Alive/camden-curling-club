@@ -34,17 +34,16 @@
     </div>
 </section>
 
-
-
 <section>
-    <!--{% for galleryimage in object_list %}
+    {% for galleryimage in object_list %}
     <h2>{{galleryimage.username}}</h2>
     <h2>{{galleryimage.gallery_image}}<h2>
+    <img src="{{ gallery.gallery_image.url }}">
     <h2>{{galleryimage.caption}}<h2>
     <h2>{{galleryimage.added_on}}<h2>
     <h2>{{galleryimage.caption_updated_on}}<h2>
     <h2>{{galleryimage.approved}}<h2>
-    {% endfor %}-->
+    {% endfor %}
 </section>
 
 </main>

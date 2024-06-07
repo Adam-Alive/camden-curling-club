@@ -1,5 +1,5 @@
-from .models import GalleryImage
 from django import forms
+from .models import GalleryImage
 
 class GalleryForm(forms.ModelForm):
     class Meta:
