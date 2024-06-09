@@ -28,6 +28,5 @@ def add_image(request):
     return render(
         request,
         "gallery/galleryimage_list.html",
-        {"gallery": gallery,
-        "gallery_form": gallery_form},
+        {"gallery_form": gallery_form},
     )
