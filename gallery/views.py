@@ -15,13 +15,12 @@ from .forms import GalleryForm
 def gallery(request):
     gallery_images = GalleryImage.objects.filter(approved=True)
     if request.method == "POST":
-        print('Received a POST request')
         gallery_form = GalleryForm(request.POST, request.FILES)
         if gallery_form.is_valid():
             gallery_form.instance.username = request.user
             gallery_form.save()
             messages.success(
-                request, 'Image submitted and awaiting approval'
+                request, 'Thank you - image submitted and awaiting approval.'
             )
             return redirect(reverse('gallery'))
 

@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
-
 {% block content %}
+{% load crispy_forms_tags %}
 
 <!--Main section.-->
 <main>
@@ -11,6 +11,22 @@
         <h2>Practice Session Bookings</h2>
         <p>Make your bookings here.</p>
     </section>
+
+    <!--Make booking with crispy forms-->
+  <section>
+    <div class="card mb-3 mt-3">
+      <div>
+        <h3> Make booking:</h3>
+        <!--<p>Added by: {{ user.username }}</p>-->
+        <form method="post" style="margin-top: 1.3em;" enctype="multipart/form-data">
+          {{ booking_form | crispy }}
+          <!--A csrf_token tag is required for each form-->
+          {% csrf_token %}
+          <button id="submitButton" type="submit" class="btn btn-signup btn-lg">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
 
     <section>
         {% for booking in object_list %}
