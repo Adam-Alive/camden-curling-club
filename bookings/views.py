@@ -25,9 +25,9 @@ def make_booking(request):
             return redirect(reverse('make_booking'))
 
     booking_form = BookingForm()
-    template = "booking/booking_list.html"
+    template = "bookings/booking_list.html"
     context = {
-        "gallery_form": gallery_form,
+        "booking_form": booking_form,
         #'gallery_images': gallery_images,
     }
 
