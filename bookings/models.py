@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 # Create your models here.
 
 
-SESSION = (
+SHEET_TIMES = (
 ('Sheet 1 at 18.00 - 19.30', 'Sheet 1 at 18.00 - 19.30'),
 ('Sheet 2 at 18.00 - 19.30', 'Sheet 2 at 18.00 - 19.30'),
 ('Sheet 3 at 18.00 - 19.30', 'Sheet 3 at 18.00 - 19.30'),
@@ -15,7 +15,7 @@ SESSION = (
 
 
 WHEELCHAIR_SHEET = (
-('Not Required', 'Not Required'), 
+('Not Required', 'Not Required'),
 ('Required', 'Required')
 )
 
@@ -28,9 +28,9 @@ class Booking(models.Model):
     User, on_delete=models.CASCADE, related_name='TBC+'
     )
     date = models.DateField()
-    session = models.CharField(choices=SESSION)
+    sheet_time = models.CharField(choices=SHEET_TIMES)
     wheelchair_sheet = models.CharField(choices=WHEELCHAIR_SHEET)
 
 
     def __str__(self):
-        return f'{self.session} booked by {self.username}'
+        return f'{self.sheet_time} booked by {self.username}'

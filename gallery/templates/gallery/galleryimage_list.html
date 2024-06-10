@@ -6,44 +6,38 @@
 <!--Main section-->
 <main>
 
-<!--Intro section-->
-<section>
+  <!--Intro section-->
+  <section>
     <h2>Members' Gallery</h2>
     <p>Share your curling ups and downs by uploading your latest pictures here.</p>
-</section>
+  </section>
 
-<!--Upload image and caption with crispy forms-->
-<section>
+  <!--Upload image and caption with crispy forms-->
+  <section>
     <div class="card mb-3 mt-3">
-        <div>
-          {% if user.is_authenticated %}
-          <h3> Upload image:</h3>
-          <p>Added by: {{ user.username }}</p>
-          <form id="GalleryForm" method="post"
-            style="margin-top: 1.3em;">
-            {{ gallery_form | crispy }}
-            <!--A csrf_token tag is required for each form-->
-            {% csrf_token %}
-            <button id="submitButton" type="submit"
-              class="btn btn-signup btn-lg">Submit</button>
-          </form>
-          {% else %}
-          <p>Log in to add an image.</p>
-          {% endif %}
-        </div>
+      <div>
+        <h3> Upload image:</h3>
+        <p>Added by: {{ user.username }}</p>
+        <form method="post" style="margin-top: 1.3em;" enctype="multipart/form-data">
+          {{ gallery_form | crispy }}
+          <!--A csrf_token tag is required for each form-->
+          {% csrf_token %}
+          <button id="submitButton" type="submit" class="btn btn-signup btn-lg">Submit</button>
+        </form>
+      </div>
     </div>
-</section>
+  </section>
 
-<section>
-    {% for galleryimage in object_list %}
+  <section>
+    {% for galleryimage in gallery_images %}
     <h2>{{galleryimage.username}}</h2>
-    <h2>{{galleryimage.gallery_image}}<h2>
-    <h2>{{galleryimage.caption}}<h2>
-    <h2>{{galleryimage.added_on}}<h2>
-    <h2>{{galleryimage.caption_updated_on}}<h2>
-    <h2>{{galleryimage.approved}}<h2>
+    <img src="{{ galleryimage.gallery_image.url }}" alt="{{galleryimage.caption}}" class="img-fluid">
+    <h2>{{galleryimage.caption}}</h2>
+    <h2>{{galleryimage.added_on}}</h2>
+    <h2>{{galleryimage.caption_updated_on}}</h2>
+    <h2>{{galleryimage.approved}}</h2>
     {% endfor %}
-</section>
+  </section>
 
 </main>
 

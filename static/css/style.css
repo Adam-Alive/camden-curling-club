@@ -129,6 +129,9 @@ footer {
   font-weight: 300;
 }
 
+#signup_form ul {
+  display: none;
+}
 /* Media Queries */
 
 /* Tablets and larger (768px and higher) */

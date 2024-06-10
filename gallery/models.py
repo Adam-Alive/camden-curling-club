@@ -10,7 +10,7 @@ class GalleryImage(models.Model):
     *** Stores an image and caption entry.
     """
     username = models.ForeignKey(
-    User, on_delete=models.CASCADE, related_name='TBC+'
+        User, on_delete=models.CASCADE, related_name='TBC+'
     )
     gallery_image = CloudinaryField('image', default='placeholder')
     caption = models.CharField(max_length=100, unique=True)
