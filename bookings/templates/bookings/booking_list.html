@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
-{% load crispy_forms_tags %}
+<!--{% load crispy_forms_tags %}-->
 
 <!--Main section.-->
 <main>
@@ -13,27 +13,25 @@
     </section>
 
     <!--Make booking with crispy forms-->
-  <section>
+  <!--<section>
     <div class="card mb-3 mt-3">
       <div>
         <h3> Make booking:</h3>
-        <!--<p>Added by: {{ user.username }}</p>-->
         <form method="post" style="margin-top: 1.3em;" enctype="multipart/form-data">
-          {{ booking_form | crispy }}
-          <!--A csrf_token tag is required for each form-->
+          {{ booking_form | crispy }}          
           {% csrf_token %}
           <button id="submitButton" type="submit" class="btn btn-signup btn-lg">Submit</button>
         </form>
       </div>
     </div>
-  </section>
+  </section>-->
 
     <section>
-        {% for booking in object_list %}
+        {% for booking in bookings %}
         <h2>{{booking.username}}</h2>
         <h2>{{booking.date}}<h2>
-        <h2>{{booking.session}}<h2>
-        <h2>{{booking.wheelchair_lane}}<h2>
+        <h2>{{booking.sheet_time}}<h2>
+        <h2>{{booking.wheelchair_sheet}}<h2>
         {% endfor %}
     </section>
 
