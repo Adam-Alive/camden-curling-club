@@ -1,18 +1,26 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
-<!--{% load crispy_forms_tags %}-->
+{% load crispy_forms_tags %}
 
 <!--Main section.-->
 <main>
 
-    <!--Intro section.-->
-    <section>
-        <h2>Practice Session Bookings</h2>
-        <p>Make your bookings here.</p>
-    </section>
+  <!--Intro section.-->
+  <section>
+    <h2>Bookings</h2>
+  </section>
 
-    <!--Make booking with crispy forms-->
+  <section class="text-start">
+    <p>Welcome to our bookings page where you can book practice sessions during the curling season from October to
+      March.</p>
+    <p>Practice nights are Tuesday and Thursday, with six sessions available each evening:</p>
+    <p class="sheets">3 sheets from 18:00 to 19:30</p>
+    <p class="sheets">3 sheets from 20:00 to 21:30</p>
+    <p>For new members, please note that a playing area is called a sheet - see more info at FAQs.</p>
+  </section>
+
+  <!--Make booking with crispy forms-->
   <!--<section>
     <div class="card mb-3 mt-3">
       <div>
@@ -26,14 +34,14 @@
     </div>
   </section>-->
 
-    <section>
-        {% for booking in bookings %}
-        <h2>{{booking.username}}</h2>
-        <h2>{{booking.date}}<h2>
+  <section>
+    {% for booking in bookings %}
+    <h2>{{booking.username}}</h2>
+    <h2>{{booking.date}}<h2>
         <h2>{{booking.sheet_time}}<h2>
-        <h2>{{booking.wheelchair_sheet}}<h2>
-        {% endfor %}
-    </section>
+            <h2>{{booking.wheelchair_sheet}}<h2>
+                {% endfor %}
+  </section>
 
 </main>
 {% endblock content %}
