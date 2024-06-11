@@ -20,8 +20,10 @@ def make_booking(request):
     """
     Displays booking form and posts booking requests.
     """
-    if request.method == "POST":
-        booking_form = BookingForm(data=request.POST)
+    
+    
+    if request.method == "POST":        
+        booking_form = BookingForm(data=request.POST)       
         if booking_form.is_valid():
             booking_form.save()
             messages.success(
@@ -29,11 +31,14 @@ def make_booking(request):
             )
             return redirect(reverse('make_booking'))
 
-    booking = Booking.objects.all()
+    user_booking = Booking.objects.all()
     booking_form = BookingForm()
     template = "bookings/booking_list.html"
     context = {
-        "booking": booking,
+        "user_booking": user_booking,
         "booking_form": booking_form,
     }
     return render(request, template, context)
+
+
+
