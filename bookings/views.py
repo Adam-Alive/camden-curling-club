@@ -13,26 +13,51 @@ class BookingList(generic.ListView):
 
 @login_required
 def make_booking(request):
-    user_bookings = Booking.objects.all()
-    print('hello')
     if request.method == "POST":
-        booking_form = BookingForm(request.POST, request.FILES)
+        booking_form = BookingForm(data=request.POST)
         if booking_form.is_valid():
-            booking_form.instance.username = request.user
             booking_form.save()
             messages.success(
-                request, 'Thank you - your booking is confirmed.'
+            request, 'Thank you - your booking is confirmed.'
             )
-            return redirect(reverse('make_booking'))
-
+    booking = Booking.objects.all()
     booking_form = BookingForm()
     template = "bookings/booking_list.html"
     context = {
+        "booking": booking,
         "booking_form": booking_form,
-        "user_bookings": user_bookings,
     }
-
     return render(request, template, context)
+
+
+
+
+
+
+
+
+#@login_required
+#def make_booking(request):
+#    user_bookings = Booking.objects.all()
+#    print('hello')
+#    if request.method == "POST":
+#        booking_form = BookingForm(request.POST, request.FILES)
+#        if booking_form.is_valid():
+#            booking_form.instance.username = request.user
+#            booking_form.save()
+#            messages.success(
+#                request, 'Thank you - your booking is confirmed.'
+#            )
+#            return redirect(reverse('make_booking'))
+
+#    booking_form = BookingForm()
+#    template = "bookings/booking_list.html"
+#    context = {
+#        "booking_form": booking_form,
+#        "user_bookings": user_bookings,
+#    }
+
+#    return render(request, template, context)
 
 
 
