@@ -32,6 +32,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = os.environ.get('DEBUG', False)
 
 ALLOWED_HOSTS = ['8000-adamalive-camdencurling-pp6yt89mz85.ws-eu114.gitpod.io',
+                '8000-adamalive-camdencurling-v6vilr01944.ws.codeinstitute-ide.net',
                 '.herokuapp.com']
 
 
@@ -115,7 +116,8 @@ DATABASES = {
 
 CSRF_TRUSTED_ORIGINS = [
     "https://*.gitpod.io/",
-    "https://*.herokuapp.com"
+    "https://*.herokuapp.com",
+    "https://8000-adamalive-camdencurling-v6vilr01944.ws.codeinstitute-ide.net",
 ]
 
 # Password validation
