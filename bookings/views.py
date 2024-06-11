@@ -1,6 +1,7 @@
 from django.shortcuts import render, reverse, redirect
 from django.views import generic
 from django.contrib import messages
+from django.http import HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
 from .models import Booking
 from .forms import BookingForm
@@ -19,9 +20,7 @@ class BookingList(generic.ListView):
 def make_booking(request):
     """
     Displays booking form and posts booking requests.
-    """
-    
-    
+    """    
     if request.method == "POST":        
         booking_form = BookingForm(data=request.POST)       
         if booking_form.is_valid():
@@ -29,7 +28,7 @@ def make_booking(request):
             messages.success(
             request, 'Thank you - your booking is confirmed.'
             )
-            return redirect(reverse('make_booking'))
+            return HttpResponseRedirect(reverse('make_booking'))
 
     user_booking = Booking.objects.all()
     booking_form = BookingForm()

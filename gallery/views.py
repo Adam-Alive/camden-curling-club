@@ -32,25 +32,3 @@ def gallery(request):
     }
 
     return render(request, template, context)
-
-#def image_detail(request):
-#    """
-#    Display a single image.
-#    """
-#    gallery_images = GalleryImage.objects.filter(approved=True)
-#    image = get_object_or_404()
-#    author = image.author
-
-
-#    return render(
-#        request,
-#        "gallery/galleryimage_list.html",
-#        {"author": author,
-#        "caption": caption
-#        },
-#    )
-
-    #queryset = Post.objects.filter(status=1)
-    #post = get_object_or_404(queryset, slug=slug)
-    #comments = post.comments.all().order_by("-created_on")
-    #comment_count = post.comments.filter(approved=True).count()
