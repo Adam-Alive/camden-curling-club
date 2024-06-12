@@ -51,10 +51,15 @@ section {
 }
 
 /*Navigation*/
+
+.nav-item {
+  font-weight: 600;
+}
+
 .nav-link:hover,
 .nav-link:active {
-    color: blue;
-    text-decoration: underline;
+  color: blue;
+  text-decoration: underline;
 }
 
 /*Test Styles*/
@@ -67,9 +72,9 @@ section {
 }*/
 
 #msg {
-  background-color: rgb(231, 62, 180);
+  background-color: rgb(238, 129, 205);
+  font-weight: 600;
 }
-
 
 
 
@@ -89,6 +94,12 @@ img {
 .image-div {
   text-align: center;
   padding: 10px 0 10px;
+}
+
+
+/*Bookings page*/
+.sheets {
+  color: blue;
 }
 
 /*faq_list.html*/
@@ -132,6 +143,7 @@ footer {
 #signup_form ul {
   display: none;
 }
+
 /* Media Queries */
 
 /* Tablets and larger (768px and higher) */
