@@ -20,9 +20,10 @@ class BookingList(generic.ListView):
 def make_booking(request):
     """
     Displays booking form and posts booking requests.
-    """    
+    """   
+    user_booking = Booking.objects.all()
     if request.method == "POST":        
-        booking_form = BookingForm(data=request.POST)       
+        booking_form = BookingForm(data=request.POST)      
         if booking_form.is_valid():
             booking_form.save()
             messages.success(
@@ -30,7 +31,7 @@ def make_booking(request):
             )
             return HttpResponseRedirect(reverse('make_booking'))
 
-    user_booking = Booking.objects.all()
+    # user_booking = Booking.objects.all()
     booking_form = BookingForm()
     template = "bookings/booking_list.html"
     context = {
