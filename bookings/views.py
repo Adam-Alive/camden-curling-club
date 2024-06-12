@@ -23,22 +23,23 @@ def make_booking(request):
     """   
     user_booking = Booking.objects.filter(username=request.user)
     booking_form = BookingForm(request.POST or None)  
-    if request.method == "POST":
+    if request.method == "POST":        
         if booking_form.is_valid():
-            booking_form.instance.username = request.user
+            booking_form.instance.username = request.user           
             booking_form.save()
             messages.success(
             request, 'Thank you - your booking is confirmed.'
             )
             return redirect(reverse('make_booking'))
+            
 
-    # booking_form = BookingForm()
     template = "bookings/booking_list.html"
     context = {
         "user_booking": user_booking,
         "booking_form": booking_form,
     }
     return render(request, template, context)
-
-
+       
+    
+    
 
