@@ -39,7 +39,3 @@ def make_booking(request):
         "booking_form": booking_form,
     }
     return render(request, template, context)
-       
-    
-    
-
