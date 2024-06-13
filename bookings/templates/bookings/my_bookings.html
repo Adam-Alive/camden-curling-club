@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% load crispy_forms_tags %}
+
+<!--Main section-->
+<main>
+
+  <!--Intro section-->
+  <!-- <section>
+    <h2>My Bookings</h2>
+  </section> -->
+
+  <!--Make booking with crispy forms-->
+  <!-- <section>
+    <div class="card mb-3 mt-3">
+      <div> -->
+        <!-- <h3> Make booking:</h3> -->
+        <!-- <form method="post" style="margin-top: 1.3em;" enctype="multipart/form-data">
+          {{ booking_form | crispy }}
+          {% csrf_token %}
+          <button type="submit" class="btn btn-lg">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Test output - not for live site -->
+  <!-- <section>
+    {% for booking in user_booking %}
+    <h3>Test output - not for live site</h3>
+    <p>{{booking.username}}</p>
+    <p>{{booking.date}}</p>
+    <p>{{booking.sheet_time}}</p>
+    <p>{{booking.wheelchair_sheet}}</p>
+    {% endfor %}
+  </section> -->
+
+
+  <!--Current user's bookings section-->
+  <!-- Heading -->
+  <section>
+    <h2>My Bookings</h2>
+  </section>
+
+  <!-- List of bookings -->
+  <section class="card">
+    <form>
+      {% for booking in user_booking %}
+      <div class="text-start">
+        <div class="row row-cols-3">
+          <div class="col-3"></div>
+          <div class="col-3">Date:</div>
+          <div class="col-6">{{booking.date}}</div>
+        </div>
+      </div>
+
+      <div class="text-start">
+        <div class="row row-cols-3">
+          <div class="col-3"></div>
+          <div class="col-3">Sheet / Time:</div>
+          <div class="col-6">{{booking.sheet_time}}</div>
+        </div>
+      </div>
+
+      <div class="text-start">
+        <div class="row row-cols-3">
+          <div class="col-3"></div>
+          <div class="col-3">Wheelchair Sheet:</div>
+          <div class="col-6">{{booking.wheelchair_sheet}}</div>
+        </div>
+      </div>
+
+      <!-- Edit or Cancel bookings section -->
+      <section>
+        <div class="text-start">
+          <div class="row row-cols-3">
+            <div class="col-3"></div>
+            <div class="col-3">
+              <button type="button" class="btn btn-success" type="submit">Edit</button>
+            </div>
+            <div class="col-6">
+              <button type="button" class="btn btn-danger" type="submit">Cancel</button>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <div class="text-center break-div">
+        <div class="row">
+          <div class="col">* * * * *</div>
+        </div>
+      </div>
+
+      {% endfor %}
+    </form>
+  </section>
+
+</main>
+{% endblock content %}

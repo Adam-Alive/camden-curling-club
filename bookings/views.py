@@ -56,9 +56,9 @@ def edit_booking(request, booking_id):
             messages.success(
             request, 'Thank you - your new booking is confirmed.'
             )
-            return redirect(reverse('make_booking'))              
+            return redirect(reverse('edit_booking'))              
    
-    template = "bookings/booking_list.html"
+    template = "bookings/my_bookings.html"
     context = {
         "user_booking": user_booking,
         "booking_form": booking_form,
