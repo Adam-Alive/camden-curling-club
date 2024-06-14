@@ -26,7 +26,6 @@
   <section>
     <div class="card mb-3 mt-3">
       <div>
-        <!-- <h3> Make booking:</h3> -->
         <form method="post" style="margin-top: 1.3em;" enctype="multipart/form-data">
           {{ booking_form | crispy }}
           {% csrf_token %}
@@ -42,73 +41,6 @@
     <div>
       <a href="{% url 'my_bookings' %}" class="btn btn-lg btn-success" type="submit">My Bookings</a>
     </div>
-  </section>
-
-  <!--Current user's bookings section-->
-  <!-- Heading -->
-  <section>
-    <p>The My Bookings button links to the my_bookings.html and the data below is displayed there. I've not been able to
-      remove it from this page. It shows the bookings made by the current user but the Edit and Cancel buttons are not
-      an active part of the form. How do I 'link' these since the form draws upon the model and buttons are not a data
-      field?
-    </p>
-  </section>
-  <section>
-    <h2>My Bookings</h2>
-  </section>
-
-  <!-- List of bookings -->
-  <section class="card">
-    <form>
-      {% for booking in user_booking %}
-      <div class="text-start">
-        <div class="row row-cols-3">
-          <div class="col-3"></div>
-          <div class="col-3">Date:</div>
-          <div class="col-6">{{booking.date}}</div>
-        </div>
-      </div>
-
-      <div class="text-start">
-        <div class="row row-cols-3">
-          <div class="col-3"></div>
-          <div class="col-3">Sheet / Time:</div>
-          <div class="col-6">{{booking.sheet_time}}</div>
-        </div>
-      </div>
-
-      <div class="text-start">
-        <div class="row row-cols-3">
-          <div class="col-3"></div>
-          <div class="col-3">Wheelchair Sheet:</div>
-          <div class="col-6">{{booking.wheelchair_sheet}}</div>
-        </div>
-      </div>
-
-      <!-- Edit or Cancel bookings section -->
-      <section>
-        <div class="text-start">
-          <div class="row row-cols-3">
-            <div class="col-3"></div>
-            <div class="col-3">
-              <button type="button" class="btn btn-success" type="submit">Edit</button>
-            </div>
-            <div class="col-6">
-              <button type="button" class="btn btn-danger" type="submit">Cancel</button>
-            </div>
-          </div>
-        </div>
-
-      </section>
-
-      <div class="text-center break-div">
-        <div class="row">
-          <div class="col">* * * * *</div>
-        </div>
-      </div>
-
-      {% endfor %}
-    </form>
   </section>
 
 </main>
