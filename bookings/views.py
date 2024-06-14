@@ -1,4 +1,4 @@
-from django.shortcuts import render, reverse, redirect
+from django.shortcuts import render, reverse, redirect, get_object_or_404
 from django.views import generic
 from django.contrib import messages
 from django.http import HttpResponseRedirect
@@ -41,7 +41,6 @@ def make_booking(request):
     return render(request, template, context)
 
 
-
 @login_required
 def my_bookings(request):
     user_booking = Booking.objects.filter(username=request.user)
@@ -62,28 +61,26 @@ def my_bookings(request):
     return render(request, template, context)
 
     
-
-
-# @login_required
-# def edit_booking(request, booking_id):
-#     """
-#     Test for edit booking
-#     """
-#     user_booking = Booking.objects.get(pk=id)
-#     booking_form = BookingForm(request.POST or None)
-#     if request.method == 'POST':
-#         if booking_form.is_valid():
-#             booking_form.instance.username = request.user           
-#             booking_form.save()
-#             print('It is working')
-#             messages.success(
-#             request, 'Thank you - your new booking is confirmed.'
-#             )
-#             return redirect(reverse('edit_booking'))              
+@login_required
+def edit_booking(request, booking_id):
+    """
+    To edit a booking for the current user.
+    """
+    user_booking = Booking.objects.get(pk=id)
+    booking_form = BookingForm(request.POST or None)
+    if request.method == 'POST':
+        if booking_form.is_valid():
+            booking_form.instance.username = request.user           
+            booking_form.save()
+            print('It is working')
+            messages.success(
+            request, 'Thank you - your new booking is confirmed.'
+            )
+            return redirect(reverse('edit_booking'))         
    
-#     template = "bookings/my_bookings.html"
-#     context = {
-#         "user_booking": user_booking,
-#         "booking_form": booking_form,
-#     }
-#     return render(request, template, context)
+    template = "bookings/my_bookings.html"
+    context = {
+        "user_booking": user_booking,
+        "booking_form": booking_form,
+    }
+    return render(request, template, context)

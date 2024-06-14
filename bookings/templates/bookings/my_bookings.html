@@ -6,13 +6,7 @@
 <!--Main section-->
 <main>
 
-  <!--Intro section-->
-  <section>
-    <h2>My Bookings</h2>
-  </section>
-
-   <!--Current user's bookings section-->
-  <!-- Heading -->
+<!-- Heading -->
   <section>
     <h2>My Bookings</h2>
   </section>
@@ -21,13 +15,7 @@
   active part of the form. How do I 'link' these since the form draws upon the model and buttons are not
   a data field? Or should it be that weh I click on Edit, it takes me to the form again? -->
   
-  <section>
-    The data below shows the bookings made by the current user but the Edit and Cancel buttons are not an
-    active part of the form. How do I 'link' these since the form draws upon the model and buttons are not
-    a data field? Or should it be that weh I click on Edit, it takes me to the form again?
-  </section>
-
-  <!-- List of bookings -->
+  <!-- Current user's bookings -->
   <section class="card">
     <form>
       {% for booking in user_booking %}
@@ -61,7 +49,8 @@
           <div class="row row-cols-3">
             <div class="col-3"></div>
             <div class="col-3">
-              <button type="button" class="btn btn-success" type="submit">Edit</button>
+              <a href="/edit/{{ booking.id }}">
+                <button type="button" class="btn btn-success" type="submit">Edit</button></a>
             </div>
             <div class="col-6">
               <button type="button" class="btn btn-danger" type="submit">Cancel</button>

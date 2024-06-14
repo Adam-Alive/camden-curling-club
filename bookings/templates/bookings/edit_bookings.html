@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% load crispy_forms_tags %}
+
+<!--Main section-->
+<main>
+
+  <!--Intro section-->
+  <section>
+    <h2>Change Your Booking</h2>
+  </section> 
+
+  <!--Make booking with crispy forms-->
+  <section>
+    <div class="card mb-3 mt-3">
+      <div>
+        <form method="post" style="margin-top: 1.3em;" enctype="multipart/form-data">
+          {{ booking_form | crispy }}
+          {% csrf_token %}
+          <button type="submit" class="btn btn-lg">Update</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Link to My Bookings page -->
+  <!-- <section>
+    <p>View, change or cancel bookings here:</p>
+    <div>
+      <a href="{% url 'my_bookings' %}" class="btn btn-lg btn-success" type="submit">My Bookings</a>
+    </div>
+  </section> -->
+
+</main>
+{% endblock content %}
