@@ -17,7 +17,9 @@
     <p>Practice nights are Tuesday and Thursday, with six sessions available each evening:</p>
     <p class="sheets">3 sheets from 18:00 to 19:30</p>
     <p class="sheets">3 sheets from 20:00 to 21:30</p>
+    <p>Enter your booking requirements in the form below.</p>
     <p>For new members, please note that a playing area is called a sheet, see: <a href="{% url 'faqs' %}">FAQs.</a></p>
+
   </section>
 
   <!--Make booking with crispy forms-->
@@ -36,29 +38,21 @@
 
   <!-- Link to My Bookings page -->
   <section>
-    <p>To view, change or cancel bookings, please got to: <a href="{% url 'home' %}">My Bookings</a></p>
-    <div>   
-      <a href="{% url 'home' %}" class="btn btn-lg btn-success" type="submit">My Bookings</a>
+    <p>View, change or cancel bookings here:</p>
+    <div>
+      <a href="{% url 'my_bookings' %}" class="btn btn-lg btn-success" type="submit">My Bookings</a>
     </div>
   </section>
 
-
-
-
-  <!-- Test output - not for live site -->
-  <!-- <section>
-    {% for booking in user_booking %}
-    <h3>Test output - not for live site</h3>
-    <p>{{booking.username}}</p>
-    <p>{{booking.date}}</p>
-    <p>{{booking.sheet_time}}</p>
-    <p>{{booking.wheelchair_sheet}}</p>
-    {% endfor %}
-  </section> -->
-
-
   <!--Current user's bookings section-->
   <!-- Heading -->
+  <section>
+    <p>The My Bookings button links to the my_bookings.html and the data below is displayed there. I've not been able to
+      remove it from this page. It shows the bookings made by the current user but the Edit and Cancel buttons are not
+      an active part of the form. How do I 'link' these since the form draws upon the model and buttons are not a data
+      field?
+    </p>
+  </section>
   <section>
     <h2>My Bookings</h2>
   </section>
