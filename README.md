@@ -1,145 +1,40 @@
 # [CAMDEN CURLING CLUB](https://camden-curling-club-286959c89917.herokuapp.com)
-
-[![GitHub commit activity](https://img.shields.io/github/commit-activity/t/Adam-Alive/camden-curling-club)](https://github.com/Adam-Alive/camden-curling-club/commits/main)
-[![GitHub last commit](https://img.shields.io/github/last-commit/Adam-Alive/camden-curling-club)](https://github.com/Adam-Alive/camden-curling-club/commits/main)
-[![GitHub repo size](https://img.shields.io/github/repo-size/Adam-Alive/camden-curling-club)](https://github.com/Adam-Alive/camden-curling-club)
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑START OF NOTES (to be deleted)
-
-!! IMPORTANT !! RE: Table of Contents
-
-DO NOT add a Table of Contents to your README or TESTING!!
-These are outdated since 2021 when GitHub added them built-in to Markdown files automatically.
-
-Assessors see this as bad practice since it's outdated for a few years now,
-as if you've taken it from someone else's project that did the same thing.
-
----
+## Project Purpose
 
 In this section, you will include a few paragraphs providing an overview of your project.
-Essentially, this part is your "sales pitch".
 
-At this stage, you should have a name for your project so use it!
-Don't introduce the project as a "portfolio project" for the diploma.
 
-In this section, describe what the project hopes to accomplish, who it is intended to target, and how it will be useful to the target audience.
+## Target Audience
 
-Consider adding a mockup image using the "Am I Responsive" website.
-Here's your deployed site as an example:
+
+
 https://ui.dev/amiresponsive?url=https://camden-curling-club-286959c89917.herokuapp.com
 
-Screenshots for the README and testing should not be inside of `assets/` or `static/` image folders.
-(reminder: `assets/` and `static/` are for files used on the live site, not documentation)
-Consider adding a new folder called `documentation`, and add the amiresponsive screenshot inside of that folder.
 To add the image into your README, use this format:
 (assuming you have a new folder called `documentation` with an image called "mockup.png")
 
 ![screenshot](documentation/mockup.png)
 
-Note: Markdown files (.md) should not contain HTML elements like `img`, `br`, `div`, `a`, etc, only Markdown formatting.
-Find out more about using Markdown elements here:
 https://pandao.github.io/editor.md/en.html
 
 ---
 
-GitHub now supports CALLOUTS in Markdown files.
-There are some callouts already embedded in this application for you.
-However, if you feel that you want to add more, there are certain ones you can use.
-
-NOTE: the preview for callouts isn't yet supported in Gitpod/Codeanywhere/VSCode/etc.
-You'll have to commit/push the changes to GitHub to see it in action.
-
-> [!NOTE]  
-> BLUE: Highlights information that users should take into account, even when skimming.
-
-> [!TIP]  
-> GREEN: Optional information to help a user be more successful.
-
-> [!IMPORTANT]  
-> PURPLE: Crucial information necessary for users to succeed.
-
-> [!WARNING]  
-> YELLOW: Critical content demanding immediate user attention due to potential risks.
-
-> [!CAUTION]  
-> RED: Negative potential consequences of an action.
-
-Source: https://github.com/orgs/community/discussions/16925
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
-![screenshot](documentation/mockup.png)
-
-source: [amiresponsive](https://ui.dev/amiresponsive?url=https://camden-curling-club-286959c89917.herokuapp.com)
-
 ## UX
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑START OF NOTES (to be deleted)
+### Initial Design
 
 In this section, you will briefly explain your design processes.
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
 ### Colour Scheme
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑START OF NOTES (to be deleted)
 
 Explain your colours and the colour scheme.
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 - `#000000` used for primary text.
 - `#E84610` used for primary highlights.
 - `#4A4A4F` used for secondary text.
 - `#009FE3` used for secondary highlights.
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑START OF NOTES (to be deleted)
-
-Consider adding a link and screenshot for your colour scheme using "coolors".
-https://coolors.co/generate
-
-When you add a colour to the palette, the URL is dynamically updated, making it easier for you to return back to your colour palette later if needed.
-
-Example:
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
-I used [coolors.co](https://coolors.co/e84610-009fe3-4a4a4f-445261-d63649-e6ecf0-000000) to generate my colour palette.
-
-![screenshot](documentation/coolors.png)
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑START OF NOTES (to be deleted)
-
-⚠️ ONLY IF YOU ACTUALLY ADDED `:root` variables in CSS! ⚠️
-If you've used CSS `:root` variables, consider also including a code snippet here!
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
-I've used CSS `:root` variables to easily update the global colour scheme by changing only one value, instead of everywhere in the CSS file.
-
-```css
-:root {
-    /* P = Primary | S = Secondary */
-    --p-text: #000000;
-    --p-highlight: #E84610;
-    --s-text: #4A4A4F;
-    --s-highlight: #009FE3;
-    --white: #FFFFFF;
-    --black: #000000;
-}
-```
-
 ### Typography
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑START OF NOTES (to be deleted)
-
-Explain any fonts and icon libraries used, like Google Fonts and/or Font Awesome.
-
-Consider adding a link to each font used, and the Font Awesome site if used (or similar icon library).
-
-Example:
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 - [Montserrat](https://fonts.google.com/specimen/Montserrat) was used for the primary headers and titles.
 
@@ -155,7 +50,7 @@ In this section, list all of your user stories for the project.
 
 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
-### New Site Users
+### New Users
 
 - As a new site user, I would like to ____________, so that I can ____________.
 - As a new site user, I would like to ____________, so that I can ____________.
@@ -163,7 +58,7 @@ In this section, list all of your user stories for the project.
 - As a new site user, I would like to ____________, so that I can ____________.
 - As a new site user, I would like to ____________, so that I can ____________.
 
-### Returning Site Users
+### Site Members
 
 - As a returning site user, I would like to ____________, so that I can ____________.
 - As a returning site user, I would like to ____________, so that I can ____________.
@@ -171,7 +66,7 @@ In this section, list all of your user stories for the project.
 - As a returning site user, I would like to ____________, so that I can ____________.
 - As a returning site user, I would like to ____________, so that I can ____________.
 
-### Site Admin
+### Site Admininistrator
 
 - As a site administrator, I should be able to ____________, so that I can ____________.
 - As a site administrator, I should be able to ____________, so that I can ____________.
@@ -179,94 +74,10 @@ In this section, list all of your user stories for the project.
 - As a site administrator, I should be able to ____________, so that I can ____________.
 - As a site administrator, I should be able to ____________, so that I can ____________.
 
-## Wireframes
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
 
-In this section, display your wireframe screenshots using a Markdown `table`.
-Instructions on how to do Markdown `tables` start on line #213 on this site: https://pandao.github.io/editor.md/en.html
 
-Alternatively, dropdowns are a way to condense several wireframes into a collapsible menu to save space.
-Dropdowns in Markdown are considered some of the only acceptable HTML components that are allowed for assessment purposes.
 
-⚠️ **IMPORTANT**! ⚠️ **IMPORTANT**! ⚠️ **IMPORTANT**! ⚠️
-The example below uses the `details` and `summary` code elements.
-However, for these scripts to work, I've had to add spaces within the `< >` elements.
-
-You MUST remove these spaces for it to work properly on your own README/TESTING files.
-Remove the spaces within the `< >` brackets for the `details` and `summary` code elements,
-for the Mobile, Tablet, and Desktop wireframes.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
-To follow best practice, wireframes were developed for mobile, tablet, and desktop sizes.
-I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wireframes.
-
-### Mobile Wireframes
-
-< details >
-< summary > Click here to see the Mobile Wireframes < / summary >
-
-Home
-  - ![screenshot](documentation/wireframes/mobile-home.png)
-
-About
-  - ![screenshot](documentation/wireframes/mobile-about.png)
-
-Contact
-  - ![screenshot](documentation/wireframes/mobile-contact.png)
-
-Gallery
-  - ![screenshot](documentation/wireframes/mobile-gallery.png)
-
-etc.
-  - repeat for any remaining mobile wireframes
-
-< / details >
-
-### Tablet Wireframes
-
-< details >
-< summary > Click here to see the Tablet Wireframes < / summary >
-
-Home
-  - ![screenshot](documentation/wireframes/tablet-home.png)
-
-About
-  - ![screenshot](documentation/wireframes/tablet-about.png)
-
-Contact
-  - ![screenshot](documentation/wireframes/tablet-contact.png)
-
-Gallery
-  - ![screenshot](documentation/wireframes/tablet-gallery.png)
-
-etc.
-  - repeat for any remaining tablet wireframes
-
-< / details >
-
-### Desktop Wireframes
-
-< details >
-< summary > Click here to see the Desktop Wireframes < / summary >
-
-Home
-  - ![screenshot](documentation/wireframes/desktop-home.png)
-
-About
-  - ![screenshot](documentation/wireframes/desktop-about.png)
-
-Contact
-  - ![screenshot](documentation/wireframes/desktop-contact.png)
-
-Gallery
-  - ![screenshot](documentation/wireframes/desktop-gallery.png)
-
-etc.
-  - repeat for any remaining desktop wireframes
-
-< / details >
 
 ## Features
 
@@ -305,24 +116,18 @@ IMPORTANT: Remember to always include a screenshot of each individual feature!
 
 ![screenshot](documentation/features/feature03.png)
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
-
 Repeat as necessary for as many features as your site contains.
 
 Hint: the more, the merrier!
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 ### Future Features
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
 
 Do you have additional ideas that you'd like to include on your project in the future?
 Fantastic! List them here!
 It's always great to have plans for future improvements!
 Consider adding any helpful links or notes to help remind you in the future, if you revisit the project in a couple years.
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 - YOUR-TITLE-FOR-FUTURE-FEATURE-#1
     - Any additional notes about this feature.
@@ -333,24 +138,12 @@ Consider adding any helpful links or notes to help remind you in the future, if 
 
 ## Tools & Technologies Used
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
-
-In this section, you should explain the various tools and technologies used to develop the project.
-Make sure to put a link (where applicable) to the source, and explain what each was used for.
-Some examples have been provided, but this is just a sample only, your project might've used others.
-Feel free to delete any unused items below as necessary.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
 - ⚠️⚠️ REQUIRED <-- delete me ⚠️⚠️
 - [![Markdown Builder](https://img.shields.io/badge/Markdown_Builder-grey?logo=markdown&logoColor=000000)](https://tim.2bn.dev/markdown-builder) used to generate README and TESTING templates.
 - [![Git](https://img.shields.io/badge/Git-grey?logo=git&logoColor=F05032)](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
 - [![GitHub](https://img.shields.io/badge/GitHub-grey?logo=github&logoColor=181717)](https://github.com) used for secure online code storage.
 - ⚠️⚠️ CHOOSE ONLY ONE <-- delete me ⚠️⚠️
 - [![Gitpod](https://img.shields.io/badge/Gitpod-grey?logo=gitpod&logoColor=FFAE33)](https://gitpod.io) used as a cloud-based IDE for development.
-- [![Codeanywhere](https://img.shields.io/badge/Codeanywhere-grey?logo=ebox&logoColor=7F3F98)](https://codeanywhere.com) used as a cloud-based IDE for development.
-- [![VSCode](https://img.shields.io/badge/VSCode-grey?logo=visualstudiocode&logoColor=007ACC)](https://code.visualstudio.com) used as my local IDE for development.
-- ⚠️⚠️ CHOOSE ALL APPLICABLE <-- delete me ⚠️⚠️
 - [![HTML](https://img.shields.io/badge/HTML-grey?logo=html5&logoColor=E34F26)](https://en.wikipedia.org/wiki/HTML) used for the main site content.
 - [![CSS](https://img.shields.io/badge/CSS-grey?logo=css3&logoColor=1572B6)](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
 - [![JavaScript](https://img.shields.io/badge/JavaScript-grey?logo=javascript&logoColor=F7DF1E)](https://www.javascript.com) used for user interaction on the site.
@@ -361,71 +154,24 @@ Feel free to delete any unused items below as necessary.
 - [![Heroku](https://img.shields.io/badge/Heroku-grey?logo=heroku&logoColor=430098)](https://www.heroku.com) used for hosting the deployed back-end site.
 - ⚠️⚠️ CHOOSE ONLY ONE (if applicable) <-- delete me ⚠️⚠️
 - [![Bootstrap](https://img.shields.io/badge/Bootstrap-grey?logo=bootstrap&logoColor=7952B3)](https://getbootstrap.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
-- [![Materialize](https://img.shields.io/badge/Materialize-grey?logo=materialdesign&logoColor=F5A5A8)](https://materializecss.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
-- ⚠️⚠️ CHOOSE ALL APPLICABLE <-- delete me ⚠️⚠️
-- [![Google Sheets](https://img.shields.io/badge/Google_Sheets-grey?logo=googlesheets&logoColor=34A853)](https://docs.google.com/spreadsheets) used for storing data from my Python app.
 - [![Jest](https://img.shields.io/badge/Jest-grey?logo=jest&logoColor=c21325)](https://jestjs.io) used for automated JavaScript testing.
-- [![Flask](https://img.shields.io/badge/Flask-grey?logo=flask&logoColor=000000)](https://flask.palletsprojects.com) used as the Python framework for the site.
-- [![MongoDB](https://img.shields.io/badge/MongoDB-grey?logo=mongodb&logoColor=47A248)](https://www.mongodb.com) used as the non-relational database management with Flask.
 - [![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-grey?logo=sqlalchemy&logoColor=D71F00)](https://www.sqlalchemy.org) used as the relational database management with Flask.
 - [![Django](https://img.shields.io/badge/Django-grey?logo=django&logoColor=092E20)](https://www.djangoproject.com) used as the Python framework for the site.
 - [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-grey?logo=postgresql&logoColor=4169E1)](https://www.postgresql.org) used as the relational database management.
-- [![PostgreSQL by Code Institute](https://img.shields.io/badge/PostgreSQL_by_Code_Institute-grey?logo=okta&logoColor=F05223)](https://dbs.ci-dbs.net) used as the Postgres database from Code Institute.
-- [![ElephantSQL](https://img.shields.io/badge/ElephantSQL-grey?logo=postgresql&logoColor=36A6E2)](https://www.elephantsql.com) used as the Postgres database.
 - [![Cloudinary](https://img.shields.io/badge/Cloudinary-grey?logo=cloudinary&logoColor=3448C5)](https://cloudinary.com) used for online static file storage.
 - [![WhiteNoise](https://img.shields.io/badge/WhiteNoise-grey?logo=python&logoColor=FFFFFF)](https://whitenoise.readthedocs.io) used for serving static files with Heroku.
-- [![Stripe](https://img.shields.io/badge/Stripe-grey?logo=stripe&logoColor=008CDD)](https://stripe.com) used for online secure payments of ecommerce products/services.
-- [![Gmail API](https://img.shields.io/badge/Gmail_API-grey?logo=gmail&logoColor=EA4335)](https://mail.google.com) used for sending emails in my application.
-- [![MailChimp](https://img.shields.io/badge/MailChimp-grey?logo=mailchimp&logoColor=FFE01B)](https://mailchimp.com) used for sending newsletter subscriptions.
-- [![AWS S3](https://img.shields.io/badge/AWS_S3-grey?logo=amazons3&logoColor=569A31)](https://aws.amazon.com/s3) used for online static file storage.
-- [![Balsamiq](https://img.shields.io/badge/Balsamiq-grey?logo=barmenia&logoColor=CE0908)](https://balsamiq.com/wireframes) used for creating wireframes.
-- [![Canva](https://img.shields.io/badge/Canva-grey?logo=canva&logoColor=00C4CC)](https://www.canva.com/p/canvawireframes) used for creating wireframes.
-- [![Google Maps API](https://img.shields.io/badge/Google_Maps_API-grey?logo=googlemaps&logoColor=4285F4)](https://developers.google.com/maps) used as an interactive map on my site.
-- [![Leaflet](https://img.shields.io/badge/Leaflet-grey?logo=leaflet&logoColor=199900)](https://leafletjs.com) used as a free open-source interactive map on my site.
 - [![Font Awesome](https://img.shields.io/badge/Font_Awesome-grey?logo=fontawesome&logoColor=528DD7)](https://fontawesome.com) used for the icons.
-- [![ChatGPT](https://img.shields.io/badge/ChatGPT-grey?logo=chromatic&logoColor=75A99C)](https://chat.openai.com) used to help debug, troubleshoot, and explain things.
 
 ## Database Design
 
-Entity Relationship Diagrams (ERD) help to visualize database architecture before creating models.
-Understanding the relationships between different tables can save time later in the project.
+Entity Relationship Diagrams (ERD)
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
-
-Using your defined models (one example below), create an ERD with the relationships identified.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
-```python
-class Product(models.Model):
-    category = models.ForeignKey(
-        "Category", null=True, blank=True, on_delete=models.SET_NULL)
-    sku = models.CharField(max_length=254, null=True, blank=True)
-    name = models.CharField(max_length=254)
-    description = models.TextField()
-    has_sizes = models.BooleanField(default=False, null=True, blank=True)
-    price = models.DecimalField(max_digits=6, decimal_places=2)
-    rating = models.DecimalField(
-        max_digits=6, decimal_places=2, null=True, blank=True)
-    image_url = models.URLField(max_length=1024, null=True, blank=True)
-    image = models.ImageField(null=True, blank=True)
-
-    def __str__(self):
-        return self.name
-```
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
-
-A couple recommendations for building free ERDs:
-- [Draw.io](https://draw.io)
-- [Lucidchart](https://www.lucidchart.com/pages/ER-diagram-symbols-and-meaning)
+MINE:
 
 A more comprehensive ERD can be auto-generated once you're
 at the end of your development stages, just before you submit.
 Follow the steps below to obtain a thorough ERD that you can include.
 Feel free to leave the steps in the README for future use to yourself.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 I have used `pygraphviz` and `django-extensions` to auto-generate an ERD.
 
@@ -456,15 +202,10 @@ source: [medium.com](https://medium.com/@yathomasi1/1-using-django-extensions-to
 ### GitHub Projects
 
 [GitHub Projects](https://github.com/Adam-Alive/camden-curling-club/projects) served as an Agile tool for this project.
-It isn't a specialized tool, but with the right tags and project creation/issue assignments, it can be made to work.
 
 Through it, user stories, issues, and milestone tasks were planned, then tracked on a weekly basis using the basic Kanban board.
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
-
 Consider adding a basic screenshot of your Projects Board.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 ![screenshot](documentation/gh-projects.png)
 
@@ -475,11 +216,7 @@ There, I used my own **User Story Template** to manage user stories.
 
 It also helped with milestone iterations on a weekly basis.
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
-
 Consider adding a screenshot of your Open and Closed Issues.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 - [Open Issues](https://github.com/Adam-Alive/camden-curling-club/issues) [![GitHub issues](https://img.shields.io/github/issues/Adam-Alive/camden-curling-club)](https://github.com/Adam-Alive/camden-curling-club/issues)
 
@@ -501,12 +238,9 @@ Using this approach, I was able to apply the MoSCow prioritization and labels to
 
 ## Testing
 
-> [!NOTE]  
 > For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
 ## Deployment
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
 
 **IMPORTANT:**
 
@@ -514,36 +248,15 @@ Using this approach, I was able to apply the MoSCow prioritization and labels to
 - ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
 - ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
 The live deployed application can be found deployed on [Heroku](https://camden-curling-club-286959c89917.herokuapp.com).
 
 ### PostgreSQL Database
 
-This project uses a [Code Institute PostgreSQL Database](https://dbs.ci-dbs.net).
-
-To obtain my own Postgres Database from Code Institute, I followed these steps:
-
-- Signed-in to the CI LMS using my email address.
-- An email was sent to me with my new Postgres Database.
-
-> [!CAUTION]  
-> - PostgreSQL databases by Code Institute are only available to CI Students.
-> - You must acquire your own PostgreSQL database through some other method
-> if you plan to clone/fork this repository.
-> - Code Institute students are allowed a maximum of 8 databases.
-> - Databases are subject to deletion after 18 months.
+This project uses a PostgreSQL database at [Neon](https://neon.tech/).
 
 ### Cloudinary API
 
 This project uses the [Cloudinary API](https://cloudinary.com) to store media assets online, due to the fact that Heroku doesn't persist this type of data.
-
-To obtain your own Cloudinary API key, create an account and log in.
-
-- For *Primary interest*, you can choose *Programmable Media for image and video API*.
-- Optional: *edit your assigned cloud name to something more memorable*.
-- On your Cloudinary Dashboard, you can copy your **API Environment Variable**.
-- Be sure to remove the `CLOUDINARY_URL=` as part of the API **value**; this is the **key**.
 
 ### Heroku Deployment
 
@@ -616,7 +329,7 @@ You will need to create a new file called `env.py` at the root-level,
 and include the same environment variables listed above from the Heroku deployment steps.
 
 > [!IMPORTANT]  
-> This is a sample only; you would replace the values with your own if cloning/forking my repository.
+> This is a sample only and you would replace the values with your own if cloning/forking my repository.
 
 Sample `env.py` file:
 
@@ -672,34 +385,11 @@ You can fork this repository by using the following steps:
 
 ### Local VS Deployment
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
 Use this space to discuss any differences between the local version you've developed, and the live deployment site on Heroku.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 ## Credits
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-In this section you need to reference where you got your content, media, and extra help from.
-It is common practice to use code from other repositories and tutorials,
-however, it is important to be very specific about these sources to avoid plagiarism.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
 ### Content
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Use this space to provide attribution links to any borrowed code snippets, elements, or resources.
-A few examples have been provided below to give you some ideas.
-
-Ideally, you should provide an actual link to every resource used, not just a generic link to the main site!
-
-⚠️⚠️ EXAMPLE LINKS - REPLACE WITH YOUR OWN ⚠️⚠️
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 | Source | Location | Notes |
 | --- | --- | --- |
@@ -707,32 +397,11 @@ Ideally, you should provide an actual link to every resource used, not just a ge
 | [Chris Beams](https://chris.beams.io/posts/git-commit) | version control | "How to Write a Git Commit Message" |
 | [W3Schools](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) | entire site | responsive HTML/CSS/JS navbar |
 | [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp) | contact page | interactive pop-up (modal) |
-| [W3Schools](https://www.w3schools.com/css/css3_variables.asp) | entire site | how to use CSS :root variables |
-| [Flexbox Froggy](https://flexboxfroggy.com/) | entire site | modern responsive layouts |
-| [Grid Garden](https://cssgridgarden.com) | entire site | modern responsive layouts |
 | [StackOverflow](https://stackoverflow.com/a/2450976) | quiz page | Fisher-Yates/Knuth shuffle in JS |
 | [YouTube](https://www.youtube.com/watch?v=YL1F4dCUlLc) | leaderboard | using `localStorage()` in JS for high scores |
-| [YouTube](https://www.youtube.com/watch?v=u51Zjlnui4Y) | PP3 terminal | tutorial for adding color to the Python terminal |
-| [strftime](https://strftime.org) | CRUD functionality | helpful tool to format date/time from string |
 | [WhiteNoise](http://whitenoise.evans.io) | entire site | hosting static files on Heroku temporarily |
 
 ### Media
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Use this space to provide attribution links to any images, videos, or audio files borrowed from online.
-A few examples have been provided below to give you some ideas.
-
-If you're the owner (or a close acquaintance) of all media files, then make sure to specify this.
-Let the assessors know that you have explicit rights to use the media files within your project.
-
-Ideally, you should provide an actual link to every media file used, not just a generic link to the main site!
-The list below is by no means exhaustive. Within the Code Institute Slack community, you can find more "free media" links
-by sending yourself the following command: `!freemedia`.
-
-⚠️⚠️ EXAMPLE LINKS - REPLACE WITH YOUR OWN ⚠️⚠️
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 | Source | Location | Type | Notes |
 | --- | --- | --- | --- |
@@ -742,23 +411,7 @@ by sending yourself the following command: `!freemedia`.
 | [Pixabay](https://pixabay.com) | gallery page | image | group of photos for gallery |
 | [Wallhere](https://wallhere.com) | footer | image | background wallpaper image in the footer |
 | [This Person Does Not Exist](https://thispersondoesnotexist.com) | testimonials | image | headshots of fake testimonial images |
-| [Audio Micro](https://www.audiomicro.com/free-sound-effects) | game page | audio | free audio files to generate the game sounds |
-| [Videvo](https://www.videvo.net/) | home page | video | background video on the hero section |
 | [TinyPNG](https://tinypng.com) | entire site | image | tool for image compression |
 
 ### Acknowledgements
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Use this space to provide attribution to any supports that helped, encouraged, or supported you throughout the development stages of this project.
-A few examples have been provided below to give you some ideas.
-
-⚠️⚠️ EXAMPLES ONLY - REPLACE WITH YOUR OWN ⚠️⚠️
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
-- I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for his support throughout the development of this project.
-- I would like to thank the [Code Institute](https://codeinstitute.net) tutor team for their assistance with troubleshooting and debugging some project issues.
-- I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the moral support; it kept me going during periods of self doubt and imposter syndrome.
-- I would like to thank my partner (John/Jane), for believing in me, and allowing me to make this transition into software development.
-- I would like to thank my employer, for supporting me in my career development change towards becoming a software developer.
+- I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for his invaluable guidance and support throughout the development of this project.
