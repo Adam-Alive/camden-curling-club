@@ -19,8 +19,7 @@
   <section>
     <div class="card mb-3 mt-3">
       <div>
-        <h3> Upload image:</h3>
-        <!--<p>Added by: {{ user.username }}</p>-->
+        <h3> Upload image:</h3>        
         <form method="post" style="margin-top: 1.3em;" enctype="multipart/form-data">
           {{ gallery_form | crispy }}
           <!--A csrf_token tag is required for each form-->

@@ -16,16 +16,15 @@
       March.</p>
     <p>Practice nights are Tuesday and Thursday, with six sessions available each evening:</p>
     <p class="sheets">3 sheets from 18:00 to 19:30</p>
-    <p class="sheets">3 sheets from 20:00 to 21:30</p>
-    <p>Enter your booking requirements in the form below.</p>
-    <p>For new members, please note that a playing area is called a sheet, see: <a href="{% url 'faqs' %}">FAQs.</a></p>
-
+    <p class="sheets">3 sheets from 20:00 to 21:30</p>    
+    <p>New members please note that a playing area is called a sheet, see: <a href="{% url 'faqs' %}">FAQs</a>.</p>
   </section>
 
   <!--Make booking with crispy forms-->
   <section>
     <div class="card mb-3 mt-3">
       <div>
+        <h3> Make a booking:</h3> 
         <form method="post" style="margin-top: 1.3em;" enctype="multipart/form-data">
           {{ booking_form | crispy }}
           {% csrf_token %}
@@ -39,7 +38,7 @@
   <section>
     <p>View, change or cancel bookings here:</p>
     <div>
-      <a href="{% url 'my_bookings' %}" class="btn btn-lg btn-success" type="submit">My Bookings</a>
+      <a href="{% url 'my_bookings' %}" class="btn btn-lg btn-success btn-booking mb-3 mt-3" type="submit">My Bookings</a>
     </div>
   </section>
 
