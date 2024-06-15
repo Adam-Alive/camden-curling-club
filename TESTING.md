@@ -369,15 +369,20 @@ from the respective feature.
 
 | User Story | Screenshot |
 | --- | --- |
-| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/features/feature01.png) |
-| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/features/feature02.png) |
-| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/features/feature03.png) |
-| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/features/feature04.png) |
-| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/features/feature05.png) |
-| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/features/feature06.png) |
-| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/features/feature07.png) |
-| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/features/feature08.png) |
-| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/features/feature09.png) |
+| As a new user, I would like to land on an informative and engaging home page so that I can learn about the club.| ![screenshot](documentation/features/feature01.png) |
+|  As a new user, I would like to submit my contact details so that I can register my membership. | ![screenshot](documentation/features/feature02.png) |
+|  As a member, I would like to enter my login details so that I can access the members' area. | ![screenshot](documentation/features/feature03.png) |
+|  As a member, I would like to logout so that I can know my session has been closed securely. | ![screenshot](documentation/features/feature04.png) |
+|  As a member, I would like to submit a question for display on the FAQs page.| ![screenshot](documentation/features/feature05.png) |
+|  As a member, I would like to book a practice session so that I can attend at a time that suits me. | ![screenshot](documentation/features/feature06.png) |
+|  As a member, I would like to amend or cancel a practice session so that I can change my plans. | ![screenshot](documentation/features/feature07.png) |
+| As a member, I would like to know if the booking time I want is available so that I can make another choice if necessary. | ![screenshot](documentation/features/feature08.png) |
+|  As a member, I would like to add images to the gallery so that I can share my curling experiences with other members. | ![screenshot](documentation/features/feature09.png) |
+| As a site administrator, I would like to access the administrator panel so that I can manage the club membership and site's pages. | ![screenshot](documentation/features/feature09.png) |
+|  As a site administrator, I would like to know when a new member has registered so that I can email them about their membership options. | ![screenshot](documentation/features/feature09.png) |
+|  As a site administrator, I would like to manage content on the FAQs page so that I can provide information to members.| ![screenshot](documentation/features/feature09.png) |
+|  As a site administrator, I would like to approve or delete images added to the gallery so that I can filter out any objectionable material.| ![screenshot](documentation/features/feature09.png) |
+|  As a site administrator, I would like to manage content on the curling network page so that I can keep members informed of other curling venues. | ![screenshot](documentation/features/feature09.png) |
 | repeat for all remaining user stories | x |
 
 ## Automated Testing
@@ -476,8 +481,6 @@ This can be used for both "fixed" and "unresolved" issues.
     - To fix this, I _____________________.
 
 ### GitHub **Issues**
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
 
 An improved way to manage bugs is to use the built-in **Issues** tracker on your GitHub repository.
 To access your Issues, click on the "Issues" tab at the top of your repository.
