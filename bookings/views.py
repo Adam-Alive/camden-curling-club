@@ -66,43 +66,24 @@ def edit_booking(request, booking_id):
     """
     To edit a booking for the current user.
     """
+    # user_booking = Booking.objects.filter(username=request.user)
     booking = get_object_or_404(Booking, id=booking_id)
-    if request.method == 'POST':
-        if booking_form.is_valid():
-            booking_form.instance.username = request.user           
-            booking_form.save()
-            print('It is working')
-            messages.success(request, 
-            'Thank you - your new booking is confirmed.'
-            )
-            return redirect(reverse('edit_booking'))    
+    if booking.user == request.user:
+        if request.method == 'POST':
+            booking_form = BookingForm(request.POST, instance=booking)
+            if booking_form.is_valid():
+                booking_form.instance.username = request.user      
+                booking_form.save()          
+                messages.success(request, 
+                'Thank you - your new booking is confirmed.'
+                )
+            return redirect(reverse('edit_booking'))
    
-    form = BookingForm(instance=booking)
+    booking_form = BookingForm(instance=booking)
 
     template = "bookings/edit_bookings.html"
     context = {
-        "user_booking": user_booking,
+        # "user_booking": user_booking,
         "booking_form": booking_form,
-        "form": form,
     }
     return render(request, template, context)
-
-
-
-
-# def edit_booking(request, booking_id):
-#     booking = get_object_or_404(Booking, id=booking_id)
-#     if booking.user == request.user:
-#         if request.method == 'POST':
-#             form = BookingForm(request.POST, instance=booking)
-#             if form.is_valid():
-#                 form.save()
-#             return redirect('get_todo_list')
-#     form = BookingForm(instance=booking)
-    
-    
-#     context = {
-#         'form': form
-#     }
-#     return render(request, 'bookings/edit_bookings.html', context)
-

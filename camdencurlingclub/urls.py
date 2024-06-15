@@ -16,9 +16,6 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-# from faqs import views as faqs_views
-# Delete later, once urls work okay.
-
 
 urlpatterns = [
         path('', include('home.urls'), name='home-urls'),
