@@ -1,4 +1,5 @@
 # [CAMDEN CURLING CLUB](https://camden-curling-club-286959c89917.herokuapp.com)
+
 ## Project Purpose
 
 The purpose of this project is to create a members' hub for the fictional Camden Curling Club where members can book practice sessions and engage with club activities.
@@ -9,8 +10,7 @@ The site administrator will be able to monitor and modify all aspects of the sit
 
 ## Target Audience
 
-
-
+The target audience is existing and potential members of the Camden Curling Club.
 
 https://ui.dev/amiresponsive?url=https://camden-curling-club-286959c89917.herokuapp.com
 
@@ -18,10 +18,6 @@ To add the image into your README, use this format:
 (assuming you have a new folder called `documentation` with an image called "mockup.png")
 
 ![screenshot](documentation/mockup.png)
-
-https://pandao.github.io/editor.md/en.html
-
----
 
 ## UX
 ### Initial Design
