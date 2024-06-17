@@ -60,29 +60,58 @@ def my_bookings(request):
 
     return render(request, template, context)
 
-    
+# Code suggested by Tim
 @login_required
 def edit_booking(request, booking_id):
     """
     To edit a booking for the current user.
     """
     booking = get_object_or_404(Booking, id=booking_id)
-    print('Step 1')
-    if booking.user == request.user:
-        if request.method == 'POST':
-            booking_form = BookingForm(request.POST, instance=booking)
-            if booking_form.is_valid():
-                booking_form.instance.username = request.user    
-                booking_form.save()          
-                messages.success(request,
+    if not booking.user == request.user:
+        messages.error(request, "Access denied - invalid credentials")
+        return redirect('my_bookings')
+
+    booking_form = BookingForm(request.POST or None, instance=booking)
+
+    if request.method == 'POST':
+        if booking_form.is_valid():
+            booking_form.instance.username = booking.user
+            booking_form.save()          
+            messages.success(request,
                 'Thank you - your new booking is confirmed.'
-                )
-            return redirect(reverse('edit_booking'))
-   
-    booking_form = BookingForm(instance=booking)
+            )
+            return redirect(reverse('my_bookings'))
 
     template = "bookings/edit_bookings.html"
-    context = {     
+    context = {
+        "booking": booking, 
         "booking_form": booking_form,
     }
     return render(request, template, context)
+
+# Previous code 16/06/24
+# @login_required
+# def edit_booking(request, booking_id):
+#     """
+#     To edit a booking for the current user.
+#     """
+#     booking = get_object_or_404(Booking, id=booking_id)
+#     print('Step 1')
+#     if booking.user == request.user:
+#         if request.method == 'POST':
+#             booking_form = BookingForm(request.POST, instance=booking)
+#             if booking_form.is_valid():
+#                 booking_form.instance.username = request.user    
+#                 booking_form.save()          
+#                 messages.success(request,
+#                 'Thank you - your new booking is confirmed.'
+#                 )
+#             return redirect(reverse('edit_booking'))
+   
+#     booking_form = BookingForm(instance=booking)
+
+#     template = "bookings/edit_bookings.html"
+#     context = {     
+#         "booking_form": booking_form,
+#     }
+#     return render(request, template, context)
