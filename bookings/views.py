@@ -87,3 +87,33 @@ def edit_booking(request, booking_id):
         "booking_form": booking_form,
     }
     return render(request, template, context)
+
+
+@login_required
+def delete_booking(request, booking_id):
+    """
+    To delete a booking for the current user.
+    """
+    booking = get_object_or_404(Booking, id=booking_id)
+    if not booking.username == request.user:
+        messages.error(request, "Access denied - invalid credentials")
+        return redirect('my_bookings')
+
+    # booking_form = BookingForm(request.POST or None, instance=booking)
+
+    if booking.username == request.user:
+        booking.delete()
+        # if booking_form.is_valid():
+        #     booking_form.instance.username = booking.username
+        #     booking_form.save()          
+        messages.success(request,
+                'Thank you - your booking has been cancelled.'
+            )
+        return redirect(reverse('my_bookings'))
+
+    template = "bookings/edit_bookings.html"
+    context = {
+        "booking": booking, 
+        # "booking_form": booking_form,
+    }
+    return render(request, template, context)
