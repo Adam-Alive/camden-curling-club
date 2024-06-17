@@ -20,9 +20,10 @@ To add the image into your README, use this format:
 ![screenshot](documentation/mockup.png)
 
 ## UX
-### Initial Design
+### Initial Design and Wireframes
 
-In this section, you will briefly explain your design processes.
+For all screen sizes I wanted to centre the content for each page and present here the primary wireframes for each: [WIREFRAMES.md](WIREFRAMES.md).
+
 
 ### Colour Scheme
 
