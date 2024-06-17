@@ -1,10 +1,14 @@
 # [CAMDEN CURLING CLUB](https://camden-curling-club-286959c89917.herokuapp.com)
 ## Project Purpose
 
-In this section, you will include a few paragraphs providing an overview of your project.
+The purpose of this project is to create a members' hub for the fictional Camden Curling Club where members can book practice sessions and engage with club activities.
 
+New users will be able to register for membership and members will be able to book practice sessions, read FAQs, upload images to a gallery and access a list of other curling clubs.
+
+The site administrator will be able to monitor and modify all aspects of the site including member access and bookings, approve gallery images and add content to the FAQs and list of curling clubs.
 
 ## Target Audience
+
 
 
 
@@ -36,11 +40,9 @@ Explain your colours and the colour scheme.
 
 ### Typography
 
-- [Montserrat](https://fonts.google.com/specimen/Montserrat) was used for the primary headers and titles.
+- [Montserrat](https://fonts.google.com/specimen/Montserrat) is used for all text.
 
-- [Lato](https://fonts.google.com/specimen/Lato) was used for all other secondary text.
-
-- [Font Awesome](https://fontawesome.com) icons were used throughout the site, such as the social media icons in the footer.
+- [Font Awesome](https://fontawesome.com) is used for the social media icons in the footer.
 
 ## User Stories
 
