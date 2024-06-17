@@ -3,9 +3,9 @@
 
 The purpose of this project is to create a members' hub for the fictional Camden Curling Club where members can book practice sessions and engage with club activities.
 
-New users will be able to register for membership and members will be able to book practice sessions, read FAQs, upload images to a gallery and access a list of other curling clubs.
+New users will be able to register for membership and members will be able to book practice sessions, read FAQs, upload images to a gallery and access a curling club network.
 
-The site administrator will be able to monitor and modify all aspects of the site including member access and bookings, approve gallery images and add content to the FAQs and list of curling clubs.
+The site administrator will be able to monitor and modify all aspects of the site including member access and bookings, approving gallery images and adding content to the FAQs and curling club network.
 
 ## Target Audience
 
