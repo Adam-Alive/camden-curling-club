@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% load crispy_forms_tags %}
+
+<!--Main section-->
+<main>
+
+  <!--Intro section-->
+  <section>
+    <h2>My Pictures</h2>
+  </section>
+
+  <section>
+    <p>View, amend or delete your pictures here.</p>
+  </section>
+
+  <!-- I want to list the current user's pictures.
+  On each picture:
+  An edit caption button.
+  A delete picture button. -->  
+
+
+{% for picture in user_picture %}
+
+   <section>
+    {% for galleryimage in gallery_images %}
+    <img src="{{ galleryimage.gallery_image.url }}" alt="{{galleryimage.caption}}" class="img-fluid">
+    <p>{{galleryimage.caption}}</p>
+    <p>Added by {{galleryimage.username}} on {{galleryimage.added_on}}</p>
+    <!--<p>{{galleryimage.caption_updated_on}}</p>-->
+    {% endfor %}
+  </section>
+
+
+  <!--Upload image and caption with crispy forms-->
+  <!-- <section>
+    <div class="card mb-3 mt-3">
+      <div>
+        <h3> Upload image:</h3>        
+        <form method="post" style="margin-top: 1.3em;" enctype="multipart/form-data">
+          {{ gallery_form | crispy }} -->
+          <!--A csrf_token tag is required for each form-->
+          <!-- {% csrf_token %}
+          <button id="submitButton" type="submit" class="btn btn-signup btn-lg">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section> -->
+
+</main>
+
+{% endblock content %}

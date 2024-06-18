@@ -30,6 +30,20 @@
     </div>
   </section>
 
+  <!-- Link to My Pictures page -->
+  <section>
+    <p>View, change or delete your pictures here:</p>
+    <div>
+      <a href="{% url 'my_pictures' %}" class="btn btn-lg btn-success btn-booking mb-3 mt-3" type="submit">My Pictures</a>
+    </div>
+  </section>
+
+  <section>
+    <p>
+      See all pictures here:
+    </p>
+  </section>
+
   <section>
     {% for galleryimage in gallery_images %}
     <img src="{{ galleryimage.gallery_image.url }}" alt="{{galleryimage.caption}}" class="img-fluid">

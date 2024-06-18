@@ -32,3 +32,29 @@ def gallery(request):
     }
 
     return render(request, template, context)
+
+
+@login_required
+def my_pictures(request):
+    gallery_images = GalleryImage.objects.filter(approved=True)
+    gallery_form = GalleryForm(request.POST, request.FILES)
+
+
+@login_required
+def my_bookings(request):
+    user_booking = Booking.objects.filter(username=request.user)
+    booking_form = BookingForm(request.POST or None)
+    if request.method == "POST":
+        if booking_form.is_valid():
+            booking_form.instance.username = request.user
+            booking_form.save()            
+            return redirect(reverse('my_bookings'))
+
+    booking_form = BookingForm()
+    template = "bookings/my_bookings.html"
+    context = {
+        "user_booking": user_booking,
+        "booking_form": booking_form,
+    }
+
+    return render(request, template, context)
