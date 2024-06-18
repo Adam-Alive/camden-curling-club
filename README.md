@@ -119,6 +119,7 @@ It's always great to have plans for future improvements!
 - [Jest](https://jestjs.io) used for automated JavaScript testing.
 - [Django](https://www.djangoproject.com) used as the Python framework for the site.
 - [PostgreSQL](https://www.postgresql.org) used as the relational database management.
+- [Neon](https://neon.tech/) used to host the PostreSQL database.
 - [Cloudinary](https://cloudinary.com) used for online static file storage.
 - [WhiteNoise](https://whitenoise.readthedocs.io) used for serving static files with Heroku.
 - [Font Awesome](https://fontawesome.com) used for icons.
@@ -131,9 +132,9 @@ In designing the database I developed four models, in addition to Django's User 
 - Booking
 - GalleryImage
 - Faqs
--Network
+- Network
 
-### Entity Relationship Diagrams (ERD)
+### Entity Relationship Diagrams (ERDs)
 I then constructed an ERD for each model:
 
 ![screenshot](documentation/erd.png)
@@ -163,7 +164,6 @@ INSTALLED_APPS = [
 - removed `'django_extensions',` from my `INSTALLED_APPS`
 - finally, in the terminal: `pip3 uninstall django-extensions pygraphviz -y`
 
-![erd](documentation/erd.png)
 source: [medium.com](https://medium.com/@yathomasi1/1-using-django-extensions-to-visualize-the-database-diagram-in-django-application-c5fa7e710e16)
 
 
@@ -214,7 +214,7 @@ Using this approach, I was able to apply the MoSCow prioritization and labels to
 
 **IMPORTANT:**
 
-The live deployed application can be found deployed on [Heroku](https://camden-curling-club-286959c89917.herokuapp.com).
+> The live deployed application can be found deployed on [Heroku](https://camden-curling-club-286959c89917.herokuapp.com).
 
 ### PostgreSQL Database
 
