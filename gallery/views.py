@@ -13,6 +13,11 @@ from .forms import GalleryForm
 
 @login_required
 def gallery(request):
+    """
+    Allows user to submit an image to be approved by the
+    site administrator. After approval, the image and caption
+    are displayed on the Gallery page.
+    """
     gallery_images = GalleryImage.objects.filter(approved=True)
     if request.method == "POST":
         gallery_form = GalleryForm(request.POST, request.FILES)
@@ -36,25 +41,17 @@ def gallery(request):
 
 @login_required
 def my_pictures(request):
-    gallery_images = GalleryImage.objects.filter(approved=True)
-    gallery_form = GalleryForm(request.POST, request.FILES)
+    """
+    Displays the current user's uploaded pictures.
+    """
+    user_pictures = GalleryImage.objects.filter(username=request.user, approved=True)  
+    if request.method == "POST":                 
+        return redirect(reverse('my_pictures'))
 
-
-@login_required
-def my_bookings(request):
-    user_booking = Booking.objects.filter(username=request.user)
-    booking_form = BookingForm(request.POST or None)
-    if request.method == "POST":
-        if booking_form.is_valid():
-            booking_form.instance.username = request.user
-            booking_form.save()            
-            return redirect(reverse('my_bookings'))
-
-    booking_form = BookingForm()
-    template = "bookings/my_bookings.html"
+    gallery_form = GalleryForm()
+    template = "gallery/my_pictures.html"
     context = {
-        "user_booking": user_booking,
-        "booking_form": booking_form,
+        "user_pictures": user_pictures,       
     }
 
     return render(request, template, context)
