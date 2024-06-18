@@ -65,17 +65,6 @@ Explain your colours and the colour scheme.
 
 ## Features
 
-In this section, you should go over the different parts of your project,
-and describe each in a sentence or so.
-
-You will need to explain what value each of the features provides for the user,
-focusing on who this website is for, what it is that they want to achieve,
-and how your project is the best way to help them achieve these things.
-
-For some/all of your features, you may choose to reference the specific project files that implement them.
-
-IMPORTANT: Remember to always include a screenshot of each individual feature!
-
 ### Existing Features
 
 - **YOUR-TITLE-FOR-FEATURE-#1**
@@ -100,14 +89,11 @@ Repeat as necessary for as many features as your site contains.
 
 Hint: the more, the merrier!
 
-
 ### Future Features
 
 Do you have additional ideas that you'd like to include on your project in the future?
 Fantastic! List them here!
 It's always great to have plans for future improvements!
-Consider adding any helpful links or notes to help remind you in the future, if you revisit the project in a couple years.
-
 
 - YOUR-TITLE-FOR-FUTURE-FEATURE-#1
     - Any additional notes about this feature.
@@ -139,9 +125,18 @@ Consider adding any helpful links or notes to help remind you in the future, if 
 
 ## Database Design
 
-Entity Relationship Diagrams (ERD)
+### Models
+In designing the database I developed four models, in addition to Django's User model:
+- User (Django)
+- Booking
+- GalleryImage
+- Faqs
+-Network
 
-MINE:
+### Entity Relationship Diagrams (ERD)
+I then constructed an ERD for each model:
+
+![screenshot](documentation/erd.png)
 
 A more comprehensive ERD can be auto-generated once you're
 at the end of your development stages, just before you submit.
@@ -172,7 +167,7 @@ INSTALLED_APPS = [
 source: [medium.com](https://medium.com/@yathomasi1/1-using-django-extensions-to-visualize-the-database-diagram-in-django-application-c5fa7e710e16)
 
 
-## Agile Development Process
+## Project Planning & Agile Development Process
 
 ### GitHub Projects
 
@@ -353,10 +348,6 @@ You can fork this repository by using the following steps:
 1. Log in to GitHub and locate the [GitHub Repository](https://github.com/Adam-Alive/camden-curling-club)
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. Once clicked, you should now have a copy of the original repository in your own GitHub account!
-
-### Local VS Deployment
-
-Use this space to discuss any differences between the local version you've developed, and the live deployment site on Heroku.
 
 ## Credits
 
