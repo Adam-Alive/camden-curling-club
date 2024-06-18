@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% load crispy_forms_tags %}
+
+<!--Main section-->
+<main>
+
+  <!--Intro section-->
+  <section>
+    <h2>Edit Caption</h2>
+  </section>
+
+  <section>
+    <p>Edit your picture captions here.</p>
+  </section>
+
+
+
+
+
+<!--Form with current caption to be edited-->
+<section>
+    <div class="card mb-3 mt-3">
+        <div>
+            <h3> Edit caption:</h3>
+            <form method="post" style="margin-top: 1.3em;" enctype="multipart/form-data">
+                {{ caption_form | crispy }}
+                <!--A csrf_token tag is required for each form-->
+                {% csrf_token %}
+                <button id="submitButton" type="submit" class="btn btn-signup btn-lg">Update</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+</main>
+
+{% endblock content %}

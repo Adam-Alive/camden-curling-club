@@ -42,7 +42,7 @@
             <!-- <div class="col-3"></div> -->
             <div class="col-6 text-end">
               {% comment %}
-              <a href="{% url 'edit_picture' booking.id %}">
+              <a href="{% url 'edit_caption' booking.id %}">
               {% endcomment %}
                 <button type="button" class="btn btn-success" type="submit">Edit</button>
             </div>
@@ -69,20 +69,6 @@
 
 
 
-  <!--Upload image and caption with crispy forms-->
-  <!-- <section>
-    <div class="card mb-3 mt-3">
-      <div>
-        <h3> Upload image:</h3>        
-        <form method="post" style="margin-top: 1.3em;" enctype="multipart/form-data">
-          {{ gallery_form | crispy }} -->
-  <!--A csrf_token tag is required for each form-->
-  <!-- {% csrf_token %}
-          <button id="submitButton" type="submit" class="btn btn-signup btn-lg">Submit</button>
-        </form>
-      </div>
-    </div>
-  </section> -->
 
 </main>
 
