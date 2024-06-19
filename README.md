@@ -119,7 +119,7 @@ It's always great to have plans for future improvements!
 - [Jest](https://jestjs.io) used for automated JavaScript testing.
 - [Django](https://www.djangoproject.com) used as the Python framework for the site.
 - [PostgreSQL](https://www.postgresql.org) used as the relational database management.
-- [Neon](https://neon.tech/) used to host the PostreSQL database.
+- [Neon](https://neon.tech/) used to host the PostgreSQL database.
 - [Cloudinary](https://cloudinary.com) used for online static file storage.
 - [WhiteNoise](https://whitenoise.readthedocs.io) used for serving static files with Heroku.
 - [Font Awesome](https://fontawesome.com) used for icons.
