@@ -71,7 +71,7 @@ def edit_caption(request, galleryimage_id):
     if request.method == 'POST':  
         if gallery_form.is_valid():            
             gallery_form.instance.username = caption.username
-            gallery_form.instance.approved = False             
+            gallery_form.instance.approved = False        
             gallery_form.save()
             messages.success(
                 request, 'Thank you - caption changed and awaiting approval.'
