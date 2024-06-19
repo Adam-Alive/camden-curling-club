@@ -45,14 +45,15 @@
           <div class="row row-cols-3">
             <div class="col-3"></div>
             <div class="col-3">
-              <a href="{% url 'edit_booking' booking.id %}">
-                <button type="button" class="btn btn-success" type="submit">Edit</button></a>
+              <!-- <a href="{% url 'edit_booking' booking.id %}">
+                <button type="button" class="btn btn-success" type="submit">Edit</button></a> -->
+              <a href="{% url 'edit_booking' booking.id %}" class="btn btn-success">Edit</a>
             </div>
             <div class="col-6">
               <button type="button" class="btn btn-danger" data-toggle="modal"
                 data-target="#cancel-modal-{{ booking.id }}">Cancel</button>
               <!-- Modal to confirm cancel booking  -->
-              <div class="modal fade" id="cancel-modal-{{ booking.id }} " tabindex="-1">
+              <div class="modal fade" id="cancel-modal-{{ booking.id }}" tabindex="-1">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -64,8 +65,9 @@
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <a href="{% url 'delete_booking' booking.id %}">
-                        <button type="button" class="btn btn-primary" type="submit">Cancel Booking</button></a>
+                      <!-- <a href="{% url 'delete_booking' booking.id %}">
+                        <button type="button" class="btn btn-primary" type="submit">Cancel Booking</button></a> -->
+                        <a href="{% url 'delete_booking' booking.id %}" class="btn btn-primary">Cancel Booking</a>
                     </div>
                   </div>
                 </div>

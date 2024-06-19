@@ -99,10 +99,9 @@ def delete_booking(request, booking_id):
         messages.error(request, "Access denied - invalid credentials")
         return redirect('my_bookings')
 
-    if booking.username == request.user:
-        booking.delete()          
-        messages.success(request,
-                'Thank you - your booking has been cancelled.'
-            )
-        return redirect(reverse('my_bookings'))
+    booking.delete()          
+    messages.success(request,
+            'Thank you - your booking has been cancelled.'
+        )
+    return redirect(reverse('my_bookings'))
         
