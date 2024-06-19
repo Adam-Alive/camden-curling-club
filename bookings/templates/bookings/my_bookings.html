@@ -44,12 +44,12 @@
         <div class="text-start">
           <div class="row row-cols-3">
             <div class="col-3"></div>
-            <div class="col-3">            
+            <div class="col-3">
               <a href="{% url 'edit_booking' booking.id %}" class="btn btn-success">Edit</a>
             </div>
             <div class="col-6">
-              <button type="button" class="btn btn-danger" data-toggle="modal"
-                data-target="#cancel-modal-{{ booking.id }}">Cancel</button>
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                data-bs-target="#cancel-modal-{{ booking.id }}">Cancel</button>
               <!-- Modal to confirm cancel booking  -->
               <div class="modal fade" id="cancel-modal-{{ booking.id }}" tabindex="-1">
                 <div class="modal-dialog">
@@ -62,8 +62,8 @@
                       <p>Are you sure you want to cancel this booking?</p>
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>                    
-                        <a href="{% url 'delete_booking' booking.id %}" class="btn btn-primary">Cancel Booking</a>
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <a href="{% url 'delete_booking' booking.id %}" class="btn btn-primary">Cancel Booking</a>
                     </div>
                   </div>
                 </div>
