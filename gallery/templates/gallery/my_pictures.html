@@ -38,15 +38,16 @@
 
       <!-- Edit or Delete pictures section -->
       <section>
-        <div class="row">
-          <div class="row col-6 text-end">
-            <a href="{% url 'edit_caption' galleryimage.id %}">
-              <button type="button" class="btn btn-success" type="submit">Edit</button></a>
+        <div class="row row-cols-2">
+          <div class="text-end">
+            <a href="{% url 'edit_caption' galleryimage.id %}" class="btn btn-success">Edit</a>
           </div>
-          <div class="row col-6 text-start">
+          <div class="text-start">
             <a href="{% url 'delete_picture' galleryimage.id %}">
               <button type="button" class="btn btn-danger" type="submit">Delete</button></a>
           </div>
+          
+        <!-- Modal ends here -->
         </div>
 
       </section>
