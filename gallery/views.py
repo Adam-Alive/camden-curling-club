@@ -68,7 +68,7 @@ def edit_caption(request, galleryimage_id):
         return redirect('my_pictures')    
     gallery_form = GalleryForm(request.POST or None, instance=caption)
 
-    if request.method == 'POST':    
+    if request.method == 'POST':  
         if gallery_form.is_valid():            
             gallery_form.instance.username = caption.username                 
             gallery_form.save()
@@ -83,3 +83,21 @@ def edit_caption(request, galleryimage_id):
         "gallery_form": gallery_form,
     }
     return render(request, template, context)
+
+
+@login_required
+def delete_picture(request, galleryimage_id):
+    """
+    To delete a picture and caption for the current user.
+    """
+    picture = get_object_or_404(GalleryImage, id=galleryimage_id, approved=True)
+    if not picture.username == request.user:
+        messages.error(request, "Access denied - invalid credentials")
+        return redirect('my_pictures')
+
+    if picture.username == request.user:
+        picture.delete()          
+        messages.success(request,
+                'Thank you - your picture has been deleted.'
+            )
+        return redirect(reverse('my_pictures'))

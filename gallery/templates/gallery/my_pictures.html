@@ -36,22 +36,17 @@
       </div>
 
     <!-- Edit or Delete pictures section -->
-    <section>
-        <!-- <div class="text-center"> -->
-          <div class="row row-cols-6">
-            <!-- <div class="col-3"></div> -->
+    <section>       
+          <div class="row">            
             <div class="col-6 text-end">            
               <a href="{% url 'edit_caption' galleryimage.id %}">          
                 <button type="button" class="btn btn-success" type="submit">Edit</button></a>
             </div>
-            <div class="col-6 text-start">
-              {% comment %}
-              <a href="{% url 'delete_picture' booking.id %}">
-              {% endcomment %}
+            <div class="col-6 text-start">              
+              <a href="{% url 'delete_picture' galleryimage.id %}">             
                 <button type="button" class="btn btn-danger" type="submit">Delete</button>
             </div>
-          </div>
-        <!-- </div> -->
+          </div>       
 
       </section>
 
@@ -64,9 +59,6 @@
       {% endfor %}
     </form>
   </section>
-
-
-
 
 </main>
 
