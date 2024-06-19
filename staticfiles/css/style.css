@@ -18,10 +18,11 @@ body {
 }
 
 h1,
-h2 {
+h2, h3 {
   font-weight: 600;
   color: rgb(10, 13, 17);
 }
+
 
 p {
   font-weight: 600;
@@ -100,6 +101,12 @@ img {
 .sheets {
   color: blue;
 }
+
+/* .btn-booking {
+  color:rgb(10, 13, 17);
+  font-weight: 600;
+  background-color: rgb(238, 129, 205);
+} */
 
 /*faq_list.html*/
 
