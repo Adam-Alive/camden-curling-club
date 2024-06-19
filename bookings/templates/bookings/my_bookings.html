@@ -48,9 +48,9 @@
               <a href="{% url 'edit_booking' booking.id %}" class="btn btn-success">Edit</a>
             </div>
             <div class="col-6">
+              <!-- Modal to confirm cancel booking -->
               <button type="button" class="btn btn-danger" data-bs-toggle="modal"
                 data-bs-target="#cancel-modal-{{ booking.id }}">Cancel</button>
-              <!-- Modal to confirm cancel booking  -->
               <div class="modal fade" id="cancel-modal-{{ booking.id }}" tabindex="-1">
                 <div class="modal-dialog">
                   <div class="modal-content">
