@@ -44,9 +44,7 @@
         <div class="text-start">
           <div class="row row-cols-3">
             <div class="col-3"></div>
-            <div class="col-3">
-              <!-- <a href="{% url 'edit_booking' booking.id %}">
-                <button type="button" class="btn btn-success" type="submit">Edit</button></a> -->
+            <div class="col-3">            
               <a href="{% url 'edit_booking' booking.id %}" class="btn btn-success">Edit</a>
             </div>
             <div class="col-6">
@@ -64,9 +62,7 @@
                       <p>Are you sure you want to cancel this booking?</p>
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <!-- <a href="{% url 'delete_booking' booking.id %}">
-                        <button type="button" class="btn btn-primary" type="submit">Cancel Booking</button></a> -->
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>                    
                         <a href="{% url 'delete_booking' booking.id %}" class="btn btn-primary">Cancel Booking</a>
                     </div>
                   </div>
