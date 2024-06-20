@@ -19,7 +19,7 @@ class GalleryImage(models.Model):
     approved = models.BooleanField(default=False)
 
     class Meta:
-        ordering = ['-added_on']
+        ordering = ['-caption_updated_on']
 
     def __str__(self):
         return f'{self.caption} | added by {self.username}'
