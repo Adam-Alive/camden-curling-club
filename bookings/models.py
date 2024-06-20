@@ -32,5 +32,9 @@ class Booking(models.Model):
     wheelchair_sheet = models.CharField(choices=WHEELCHAIR_SHEET)
 
 
+    class Meta:
+        ordering = ['date']
+
+
     def __str__(self):
         return f'{self.sheet_time} booked by {self.username}'
