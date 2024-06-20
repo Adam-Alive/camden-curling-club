@@ -7,7 +7,8 @@ from cloudinary.models import CloudinaryField
 
 class GalleryImage(models.Model):
     """
-    *** Stores an image and caption entry.
+    Stores an image and caption entry uploaded
+    by the current user.
     """
     username = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name='author')
