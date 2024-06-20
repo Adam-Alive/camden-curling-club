@@ -25,11 +25,10 @@ class Booking(models.Model):
     *** TBC Stores a single booking entry.
     """
     username = models.ForeignKey(
-    User, on_delete=models.CASCADE, related_name='TBC+'
-    )
+    User, on_delete=models.CASCADE)
     date = models.DateField()
-    sheet_time = models.CharField(choices=SHEET_TIMES)
-    wheelchair_sheet = models.CharField(choices=WHEELCHAIR_SHEET)
+    sheet_time = models.CharField(choices=SHEET_TIMES, max_length=150)
+    wheelchair_sheet = models.CharField(choices=WHEELCHAIR_SHEET, max_length=150)
 
 
     class Meta:
