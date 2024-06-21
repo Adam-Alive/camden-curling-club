@@ -17,8 +17,9 @@ class TestFaqsViews(TestCase):
                     )
         self.faq.save()
 
-    def test_render_faq_list(self):
+    def test_render_faqs_page(self):
         response = self.client.get(reverse('faqs'))
         self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'faqs/faq_list.html', 'base.html')
         self.assertIn(b"A Question", response.content)
         self.assertIn(b"An Answer", response.content)
