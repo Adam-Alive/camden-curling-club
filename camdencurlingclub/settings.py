@@ -32,10 +32,14 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG', False)
 
-ALLOWED_HOSTS = ['8000-adamalive-camdencurling-pp6yt89mz85.ws-eu114.gitpod.io',
-                 '8000-adamalive-camdencurling-v6vilr01944.ws.codeinstitute-ide.net',  # noqa
-                 '.herokuapp.com']
+ALLOWED_HOSTS = []
 
+CSRF_TRUSTED_ORIGINS = []
+
+host = os.environ.get("HOST")
+if host:
+    ALLOWED_HOSTS.append(host)
+    CSRF_TRUSTED_ORIGINS.append(f"https://{host}")
 
 # Application definition
 
@@ -105,27 +109,20 @@ WSGI_APPLICATION = 'camdencurlingclub.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+if "DATABASE_URL" in os.environ:
+    print("connected to live database - PostgreSQL")
+    DATABASES = {
+        "default": dj_database_url.parse(os.environ.get("DATABASE_URL"))
+    }
+else:
+    print("connected to local database - SQLite3")
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.sqlite3",
+            "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
         }
-}
+    }
 
-# Comment out for testing.
-# DATABASES = {
-#     'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
-# }
-
-if 'test' in sys.argv:
-    DATABASES['default']['ENGINE'] = 'django.db.backends.sqlite3'
-
-
-CSRF_TRUSTED_ORIGINS = [
-    "https://*.gitpod.io/",
-    "https://*.herokuapp.com",
-    "https://*.codeinstitute-ide.net",
-]
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
