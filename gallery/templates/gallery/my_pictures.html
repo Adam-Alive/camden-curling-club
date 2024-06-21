@@ -17,7 +17,7 @@
 
   <!-- Display current user's pictures -->
   <section class="card">
-    <form>
+    <!-- <form> -->
       {% for galleryimage in user_pictures %}
       <div class="text-start">
         <div class="row row-cols-12">
@@ -30,12 +30,8 @@
         </div>
       </div>
       <div class="text-center">
-        <div class="row row-cols-12">
-          {% if galleryimage.caption_updated_on|date:"U" != galleryimage.added_on|date:"U" %}
-            <p>Caption updated by {{galleryimage.username}} on {{galleryimage.caption_updated_on}}</p>
-          {% else %}
-            <p>Added by {{galleryimage.username}} on {{galleryimage.added_on}}</p>
-          {% endif %}
+        <div class="row row-cols-12">          
+            <p>Caption added/updated by {{galleryimage.username}} on {{galleryimage.caption_updated_on}}</p>
         </div>
       </div>
 
@@ -73,7 +69,7 @@
       {% empty %}
       <p>You have no pictures yet</p>
       {% endfor %}
-    </form>
+    <!-- </form> -->
   </section>
 
 </main>
