@@ -46,10 +46,13 @@
 
   <section>
     {% for galleryimage in gallery_images %}
-    <img src="{{ galleryimage.gallery_image.url }}" alt="{{galleryimage.caption}}" class="img-fluid">
-    <p>{{galleryimage.caption}}</p>
-    <p>Added by {{galleryimage.username}} on {{galleryimage.added_on}}</p>
-    <p>Caption updated by {{galleryimage.username}} on {{galleryimage.caption_updated_on}}</p>
+      <img src="{{ galleryimage.gallery_image.url }}" alt="{{galleryimage.caption}}" class="img-fluid">
+      <p>{{galleryimage.caption}}</p>
+      {% if galleryimage.caption_updated_on|date:"U" != galleryimage.added_on|date:"U" %}
+        <p>Caption updated by {{galleryimage.username}} on {{galleryimage.caption_updated_on}}</p>
+      {% else %}
+        <p>Added by {{galleryimage.username}} on {{galleryimage.added_on}}</p>
+      {% endif %}
     {% endfor %}
   </section>
 
