@@ -41,8 +41,8 @@ body>footer {
 }
 
 main {
-  /* width: 85%;
-  max-width: 800px; */
+  /* width: 85%; */
+  /* max-width: 2000px; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -102,11 +102,41 @@ img {
   color: blue;
 }
 
-/* .btn-booking {
-  color:rgb(10, 13, 17);
+.bookings-main {
+  width: 90%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* My Bookings page */
+.btn-success {
+  background: rgb(173, 187, 250);
+  color:  rgb(10, 13, 17);
+  border: none;
   font-weight: 600;
-  background-color: rgb(238, 129, 205);
-} */
+}
+
+.btn-success:hover {
+  background: rgb(238, 129, 205);
+  color:  white;
+  border: none;
+  font-weight: 600;
+}
+
+.btn-danger {
+  background: rgb(238, 129, 205);
+  color:  rgb(10, 13, 17);
+  border: none;
+  font-weight: 600;
+}
+
+.btn-danger:hover {
+  background: rgb(173, 187, 250);
+  color:   white;
+  border: none;
+  font-weight: 600;
+}
 
 /*faq_list.html*/
 
@@ -151,6 +181,8 @@ footer {
 }
 
 /* Media Queries */
+
+
 
 /* Tablets and larger (768px and higher) */
 @media screen and (min-width: 768px) {
