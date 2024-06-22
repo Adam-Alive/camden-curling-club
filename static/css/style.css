@@ -30,7 +30,6 @@ p {
   color: rgb(10, 13, 17);
 }
 
-
 header {
   background-color: rgb(173, 187, 250);
 }
@@ -40,19 +39,11 @@ body>footer {
   top: 100vh;
 }
 
-/* main {
-  width: 85%; */
-  /* max-width: 2000px; */
-  /* margin-left: auto;
-  margin-right: auto;
-}
-
 section {
   padding: 10px 0px;
 }
 
 /*Navigation*/
-
 .nav-item {
   font-weight: 600;
 }
@@ -63,28 +54,14 @@ section {
   text-decoration: underline;
 }
 
-/*Test Styles*/
-/*Delete test-container when all pages have had main styling added.*/
-/*.test-container {
-  width: 85%;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}*/
-
 #msg {
   background-color: rgb(238, 129, 205);
   font-weight: 600;
 }
 
-
-
-/*End of Test Styles*/
-
 .break-div {
   padding: 10px 0px;
 }
-
 
 /*Images*/
 img {
@@ -138,7 +115,7 @@ img {
   font-weight: 600;
 }
 
-/*faq_list.html*/
+/*FAQs page*/
 
 .question {
   color: blue;
@@ -148,6 +125,21 @@ img {
   color: green;
 }
 
+/* Network page */
+.network-blue {
+  color: blue;
+  font-weight: 600;
+}
+
+.network-green {
+  color: green;
+  font-weight: 600;
+}
+
+.network-stars {
+  color:rgb(10, 13, 17);
+  font-weight: 600;
+}
 
 /* Footer */
 footer,
@@ -181,7 +173,6 @@ footer {
 }
 
 /* Media Queries */
-
 
 
 /* Tablets and larger (768px and higher) */

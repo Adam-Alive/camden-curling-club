@@ -24,58 +24,51 @@
         </section>
 
         <!-- Club details section-->
-        <section class="col-12 col-lg-6">
-            {% for network in object_list %}
-            <div class="text-end">
-                <div class="row row-cols-2">
-                    <!-- <div class="col-3"></div> -->
-                    <div class="col-6">Club Name:</div>
-                    <div class="col-6 text-start">{{network.club_name}}</div>
+        {% for network in object_list %}
+        <div class="text-end">
+            <div class="row row-cols-2">
+                <div class="col-6 network-blue">Club Name:</div>
+                <div class="col-6 text-start network-green">{{network.club_name}}</div>
+            </div>
+        </div>
+
+        <div class="text-end">
+            <div class="row row-cols-2">
+                <div class="col-6 network-blue">Location:</div>
+                <div class="col-6 text-start network-green">{{network.location}}</div>
+            </div>
+        </div>
+
+        <div class="text-end">
+            <div class="row row-cols-2">
+                <div class="col-6 network-blue">Website:</div>
+                <div class="col-6 text-start network-green"><a href="{{network.website}}" target="_blank" rel="noopener"
+                        aria-label="All fictional clubs link to the British Curling website (opens in a new tab)"><a
+                            href={{network.website}} target="_blank" rel="noopener">British Curling</a></a>
                 </div>
             </div>
+        </div>
 
-            <div class="text-end">
-                <div class="row row-cols-2">
-                    <!-- <div class="col-3"></div> -->
-                    <div class="col-6">Location:</div>
-                    <div class="col-6 text-start">{{network.location}}</div>
-                </div>
+        <div class="text-end">
+            <div class="row row-cols-2">
+                <div class="col-6 network-blue">Email:</div>
+                <div class="col-6 text-start network-green">{{network.email}}</div>
             </div>
+        </div>
 
-            <div class="text-end">
-                <div class="row row-cols-2">
-                    <!-- <div class="col-3"></div> -->
-                    <div class="col-6">Website:</div>
-                    <div class="col-6 text-start"><a href="{{network.website}}" target="_blank" rel="noopener"
-                            aria-label="All fictional clubs link to the British Curling website (opens in a new tab)">{{network.website}}</a>
-                    </div>
-                </div>
+        <div class="text-end">
+            <div class="row row-cols-2">
+                <div class="col-6 network-blue">Wheelchair access:</div>
+                <div class="col-6 text-start network-green">{{network.wheelchair_access}}</div>
             </div>
+        </div>
 
-            <div class="text-end">
-                <div class="row row-cols-2">
-                    <!-- <div class="col-3"></div> -->
-                    <div class="col-6">Email:</div>
-                    <div class="col-6 text-start">{{network.email}}</div>
-                </div>
+        <div class="text-center break-div">
+            <div class="row">
+                <div class="col network-stars">* * * * *</div>
             </div>
-
-            <div class="text-end">
-                <div class="row row-cols-2">
-                    <!-- <div class="col-3"></div> -->
-                    <div class="col-6">Wheelchair access:</div>
-                    <div class="col-6 text-start">{{network.wheelchair_access}}</div>
-                </div>
-            </div>
-
-            <div class="text-center break-div">
-                <div class="row">
-                    <div class="col">* * * * *</div>
-                </div>
-            </div>
-
-            {% endfor %}
-        </section>
+        </div>
+        {% endfor %}
     </div>
 </main>
 
