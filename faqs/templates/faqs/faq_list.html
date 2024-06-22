@@ -3,19 +3,25 @@
 
 {% block content %}
 <!--Main section-->
-<main>
-    <!--Intro section-->
-    <section>
-        <h2>FAQs</h2>
-    </section>
+<main class="container-lg">
+    <div class="row">
 
-    <section class="container-fluid text-start">
-        <div class="row">
-            {% for faq in object_list %}
-            <p class="question">Q: {{faq.question}}</p>
-            <p class="answer">A: {{faq.answer}}<p>
-            {% endfor %}
-        </div>
-    </section>
+        <!--Intro section-->
+        <section>
+            <h2>FAQs</h2>
+        </section>
+
+        <!-- Q & A section -->
+        <section>
+            <!-- <div class="col-lg-4"></div> -->
+            <div class="text-start">
+                {% for faq in object_list %}
+                <p class="question">Q: {{faq.question}}</p>
+                <p class="answer">A: {{faq.answer}}<p>
+                {% endfor %}
+            </div>
+            <!-- <div class="col-lg-4"></div> -->
+        </section>
+    </div>
 </main>
 {% endblock content %}
