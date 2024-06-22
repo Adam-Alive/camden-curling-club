@@ -4,7 +4,7 @@
 {% load crispy_forms_tags %}
 
 <!--Main section-->
-<main>
+<main class="bookings-main">
 
   <!--Intro section-->
   <section>
@@ -18,7 +18,7 @@
         <form method="POST" style="margin-top: 1.3em;" enctype="multipart/form-data">
           {{ booking_form | crispy }}
           {% csrf_token %}
-          <button type="submit" class="btn btn-lg">Update</button>
+          <button type="submit" class="btn btn-success-sub">Update</button>
         </form>
       </div>
     </div>
