@@ -18,7 +18,7 @@ body {
 }
 
 h1,
-h2, h3 {
+h2, h3, h4 {
   font-weight: 600;
   color: rgb(10, 13, 17);
 }
@@ -64,15 +64,17 @@ section {
 }
 
 /*Images*/
-img {
+/* img {
   height: 80%;
   width: 80%;
+  border-radius: 8px;
 }
 
 .image-div {
   text-align: center;
   padding: 10px 0 10px;
-}
+} */
+
 
 /*Bookings page*/
 .sheets {
@@ -137,6 +139,24 @@ img {
 
 .answer {
   color: green;
+}
+
+/* Gallery page */
+.gallery-main {
+  width: 90%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.caption-add {
+  padding: 0 0 10px 0;
+  font-size: .8em;
+  font-weight: 400;
+}
+
+.gallery-frame {
+  border: #000000;
 }
 
 /* Network page */

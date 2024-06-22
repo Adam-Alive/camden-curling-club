@@ -4,7 +4,7 @@
 {% load crispy_forms_tags %}
 
 <!--Main section-->
-<main>
+<main class="gallery-main">
 
   <!--Intro section-->
   <section>
@@ -31,7 +31,7 @@
       </div>
       <div class="text-center">
         <div class="row row-cols-12">          
-            <p>Caption added/updated by {{galleryimage.username}} on {{galleryimage.caption_updated_on}}</p>
+            <p class="caption-add">Caption added/updated by {{galleryimage.username}} on {{galleryimage.caption_updated_on|date:"j/m/y"}}</p>
         </div>
       </div>
 

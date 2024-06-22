@@ -4,7 +4,7 @@
 {% load crispy_forms_tags %}
 
 <!--Main section-->
-<main>
+<main class="gallery-main">
 
   <!--Intro section-->
   <section>
@@ -19,12 +19,12 @@
   <section>
     <div class="card mb-3 mt-3">
       <div>
-        <h3> Upload image:</h3>        
+        <h3> Upload image:</h3>
         <form method="post" style="margin-top: 1.3em;" enctype="multipart/form-data">
           {{ gallery_form | crispy }}
           <!--A csrf_token tag is required for each form-->
           {% csrf_token %}
-          <button id="submitButton" type="submit" class="btn btn-signup btn-lg">Submit</button>
+          <button type="submit" class="btn btn-success-sub">Submit</button>
         </form>
       </div>
     </div>
@@ -32,24 +32,28 @@
 
   <!-- Link to My Pictures page -->
   <section>
-    <p>View, change or delete your pictures here:</p>
+    <h4>View, change or delete your pictures here:</h4>
     <div>
-      <a href="{% url 'my_pictures' %}" class="btn btn-lg btn-success btn-booking mb-3 mt-3" type="submit">My Pictures</a>
+      <a href="{% url 'my_pictures' %}" class="btn btn-lg btn-success btn-booking mb-3 mt-3" type="submit">My
+        Pictures</a>
     </div>
   </section>
 
   <section>
-    <p>
-      See all pictures here:
-    </p>
+    <h4>
+      See all members' pictures here:
+    </h4>
   </section>
 
   <section>
-    {% for galleryimage in gallery_images %}
+    <div>
+      {% for galleryimage in gallery_images %}
       <img src="{{ galleryimage.gallery_image.url }}" alt="{{galleryimage.caption}}" class="img-fluid">
       <p>{{galleryimage.caption}}</p>
-      <p>Caption added/updated by {{galleryimage.username}} on {{galleryimage.caption_updated_on}}</p>     
-    {% endfor %}
+      <p class="caption-add">Caption added/updated by {{galleryimage.username}} on
+        {{galleryimage.caption_updated_on|date:"j/m/y"}}</p>
+      {% endfor %}
+    </div>
   </section>
 
 </main>

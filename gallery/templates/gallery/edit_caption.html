@@ -4,7 +4,7 @@
 {% load crispy_forms_tags %}
 
 <!--Main section-->
-<main>
+<main class="gallery-main">
 
   <!--Intro section-->
   <section>
@@ -15,21 +15,20 @@
     <p>Edit your picture captions here.</p>
   </section>
 
-<!--Form with current caption to be edited-->
-<section>
+  <!--Form with current caption to be edited-->
+  <section>
     <div class="card mb-3 mt-3">
-        <div>
-            <h3> Edit caption:</h3>
-            <form method="post" style="margin-top: 1.3em;" enctype="multipart/form-data">
-                {{ gallery_form | crispy }}
-                <!--A csrf_token tag is required for each form-->
-                {% csrf_token %}
-                <button id="submitButton" type="submit" class="btn btn-signup btn-lg">Update</button>
-            </form>
-        </div>
+      <div>
+        <h3> Edit caption:</h3>
+        <form method="post" style="margin-top: 1.3em;" enctype="multipart/form-data">
+          {{ gallery_form | crispy }}
+          <!--A csrf_token tag is required for each form-->
+          {% csrf_token %}
+          <button id="submitButton" type="submit" class="btn btn-success-sub">Update</button>
+        </form>
+      </div>
     </div>
-</section>
-
+  </section>
 </main>
 
 {% endblock content %}
