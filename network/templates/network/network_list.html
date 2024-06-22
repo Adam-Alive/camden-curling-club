@@ -4,77 +4,79 @@
 {% block content %}
 
 <!--Main section-->
-<main class="bookings-main">
+<main class="container-lg">
+    <div class="row">
 
-    <!-- Headding -->
-    <section>
-        <h2>Curling Network</h2>
-    </section>
+        <!-- Headding -->
+        <section>
+            <h2>Curling Network</h2>
+        </section>
 
-    <section>
-        <p>
-            Here you will find contact details for England's growing curling club network.
-        </p>
-        <p>
-            To connect with our friends in Scotland, birthplace of curling, please see: <a
-                href=" https://www.scottishcurling.org/" target="_blank" rel="noopener"
-                aria-label="Visit Scottish Curling website (opens in a new tab)">Scottish Curling</a>
-        </p>
-    </section>
+        <section>
+            <p>
+                Here you will find contact details for England's growing curling club network.
+            </p>
+            <p>
+                To connect with our friends in Scotland, birthplace of curling, please see: <a
+                    href=" https://www.scottishcurling.org/" target="_blank" rel="noopener"
+                    aria-label="Visit Scottish Curling website (opens in a new tab)">Scottish Curling</a>
+            </p>
+        </section>
 
-    <!-- Club details section-->
-    <section>
-        {% for network in object_list %}
-        <div class="text-end">
-            <div class="row row-cols-2">
-                <!-- <div class="col-3"></div> -->
-                <div class="col-6">Club Name:</div>
-                <div class="col-6 text-start">{{network.club_name}}</div>
-            </div>
-        </div>
-
-        <div class="text-end">
-            <div class="row row-cols-2">
-                <!-- <div class="col-3"></div> -->
-                <div class="col-6">Location:</div>
-                <div class="col-6 text-start">{{network.location}}</div>
-            </div>
-        </div>
-
-        <div class="text-end">
-            <div class="row row-cols-2">
-                <!-- <div class="col-3"></div> -->
-                <div class="col-6">Website:</div>
-                <div class="col-6 text-start"><a href="{{network.website}}" target="_blank">{{network.website}}</a>
+        <!-- Club details section-->
+        <section class="col-12 col-lg-6">
+            {% for network in object_list %}
+            <div class="text-end">
+                <div class="row row-cols-2">
+                    <!-- <div class="col-3"></div> -->
+                    <div class="col-6">Club Name:</div>
+                    <div class="col-6 text-start">{{network.club_name}}</div>
                 </div>
             </div>
-        </div>
 
-        <div class="text-end">
-            <div class="row row-cols-2">
-                <!-- <div class="col-3"></div> -->
-                <div class="col-6">Email:</div>
-                <div class="col-6 text-start">{{network.email}}</div>
+            <div class="text-end">
+                <div class="row row-cols-2">
+                    <!-- <div class="col-3"></div> -->
+                    <div class="col-6">Location:</div>
+                    <div class="col-6 text-start">{{network.location}}</div>
+                </div>
             </div>
-        </div>
 
-        <div class="text-end">
-            <div class="row row-cols-2">
-                <!-- <div class="col-3"></div> -->
-                <div class="col-6">Wheelchair access:</div>
-                <div class="col-6 text-start">{{network.wheelchair_access}}</div>
+            <div class="text-end">
+                <div class="row row-cols-2">
+                    <!-- <div class="col-3"></div> -->
+                    <div class="col-6">Website:</div>
+                    <div class="col-6 text-start"><a href="{{network.website}}" target="_blank" rel="noopener"
+                            aria-label="All fictional clubs link to the British Curling website (opens in a new tab)">{{network.website}}</a>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="text-center break-div">
-            <div class="row">
-                <div class="col">* * * * *</div>
+            <div class="text-end">
+                <div class="row row-cols-2">
+                    <!-- <div class="col-3"></div> -->
+                    <div class="col-6">Email:</div>
+                    <div class="col-6 text-start">{{network.email}}</div>
+                </div>
             </div>
-        </div>
 
-        {% endfor %}
-    </section>
+            <div class="text-end">
+                <div class="row row-cols-2">
+                    <!-- <div class="col-3"></div> -->
+                    <div class="col-6">Wheelchair access:</div>
+                    <div class="col-6 text-start">{{network.wheelchair_access}}</div>
+                </div>
+            </div>
 
+            <div class="text-center break-div">
+                <div class="row">
+                    <div class="col">* * * * *</div>
+                </div>
+            </div>
+
+            {% endfor %}
+        </section>
+    </div>
 </main>
 
 {% endblock content %}
