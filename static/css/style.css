@@ -41,8 +41,8 @@ body>footer {
 }
 
 main {
-  width: 85%;
-  max-width: 800px;
+  /* width: 85%;
+  max-width: 800px; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -157,8 +157,8 @@ footer {
 
   /* Images */
   img {
-    height: 60%;
-    width: 60%;
+    height: 70%;
+    width: 70%;
   }
 
 }

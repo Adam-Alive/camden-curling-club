@@ -4,46 +4,50 @@
 {% block content %}
 
 <!--Main section-->
-<main>
+<main class="container-md">
+    <div class="row">
 
-    <!--Intro section-->
-    <section>
-        <h2>About Us</h2>
-    </section>
+        <!--Intro section-->
+        <section class="col-12 col-md-4">
+            <h2>About Us</h2>
 
-    <section>
-        <p class="text-start">
-            Founded in 2010, we are based at Camden Ice Rink where curlers of all ages, backgrounds and abilities are
-            always welcome.
-        </p>
-        <div class="image-div">
-            <img src="static/images/stones-shape.webp"
-                alt="Red and yellow tagged curling stones gathered within the house (target)">
-        </div>
-    </section>
+            <p class="text-start">
+                Founded in 2010, we are based at Camden Ice Rink where curlers of all ages, backgrounds and abilities
+                are
+                always welcome.
+            </p>
+            <div class="image-div">
+                <img src="static/images/wheelchair-curlers.webp"
+                    alt="Two wheelchair curlers pushing a stone with other players in the background.">
+            </div>
+        </section>
 
-    <!--Activities section-->
-    <section>
-        <h2>Activities</h2>
-        <p class="text-start">
-            The curling season runs from October to March and during this time we hold practice sessions every day,
-            including weekends, with league games on Sundays.
-        </p>
-        <div class="image-div">
-            <img src="static/images/wheelchair-curlers.webp"
-                alt="Two wheelchair curlers pushing a stone with other players in the background.">
-        </div>
-    </section>
+        <!--Activities section-->
+        <section class="col-12 col-md-4">
+            <h2>Activities</h2>
+            <p class="text-start">
+                The curling season runs from October to March and during this time we hold practice sessions every day,
+                including weekends, with league games on Sundays.
+            </p>
+            <div class="image-div">
+                <img src="static/images/stones-shape.webp"
+                    alt="Red and yellow tagged curling stones gathered within the house (target)">
+            </div>
+        </section>
 
-    <!--Information section-->
-    <section>
-        <h2>Join Us</h2>
-        <p class="text-start">For more information, please <a href="{% url 'account_signup' %}">register</a> to access
-            our members' hub where you can make
-            bookings, upload images to the gallery and connect with other curling clubs.
-        </p>
-    </section>
+        <!--Information section-->
+        <section class="col-12 col-md-4">
+            <h2>Join Us</h2>
+            <p class="text-start">For more information, please <a href="{% url 'account_signup' %}">register</a> to
+                access
+                our members' hub where you can make
+                bookings, upload images to the gallery and connect with other curling clubs.
+            </p>
+            <div class="image-div">
+                <img src="static/images/push.webp" alt="Curler pushing a stone as two other curlers move forward.">
+            </div>
+        </section>
+    </div>
 </main>
-
 
 {% endblock content %}
