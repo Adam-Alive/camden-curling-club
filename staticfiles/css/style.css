@@ -64,7 +64,7 @@ section {
 }
 
 /*Images*/
-/* img {
+img {
   height: 80%;
   width: 80%;
   border-radius: 8px;
@@ -73,8 +73,7 @@ section {
 .image-div {
   text-align: center;
   padding: 10px 0 10px;
-} */
-
+}
 
 /*Bookings page*/
 .sheets {
@@ -155,8 +154,12 @@ section {
   font-weight: 400;
 }
 
-.gallery-frame {
-  border: #000000;
+.date-div {
+  padding: 0 0 30px 0;
+}
+
+ {
+  background: rgb(173, 187, 250);
 }
 
 /* Network page */
@@ -214,8 +217,12 @@ footer {
 
   /* Images */
   img {
-    height: 70%;
-    width: 70%;
+    height: 90%;
+    width: 90%;
+  }
+
+  #image-1 {
+    padding: 35px 0 10px;
   }
 
 }
