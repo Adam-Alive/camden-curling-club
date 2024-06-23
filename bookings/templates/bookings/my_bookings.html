@@ -12,10 +12,10 @@
   </section>  
 
   <!-- Current user's bookings -->
-  <section class="card">  
+  <section>
       {% for booking in user_booking %}
-      <div class="text-end">
-        <div class="row row-cols-2">        
+      <div class="text-end card h-50">
+        <div class="row row-cols-2 booking-date">        
           <div class="col-6">Date:</div>
           <div class="col-6 text-start">{{booking.date}}</div>
         </div>
@@ -37,7 +37,7 @@
 
       <!-- Edit or Cancel bookings section -->
       <section>
-        <div class="text-start">
+        <div class="text-start break-div">
           <div class="row row-cols-2">            
             <div class="col-6 text-end">
               <a href="{% url 'edit_booking' booking.id %}" class="btn btn-success">Edit</a>
@@ -68,11 +68,11 @@
         </div>
       </section>
 
-      <div class="text-center break-div">
+      <!-- <div class="text-center break-div">
         <div class="row">
           <div class="col">* * * * *</div>
         </div>
-      </div>
+      </div> -->
       {% empty %}
       <p>You have no bookings yet</p>
       {% endfor %}
