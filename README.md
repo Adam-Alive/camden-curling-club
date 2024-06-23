@@ -14,26 +14,29 @@ The target audience is existing and potential members of the Camden Curling Club
 
 https://ui.dev/amiresponsive?url=https://camden-curling-club-286959c89917.herokuapp.com
 
-To add the image into your README, use this format:
-(assuming you have a new folder called `documentation` with an image called "mockup.png")
-
-![screenshot](documentation/mockup.png)
+![screenshot](documentation/features/am-i-responsive.png)
 
 ## UX
 ### Initial Design and Wireframes
 
-For all screen sizes I wanted to centre the content for each page and present here the primary wireframes for each: [WIREFRAMES.md](WIREFRAMES.md).
+For small screens I wanted to centre the content and I present here the primary wireframes for each page: [WIREFRAMES.md](WIREFRAMES.md).
 
+For larger screens the content, where appropriate, will display as three columns from left to right and I present here the relevant wireframes.
 
 ### Colour Scheme
 
-Explain your colours and the colour scheme.
+Design and colour should enhance, not distract, so I wanted to adopt a clean and simple design with pastel-shade colours on a primarily white background, thus allowing the text and images to be the focus.
 
+I therefore chose a soft lavender for the primary background colour along with a similar shade of pink for onscreen messages, button-hover and secondary-button functions.
 
-- `#000000` used for primary text.
-- `#E84610` used for primary highlights.
-- `#4A4A4F` used for secondary text.
-- `#009FE3` used for secondary highlights.
+Black, blue and green text were chosen to provide variety and a clear contrast with the white background.
+
+I used the [W3 RGB](https://www.w3schools.com/colors/colors_rgb.asp) calculator to select colours, and their use is summarised below:
+
+- `rgb(10, 13, 17)` used for primary text.
+- `rgb(173, 187, 250)` used for header, footer and primary buttons.
+- `rgb(238, 129, 205)` used for onscreen messages, button-hover and secondary buttons.
+- `rgb(0, 0, 255)` and `rgb(0, 128, 0)` for text on FAQs and Network pages for contrast.
 
 ### Typography
 
@@ -67,40 +70,69 @@ Explain your colours and the colour scheme.
 
 ### Existing Features
 
-- **YOUR-TITLE-FOR-FEATURE-#1**
+- **Home Page**
+    
+    - The home page displays the club name in the header along with a navbar to login or register. Three images support clear and engaging text outlining club activities and membership opportunities.
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+![screenshot](documentation/features/test.png)
 
-![screenshot](documentation/features/feature01.png)
 
-- **YOUR-TITLE-FOR-FEATURE-#2**
+- **Confirm Login**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - A message confirms that the member has logged in successfully.
 
-![screenshot](documentation/features/feature02.png)
+![screenshot](documentation/features/login.png)
 
-- **YOUR-TITLE-FOR-FEATURE-#3**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+- **Bookings Page**
 
-![screenshot](documentation/features/feature03.png)
+    - Members are given clear instructions about the booking process and can submit their booking request via an online form.
 
-Repeat as necessary for as many features as your site contains.
+![screenshot](documentation/features/bookings.png)
 
-Hint: the more, the merrier!
+- **My Bookings Page**
+    - Members can view their current bookings in ascending order of booking date. An Edit and Cancel button allow a booking to be amended or cancelled.
+
+![screenshot](documentation/features/my-bookings.png)
+
+- **FAQs Page**
+
+    - A list of commonly asked questions for new members.
+
+![screenshot](documentation/features/faqs.png)
+
+- **Gallery Page**
+
+    - Members can upload their curling images and include a caption. Once submitted, the image is sent for approval by the site administrator and once approved, is then displayed for all members to see along with the caption and date added/updated.
+
+![screenshot](documentation/features/gallery.png)
+
+-**My Pictures Page**
+
+- Details 
+
+![screenshot](documentation/features/test.png)
+
+- **Network Page**
+
+    - A member is able to view all of their own uploaded images. They can edit the caption (again, sent for approval by the site administrator) and also delete their images from the gallery.
+
+![screenshot](documentation/features/network.png)
+
+- **Confirm Logout**
+
+    - When a member logs out they are first asked to confirm this action and are then given an onscreen message confirming that they have logged out.
+
+![screenshot](documentation/features/logout.png)
 
 ### Future Features
+The following features would add to the user experience:
 
-Do you have additional ideas that you'd like to include on your project in the future?
-Fantastic! List them here!
-It's always great to have plans for future improvements!
+- Membership Approval & Confirmation
+    - A new user will be required to submit additional membership details   via an online form. They will receive an automated email after submission and the site administrator will also receive an automated email giving notice of this application so they can approve membership.
 
-- YOUR-TITLE-FOR-FUTURE-FEATURE-#1
-    - Any additional notes about this feature.
-- YOUR-TITLE-FOR-FUTURE-FEATURE-#2
-    - Any additional notes about this feature.
-- YOUR-TITLE-FOR-FUTURE-FEATURE-#3
-    - Any additional notes about this feature.
+- Enhanced Booking System
+    - The bookings system will ensure that double-bookings are avoided by cross-checking bookings and displaying an onscreen message if a time-slot is unavailable.
 
 ## Tools & Technologies Used
 
