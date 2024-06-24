@@ -12,8 +12,6 @@ The site administrator will be able to monitor and modify all aspects of the sit
 
 The target audience is existing and potential members of the Camden Curling Club.
 
-https://ui.dev/amiresponsive?url=https://camden-curling-club-286959c89917.herokuapp.com
-
 ![screenshot](documentation/features/am-i-responsive.png)
 
 ## UX
@@ -97,17 +95,19 @@ I used the [W3 RGB](https://www.w3schools.com/colors/colors_rgb.asp) calculator 
 
 - **FAQs Page**
 
-    - A list of commonly asked questions for new members.
+    - A list of commonly asked questions for new members. This page can be updated through the admin panel
 
 ![screenshot](documentation/features/faqs.png)
 
 - **Gallery Page**
 
-    - Members can upload their curling images and include a caption. Once submitted, the image is sent for approval by the site administrator and once approved, is then displayed for all members to see along with the caption and date added/updated.
+    - Members can upload their curling images and include a caption. Once submitted, the image is sent for approval by the site administrator and then displayed for all members to see along with the caption and date added/updated. Larger screens display images in rows of up to three columns, tablets two and mobiles one.
 
 ![screenshot](documentation/features/gallery-upload.png)
+![screenshot](documentation/features/gallery-ipad.png)
+![screenshot](documentation/features/gallery-sm-screen.png)
 
--**My Pictures Page**
+- **My Pictures Page**
 
 - Members can view their own uploaded images , edit the caption or delete the image. As above, any edited caption will require approval by the site administrator before display to all.
 
@@ -115,7 +115,7 @@ I used the [W3 RGB](https://www.w3schools.com/colors/colors_rgb.asp) calculator 
 
 - **Network Page**
 
-    - A member is able to view all of their own uploaded images. They can edit the caption (again, sent for approval by the site administrator) and also delete their images from the gallery.
+    - Members can access information about other curling clubs across the UK. This page can be updated through the admin panel. Please note that, since all clubs are fictional, for each website I have added a link to the British Curling Association for demonstration purposes.
 
 ![screenshot](documentation/features/network.png)
 
@@ -172,19 +172,14 @@ I then constructed an ERD for each model:
 
 ![screenshot](documentation/erd.png)
 
-A more comprehensive ERD can be auto-generated once you're
-at the end of your development stages, just before you submit.
-Follow the steps below to obtain a thorough ERD that you can include.
-Feel free to leave the steps in the README for future use to yourself.
+At project completion I auto-generated a more comprehensive ERD, using `pygraphviz` and `django-extensions`.
 
-I have used `pygraphviz` and `django-extensions` to auto-generate an ERD.
-
-The steps taken were as follows:
+These are the steps to follow:
 - In the terminal: `sudo apt update`
-- then: `sudo apt-get install python3-dev graphviz libgraphviz-dev pkg-config`
-- then type `Y` to proceed
-- then: `pip3 install django-extensions pygraphviz`
-- in my `settings.py` file, I added the following to my `INSTALLED_APPS`:
+- Then: `sudo apt-get install python3-dev graphviz libgraphviz-dev pkg-config`
+- Then type `Y` to proceed
+- Then: `pip3 install django-extensions pygraphviz`
+- In `settings.py` file, add the following to `INSTALLED_APPS`:
 ```python
 INSTALLED_APPS = [
     ...
@@ -192,15 +187,21 @@ INSTALLED_APPS = [
     ...
 ]
 ```
-- back in the terminal: `python3 manage.py graph_models -a -o erd.png`
-- dragged the new `erd.png` file into my `documentation/` folder
-- removed `'django_extensions',` from my `INSTALLED_APPS`
-- finally, in the terminal: `pip3 uninstall django-extensions pygraphviz -y`
+- Back in the terminal: `python3 manage.py graph_models -a -o erd.png`
+- Drag the new `erd.png` file into `documentation/` folder
+- Remove `'django_extensions',` from `INSTALLED_APPS`
+- Finally, in the terminal: `pip3 uninstall django-extensions pygraphviz -y`
 
-source: [medium.com](https://medium.com/@yathomasi1/1-using-django-extensions-to-visualize-the-database-diagram-in-django-application-c5fa7e710e16)
+Source: [medium.com](https://medium.com/@yathomasi1/1-using-django-extensions-to-visualize-the-database-diagram-in-django-application-c5fa7e710e16)
 
 
 ## Project Planning & Agile Development Process
+
+### Project Plan and Milestones
+
+I began with a series of brainstorming sessions and then drew up a project plan which served as milestones for tracking on GitHub.
+
+![screenshot](documentation/milestones.png)
 
 ### GitHub Projects
 
@@ -247,7 +248,7 @@ Using this approach, I was able to apply the MoSCow prioritization and labels to
 
 **IMPORTANT:**
 
-> The live deployed application can be found deployed on [Heroku](https://camden-curling-club-286959c89917.herokuapp.com).
+> The live application is deployed on Heroku at: [Heroku](https://camden-curling-club-286959c89917.herokuapp.com).
 
 ### PostgreSQL Database
 
@@ -255,7 +256,7 @@ This project uses a PostgreSQL database at [Neon](https://neon.tech/).
 
 ### Cloudinary API
 
-This project uses the [Cloudinary API](https://cloudinary.com) to store media assets online, due to the fact that Heroku doesn't persist this type of data.
+This project uses the [Cloudinary API](https://cloudinary.com) to store media assets online since Heroku doesn't persist this type of data.
 
 ### Heroku Deployment
 
@@ -366,12 +367,12 @@ You can clone the repository by following these steps:
 	- `git clone https://github.com/Adam-Alive/camden-curling-club.git`
 7. Press Enter to create your local clone.
 
-Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
+Alternatively, if using Gitpod, you can click below to create your own workspace using this repository:
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Adam-Alive/camden-curling-club)
+[Open in Gitpod](https://gitpod.io/#https://github.com/Adam-Alive/camden-curling-club)
 
 Please note that in order to directly open the project in Gitpod, you need to have the browser extension installed.
-A tutorial on how to do that can be found [here](https://www.gitpod.io/docs/configure/user-settings/browser-extension).
+A tutorial on this can be found [here](https://www.gitpod.io/docs/configure/user-settings/browser-extension).
 
 #### Forking
 
