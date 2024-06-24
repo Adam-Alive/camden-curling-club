@@ -219,7 +219,6 @@ footer {
 
 /* Media Queries */
 
-
 /* Tablets and larger (768px and higher) */
 @media screen and (min-width: 768px) {
 
@@ -233,6 +232,7 @@ footer {
     padding: 35px 0 10px;
   }
 
+  /* Register button */
   .btn-success-md {
     background: rgb(173, 187, 250);
     color:  rgb(10, 13, 17);
@@ -248,3 +248,4 @@ footer {
   }
 
 }
+
