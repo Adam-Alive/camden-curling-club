@@ -59,6 +59,19 @@ section {
   font-weight: 600;
 }
 
+/* Registration form */
+#signup_form input {
+  width: 100%;
+}
+
+#signup_form ul {
+  display: none;
+}
+
+.btn-bold {
+  font-weight: 700;
+}
+
 /*Images*/
 img {
   height: 80%;
@@ -204,10 +217,6 @@ footer {
   font-weight: 300;
 }
 
-#signup_form ul {
-  display: none;
-}
-
 /* Media Queries */
 
 
@@ -222,6 +231,20 @@ footer {
 
   #image-1 {
     padding: 35px 0 10px;
+  }
+
+  .btn-success-md {
+    background: rgb(173, 187, 250);
+    color:  rgb(10, 13, 17);
+    border: none;
+    font-weight: 600;
+  }
+  
+  .btn-success-md:hover {
+    background: rgb(238, 129, 205);
+    color:  white;
+    border: none;
+    font-weight: 600;
   }
 
 }
