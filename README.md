@@ -70,18 +70,18 @@ I used the [W3 RGB](https://www.w3schools.com/colors/colors_rgb.asp) calculator 
 
 ### Existing Features
 
-- **Home Page**
+- **Home Page - Public**
     
     - The home page displays the club name in the header along with a navbar to login or register. Three images support clear and engaging text outlining club activities and membership opportunities.
 
-![screenshot](documentation/features/test.png)
+![screenshot](documentation/features/home-non-member.png)
 
 
-- **Confirm Login**
+- **Home Page - Members**
 
-    - A message confirms that the member has logged in successfully.
+    - A message confirms that the member has logged in successfully and the navbar shows the page options.
 
-![screenshot](documentation/features/login.png)
+![screenshot](documentation/features/home-logged-in.png)
 
 
 - **Bookings Page**
@@ -105,13 +105,13 @@ I used the [W3 RGB](https://www.w3schools.com/colors/colors_rgb.asp) calculator 
 
     - Members can upload their curling images and include a caption. Once submitted, the image is sent for approval by the site administrator and once approved, is then displayed for all members to see along with the caption and date added/updated.
 
-![screenshot](documentation/features/gallery.png)
+![screenshot](documentation/features/gallery-upload.png)
 
 -**My Pictures Page**
 
-- Details 
+- Members can view their own uploaded images , edit the caption or delete the image. As above, any edited caption will require approval by the site administrator before display to all.
 
-![screenshot](documentation/features/test.png)
+![screenshot](documentation/features/gallery-my-pictures.png)
 
 - **Network Page**
 
