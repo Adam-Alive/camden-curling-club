@@ -9,22 +9,22 @@
   <!--Intro section-->
   <section>
     <h2>Bookings</h2>
-  </section>
 
-  <section class="text-start">
-    <p>Welcome to our bookings page where you can book practice sessions during the curling season from October to
-      March.</p>
-    <p>Practice nights are Tuesday and Thursday, with six sessions available each evening:</p>
-    <p class="sheets">3 sheets from 18:00 to 19:30</p>
-    <p class="sheets">3 sheets from 20:00 to 21:30</p>    
-    <p>New members please note that a playing area is called a sheet, see: <a href="{% url 'faqs' %}">FAQs</a>.</p>
+    <div class="text-start">
+      <p>Welcome to our bookings page where you can book practice sessions during the curling season from October to
+        March.</p>
+      <p>Practice nights are Tuesday and Thursday, with six sessions available each evening:</p>
+      <p class="sheets">3 sheets from 18:00 to 19:30</p>
+      <p class="sheets">3 sheets from 20:00 to 21:30</p>
+      <p>New members please note that a playing area is called a sheet, see: <a href="{% url 'faqs' %}">FAQs</a>.</p>
+    </div>
   </section>
 
   <!--Make booking with crispy forms-->
   <section>
     <div class="card mb-3 mt-3">
       <div>
-        <h3> Make a booking:</h3> 
+        <h3> Make a booking:</h3>
         <form method="post" style="margin-top: 1.3em;" enctype="multipart/form-data">
           {{ booking_form | crispy }}
           {% csrf_token %}
@@ -35,12 +35,13 @@
   </section>
 
   <!-- Link to My Bookings page -->
-  <section>
+  <div>
     <p>View, change or cancel bookings here:</p>
     <div>
-      <a href="{% url 'my_bookings' %}" class="btn btn-lg btn-success btn-booking mb-3 mt-3" type="submit">My Bookings</a>
+      <a href="{% url 'my_bookings' %}" class="btn btn-lg btn-success btn-booking mb-3 mt-3" type="submit">My
+        Bookings</a>
     </div>
-  </section>
+  </div>
 
 </main>
 {% endblock content %}

@@ -1,18 +1,17 @@
 {% extends "base.html" %}
 {% load static %}
-
 {% block content %}
 
 <!--Main section-->
 <main class="container-lg">
     <div class="row">
 
-        <!-- Headding -->
+        <!-- Heading -->
         <section>
             <h2>Curling Network</h2>
         </section>
 
-        <section>
+        <div class="div-sec">
             <p>
                 Here you will find contact details for England's growing curling club network.
             </p>
@@ -21,7 +20,7 @@
                     href=" https://www.scottishcurling.org/" target="_blank" rel="noopener"
                     aria-label="Visit Scottish Curling website (opens in a new tab)">Scottish Curling</a>
             </p>
-        </section>
+        </div>
 
         <!-- Club details section-->
         {% for network in object_list %}

@@ -12,14 +12,12 @@
         </section>
 
         <!-- Q & A section -->
-        <section>           
-            <div class="text-start">
-                {% for faq in object_list %}
-                <p class="question">Q: {{faq.question}}</p>
-                <p class="answer">A: {{faq.answer}}<p>
-                {% endfor %}
-            </div>           
-        </section>
+        <div class="text-start div-sec">
+            {% for faq in object_list %}
+            <p class="question">Q: {{faq.question}}</p>
+            <p class="answer">A: {{faq.answer}}<p>
+                    {% endfor %}
+        </div>
     </div>
 </main>
 {% endblock content %}

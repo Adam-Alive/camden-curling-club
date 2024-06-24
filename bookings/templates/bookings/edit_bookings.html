@@ -9,28 +9,18 @@
   <!--Intro section-->
   <section>
     <h2>Change Your Booking</h2>
-  </section> 
-
-  <!--Make booking with crispy forms-->
-  <section>
-    <div class="card mb-3 mt-3">
-      <div>
-        <form method="POST" style="margin-top: 1.3em;" enctype="multipart/form-data">
-          {{ booking_form | crispy }}
-          {% csrf_token %}
-          <button type="submit" class="btn btn-success-sub">Update</button>
-        </form>
-      </div>
-    </div>
   </section>
 
-  <!-- Link to My Bookings page -->
-  <!-- <section>
-    <p>View, change or cancel bookings here:</p>
+  <!--Make booking with crispy forms-->
+  <div class="card mb-3 mt-3">
     <div>
-      <a href="{% url 'my_bookings' %}" class="btn btn-lg btn-success" type="submit">My Bookings</a>
+      <form method="POST" style="margin-top: 1.3em;" enctype="multipart/form-data">
+        {{ booking_form | crispy }}
+        {% csrf_token %}
+        <button type="submit" class="btn btn-success-sub">Update</button>
+      </form>
     </div>
-  </section> -->
+  </div>
 
 </main>
 {% endblock content %}
