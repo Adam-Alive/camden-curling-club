@@ -35,25 +35,6 @@ I have not undertaken any JS validation since the only scripts used in the base.
 
 ### Python
 
-The CI Python Linter can be used two different ways.
-- Copy/Paste your Python code directly into the linter.
-- As an API, using the "raw" URL appended to the linter URL.
-    - To find the "raw" URL, navigate to your file directly on the GitHub repo.
-    - On that page, GitHub provides a button on the right called "Raw" that you can click on.
-    - From that new page, copy the full URL, and paste it after the CI Python Linter URL (with a `/` separator).
-    - Check the example table below for a live demo.
-
-It's recommended to validate each file using the API URL.
-This will give you a custom URL which you can use on your testing documentation.
-It makes it easier to return back to a file to validate it again in the future.
-Use the steps above to generate your own custom URLs for each Python file.
-
-**IMPORTANT**: `E501 line too long` errors
-
-You must strive to fix any Python lines that are too long ( >80 characters ).
-In rare cases where you cannot break the lines [without breaking the functionality],
-then by adding `# noqa` to the end of those lines will ignore linting validation.
-
 `# noqa` = **NO Quality Assurance**
 
 **NOTE**: You must include 2 *spaces* before the `#`, and 1 *space* after the `#`.
@@ -72,11 +53,9 @@ Any opening bracket type will work: `(`, `[`, `{`.
 By using an opening bracket, Python knows where to appropriately indent the next line of code,
 without having to "guess" yourself and attempt to tab to the correct indentation level.
 
-Sample Python code validation documentation below (tables are extremely helpful!).
-
 **Note**: This gives examples of PP3 (Python-only), and Flask/Django files, so eliminate the ones not applicable to your own project.
 
-I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com) to validate all of my Python files.
+I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com) to validate all Python files.
 
 | File | CI URL | Screenshot | Notes |
 | --- | --- | --- | --- |

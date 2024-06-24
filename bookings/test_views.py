@@ -6,7 +6,6 @@ from .forms import BookingForm
 
 # Create your tests here.
 
-
 class TestBookingsViews(TestCase):
     """
     Test views from the views.py file.

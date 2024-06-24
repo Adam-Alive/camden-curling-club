@@ -6,6 +6,10 @@ from .models import Network
 # Create your tests here.
 
 class TestNetworkViews(TestCase):
+    """
+    Tests for login of site administrator
+    and validity of Network data.
+    """
 
     def setUp(self):
         self.user = User.objects.create_superuser(

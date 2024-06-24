@@ -22,7 +22,8 @@ WHEELCHAIR_SHEET = (
 
 class Booking(models.Model):
     """
-    *** TBC Stores a single booking entry.
+    *** Stores a single booking entry by a user to
+    enable booking, booking amendment and cancellation.
     """
     username = models.ForeignKey(
     User, on_delete=models.CASCADE)

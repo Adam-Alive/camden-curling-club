@@ -5,7 +5,10 @@ from .forms import GalleryForm
 # Create your tests here.
 
 class TestGalleryForm(TestCase):
- 
+    """
+    Test for the validity of data handled by
+    the GalleryForm and Gallery Model.
+    """ 
     def test_form_is_valid(self): 
         gallery_form = GalleryForm(
             {'gallery_image': 'image',
