@@ -24,14 +24,19 @@ The URL will look something like this:
 
 Sample HTML code validation documentation (tables are extremely helpful!):
 
-| Page | W3C URL | Screenshot | Notes |
+| Template | Result| Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2FAdam-Alive.github.io%2Fcamden-curling-club%2Findex.html) | ![screenshot](documentation/validation/html-validation-home.png) | Section lacks header h2-h6 warning |
-| Contact | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2FAdam-Alive.github.io%2Fcamden-curling-club%2Fcontact.html) | ![screenshot](documentation/validation/html-validation-contact.png) | obsolete iframe warnings |
-| Quiz | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2FAdam-Alive.github.io%2Fcamden-curling-club%2Fquiz.html) | ![screenshot](documentation/validation/html-validation-quiz.png) | Pass: No Errors |
-| Add Blog | n/a | ![screenshot](documentation/validation/html-validation-add-blog.png) | Duplicate IDs found, and fixed |
-| Checkout | n/a | ![screenshot](documentation/validation/html-validation-checkout.png) | Pass: No Errors |
-| x | x | x | repeat for all remaining HTML files |
+| base |  | ![screenshot](documentation/validation/html-.png) |  |
+| index |  | ![screenshot](documentation/validation/html-.png) |  |
+| booking_list |  | ![screenshot](documentation/validation/html-.png) | |
+| edit_bookings| | ![screenshot](documentation/validation/html-.png) |  |
+| my_bookings |  | ![screenshot](documentation/validation/html-.png) | |
+| faq_list |  | ![screenshot](documentation/validation/html-.png) | |
+| edit_caption |  | ![screenshot](documentation/validation/html-.png) | |
+| galleryimage_list |  | ![screenshot](documentation/validation/html-.png) | |
+| my_pictures |  | ![screenshot](documentation/validation/html-.png) | |
+| network_list |  | ![screenshot](documentation/validation/html-.png) | |
+
 
 **IMPORTANT**: Python/Jinja syntax in HTML
 
