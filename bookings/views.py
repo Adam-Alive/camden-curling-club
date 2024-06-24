@@ -20,18 +20,16 @@ class BookingList(generic.ListView):
 def make_booking(request):
     """
     Displays booking form and posts booking requests.
-    """   
+    """
     user_booking = Booking.objects.filter(username=request.user)
-    booking_form = BookingForm(request.POST or None)  
-    if request.method == "POST":        
+    booking_form = BookingForm(request.POST or None)
+    if request.method == "POST":
         if booking_form.is_valid():
-            booking_form.instance.username = request.user           
+            booking_form.instance.username = request.user
             booking_form.save()
-            messages.success(
-            request, 'Thank you - your booking is confirmed.'
-            )
-            return redirect(reverse('make_booking'))
-            
+            messages.success(request,
+                             'Thank you - your booking is confirmed.')
+    return redirect(reverse('make_booking'))
 
     template = "bookings/booking_list.html"
     context = {
@@ -48,7 +46,7 @@ def my_bookings(request):
     if request.method == "POST":
         if booking_form.is_valid():
             booking_form.instance.username = request.user
-            booking_form.save()            
+            booking_form.save()
             return redirect(reverse('my_bookings'))
 
     booking_form = BookingForm()
@@ -59,6 +57,7 @@ def my_bookings(request):
     }
 
     return render(request, template, context)
+
 
 @login_required
 def edit_booking(request, booking_id):
@@ -75,15 +74,15 @@ def edit_booking(request, booking_id):
     if request.method == 'POST':
         if booking_form.is_valid():
             booking_form.instance.username = booking.username
-            booking_form.save()          
+            booking_form.save()
             messages.success(request,
-                'Thank you - your new booking is confirmed.'
-            )
+                             'Thank you - your new booking is confirmed.'
+                             )
             return redirect(reverse('my_bookings'))
 
     template = "bookings/edit_bookings.html"
     context = {
-        "booking": booking, 
+        "booking": booking,
         "booking_form": booking_form,
     }
     return render(request, template, context)
@@ -99,9 +98,8 @@ def delete_booking(request, booking_id):
         messages.error(request, "Access denied - invalid credentials")
         return redirect('my_bookings')
 
-    booking.delete()          
+    booking.delete()
     messages.success(request,
-            'Thank you - your booking has been cancelled.'
-        )
+                     'Thank you - your booking has been cancelled.'
+                     )
     return redirect(reverse('my_bookings'))
-        

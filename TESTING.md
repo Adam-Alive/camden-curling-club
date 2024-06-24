@@ -35,6 +35,40 @@ I have not undertaken any JS validation since the only scripts used in the base.
 
 ### Python
 
+I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com) to validate all Python files.
+
+| File | Screenshot | Notes |
+| --- |--- | --- |
+| settings.py |![screenshot](documentation/validation/py/settings.png) | No errors |
+| bookings/models.py |![screenshot](documentation/validation/py/bookings-models.png) | |
+| bookings/test_forms.py |![screenshot](documentation/validation/py/bookings-test-forms.png) | |
+| bookings/testviews.py |![screenshot](documentation/validation/py/bookings-test-views.png) | |
+| bookings/urls.py |![screenshot](documentation/validation/py/bookings-urls.png) | |
+| bookings/views.py |![screenshot](documentation/validation/py/bookings-views.png) | |
+| .py |![screenshot](documentation/validation/py/.png) | |
+| .py |![screenshot](documentation/validation/py/.png) | |
+| .py |![screenshot](documentation/validation/py/.png) | |
+| .py |![screenshot](documentation/validation/py/.png) | |
+| .py |![screenshot](documentation/validation/py/.png) | |
+| .py |![screenshot](documentation/validation/py/.png) | |
+| .py |![screenshot](documentation/validation/py/.png) | |
+| .py |![screenshot](documentation/validation/py/.png) | |
+| .py |![screenshot](documentation/validation/py/.png) | |
+| .py |![screenshot](documentation/validation/py/.png) | |
+| .py |![screenshot](documentation/validation/py/.png) | |
+| .py |![screenshot](documentation/validation/py/.png) | |
+| .py |![screenshot](documentation/validation/py/.png) | |
+| .py |![screenshot](documentation/validation/py/.png) | |
+| .py |![screenshot](documentation/validation/py/.png) | |
+| .py |![screenshot](documentation/validation/py/.png) | |
+| .py |![screenshot](documentation/validation/py/.png) | |
+
+
+
+
+| x | x | x | repeat for all remaining Python files |
+
+
 `# noqa` = **NO Quality Assurance**
 
 **NOTE**: You must include 2 *spaces* before the `#`, and 1 *space* after the `#`.
@@ -53,48 +87,6 @@ Any opening bracket type will work: `(`, `[`, `{`.
 By using an opening bracket, Python knows where to appropriately indent the next line of code,
 without having to "guess" yourself and attempt to tab to the correct indentation level.
 
-**Note**: This gives examples of PP3 (Python-only), and Flask/Django files, so eliminate the ones not applicable to your own project.
-
-I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com) to validate all Python files.
-
-| File | CI URL | Screenshot | Notes |
-| --- | --- | --- | --- |
-| run.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Adam-Alive/camden-curling-club/main/run.py) | ![screenshot](documentation/validation/py-validation-run.png) | W291 trailing whitespace |
-| settings.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Adam-Alive/camden-curling-club/main/boutique-ado/settings.py) | ![screenshot](documentation/validation/py-validation-settings.png) | E501 line too long |
-| Blog views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Adam-Alive/camden-curling-club/main/blog/views.py) | ![screenshot](documentation/validation/py-validation-blog-views.png) | Pass: No Errors |
-| Checkout urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Adam-Alive/camden-curling-club/main/checkout/urls.py) | ![screenshot](documentation/validation/py-validation-checkout-urls.png) | W292 no newline at end of file |
-| Profiles models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Adam-Alive/camden-curling-club/main/profiles/models.py) | ![screenshot](documentation/validation/py-validation-profiles-models.png) | Pass: No Errors |
-| x | x | x | repeat for all remaining Python files |
-
-
-**IMPORTANT**: Django settings.py
-
-The Django settings.py file comes with 4 lines that are quite long, and will throw the `E501 line too long` error.
-This is default behavior, but can be fixed by adding `# noqa` to the end of those lines.
-
-Example:
-
-```python
-AUTH_PASSWORD_VALIDATORS = [
-    {
-        "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",  # noqa
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",  # noqa
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",  # noqa
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",  # noqa
-    },
-]
-```
-
-**IMPORTANT**: migration and pycache files
-
-You do not have to ever validate files from the `migrations/` or `pycache/` folders!
-Ignore these `.py` files, and validate just the files that you've created or modified.
 
 
 ## Browser Compatibility
