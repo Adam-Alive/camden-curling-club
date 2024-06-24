@@ -93,7 +93,7 @@ I used the [W3 RGB](https://www.w3schools.com/colors/colors_rgb.asp) calculator 
 - **My Bookings Page**
     - Members can view their current bookings in ascending order of booking date. An Edit and Cancel button allow a booking to be amended or cancelled.
 
-![screenshot](documentation/features/my-bookings.png)
+![screenshot](documentation/features/bookings-my-bookings.png)
 
 - **FAQs Page**
 
@@ -123,7 +123,8 @@ I used the [W3 RGB](https://www.w3schools.com/colors/colors_rgb.asp) calculator 
 
     - When a member logs out they are first asked to confirm this action and are then given an onscreen message confirming that they have logged out.
 
-![screenshot](documentation/features/logout.png)
+![screenshot](documentation/features/logout-1.png)
+![screenshot](documentation/features/logout-2.png)
 
 ### Future Features
 The following features would add to the user experience:
