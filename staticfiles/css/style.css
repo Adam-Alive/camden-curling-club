@@ -23,7 +23,6 @@ h2, h3, h4 {
   color: rgb(10, 13, 17);
 }
 
-
 p {
   font-weight: 600;
   padding: 0 0 5px 0;
@@ -40,6 +39,10 @@ body>footer {
 }
 
 section {
+  padding: 10px 0px;
+}
+
+.div-sec {
   padding: 10px 0px;
 }
 
@@ -89,7 +92,7 @@ img {
   color: blue;  
 }
 
-.bookings-main {
+.bookings-div {
   width: 90%;
   max-width: 800px;
   margin-left: auto;
@@ -157,7 +160,7 @@ font-weight: 600;
 }
 
 /* Gallery page */
-.gallery-main {
+.gallery-div {
   width: 90%;
   max-width: 800px;
   margin-left: auto;
