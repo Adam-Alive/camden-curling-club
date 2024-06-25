@@ -170,7 +170,7 @@ I then constructed an ERD for each model:
 
 ![screenshot](documentation/erd.png)
 
-At project completion I auto-generated a more comprehensive ERD, using `pygraphviz` and `django-extensions`.
+At project completion I auto-generated a more comprehensive ERD, using `Mermaid`.
 
 ```mermaid
 erDiagram
@@ -179,7 +179,6 @@ erDiagram
         string username
         string password
         string email
-        // Other fields specific to the User model
     }
 
     Booking {
@@ -215,8 +214,6 @@ erDiagram
         string wheelchair_access
     }
 ```
-
-
 ## Project Planning & Agile Development Process
 
 ### Project Plan and Milestones

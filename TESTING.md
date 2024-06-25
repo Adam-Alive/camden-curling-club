@@ -203,22 +203,17 @@ from the respective feature.
 |  As a member, I would like to amend or cancel a practice session so that I can change my plans. | ![screenshot](documentation/features/bookings-my-bookings.png) |
 | As a member, I would like to know if the booking time I want is available so that I can make another choice if necessary. | A 'could have' not completed during this iteration.|
 |  As a member, I would like to add images to the gallery so that I can share my curling experiences with other members. | ![screenshot](documentation/features/gallery-upload.png)  ![screenshot](documentation/features/gallery-my-pictures.png) |
-| As a site administrator, I would like to access the administrator panel so that I can manage the club membership and site's pages. | ![screenshot](documentation/features/feature09.png) |
+| As a site administrator, I would like to access the administrator panel so that I can manage the club membership and site's pages. | ![screenshot](documentation/features/admin-1.png) ![screenshot](documentation/features/admin-2.png)  |
 |  As a site administrator, I would like to know when a new member has registered so that I can email them about their membership options. | A 'won't have' not completed during this iteration. |
 |  As a site administrator, I would like to manage content on the FAQs page so that I can provide information to members.| ![screenshot](documentation/features/faqs-1.png) ![screenshot](documentation/features/faqs-2.png) ![screenshot](documentation/features/faqs-3.png)|
-|  As a site administrator, I would like to approve or delete images added to the gallery so that I can filter out any objectionable material.| ![screenshot](documentation/features/.png) |
-|  As a site administrator, I would like to manage content on the curling network page so that I can keep members informed of other curling venues. | ![screenshot](documentation/features/.png) |
-| repeat for all remaining user stories | x |
+|  As a site administrator, I would like to approve or delete images added to the gallery so that I can filter out any objectionable material.| ![screenshot](documentation/features/admin-gall-1.png) ![screenshot](documentation/features/admin-gall-2.png)|
+|  As a site administrator, I would like to manage content on the curling network page so that I can keep members informed of other curling venues. | ![screenshot](documentation/features/admin-net-1.png)  ![screenshot](documentation/features/admin-net-2.png)|
 
 ## Automated Testing
 
-I have conducted a series of automated tests on my application.
-
-I fully acknowledge and understand that, in a real-world scenario, an extensive set of additional tests would be more comprehensive.
+I have conducted a series of automated tests on my application and fully acknowledge that, in a real-world scenario, an extensive set of additional tests would be required
 
 ### Python (Unit Testing)
-
-Adjust the code below (file names, etc.) to match your own project files/folders.
 
 I have used Django's built-in unit testing framework to test the application functionality.
 
@@ -226,7 +221,7 @@ In order to run the tests, I ran the following command in the terminal each time
 
 `python3 manage.py test name-of-app `
 
-To create the coverage report, I would then run the following commands:
+To create the coverage report, I would then conducted the following:
 
 `coverage run --source=name-of-app manage.py test`
 
