@@ -399,7 +399,6 @@ You can fork this repository by using the following steps:
 | [Pexels](https://www.pexels.com/) | home and gallery  | images | Various images of curling  |
 | [Pixelied](https://pixelied.com/convert/jpg-converter/jpg-to-webp) | home and gallery  | images | Convert png to webp |
 
-
-
 ### Acknowledgements
+
 - I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN), for his invaluable guidance and support throughout the development of this project.
