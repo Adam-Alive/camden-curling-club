@@ -194,20 +194,20 @@ from the respective feature.
 
 | User Story | Screenshot |
 | --- | --- |
-| As a new user, I would like to land on an informative and engaging home page so that I can learn about the club.| ![screenshot](documentation/features/feature01.png) |
-|  As a new user, I would like to submit my contact details so that I can register my membership. | ![screenshot](documentation/features/feature02.png) |
-|  As a member, I would like to enter my login details so that I can access the members' area. | ![screenshot](documentation/features/feature03.png) |
-|  As a member, I would like to logout so that I can know my session has been closed securely. | ![screenshot](documentation/features/feature04.png) |
-|  As a member, I would like to submit a question for display on the FAQs page.| ![screenshot](documentation/features/feature05.png) |
-|  As a member, I would like to book a practice session so that I can attend at a time that suits me. | ![screenshot](documentation/features/feature06.png) |
-|  As a member, I would like to amend or cancel a practice session so that I can change my plans. | ![screenshot](documentation/features/feature07.png) |
-| As a member, I would like to know if the booking time I want is available so that I can make another choice if necessary. | ![screenshot](documentation/features/feature08.png) |
-|  As a member, I would like to add images to the gallery so that I can share my curling experiences with other members. | ![screenshot](documentation/features/feature09.png) |
+| As a new user, I would like to land on an informative and engaging home page so that I can learn about the club.| ![screenshot](documentation/features/home-non-member.png) |
+|  As a new user, I would like to submit my contact details so that I can register my membership. | ![screenshot](documentation/features/register.png) |
+|  As a member, I would like to enter my login details so that I can access the members' area. | ![screenshot](documentation/features/login.png) |
+|  As a member, I would like to logout so that I can know my session has been closed securely. | ![screenshot](documentation/features/logout-1.png) ![screenshot](documentation/features/logout-2.png) |
+|  As a member, I would like to submit a question for display on the FAQs page.| A 'could have' not completed during this iteration. |
+|  As a member, I would like to book a practice session so that I can attend at a time that suits me. | ![screenshot](documentation/features/bookings.png) |
+|  As a member, I would like to amend or cancel a practice session so that I can change my plans. | ![screenshot](documentation/features/bookings-my-bookings.png) |
+| As a member, I would like to know if the booking time I want is available so that I can make another choice if necessary. | A 'could have' not completed during this iteration.|
+|  As a member, I would like to add images to the gallery so that I can share my curling experiences with other members. | ![screenshot](documentation/features/gallery-upload.png)  ![screenshot](documentation/features/gallery-my-pictures.png) |
 | As a site administrator, I would like to access the administrator panel so that I can manage the club membership and site's pages. | ![screenshot](documentation/features/feature09.png) |
-|  As a site administrator, I would like to know when a new member has registered so that I can email them about their membership options. | ![screenshot](documentation/features/feature09.png) |
-|  As a site administrator, I would like to manage content on the FAQs page so that I can provide information to members.| ![screenshot](documentation/features/feature09.png) |
-|  As a site administrator, I would like to approve or delete images added to the gallery so that I can filter out any objectionable material.| ![screenshot](documentation/features/feature09.png) |
-|  As a site administrator, I would like to manage content on the curling network page so that I can keep members informed of other curling venues. | ![screenshot](documentation/features/feature09.png) |
+|  As a site administrator, I would like to know when a new member has registered so that I can email them about their membership options. | A 'won't have' not completed during this iteration. |
+|  As a site administrator, I would like to manage content on the FAQs page so that I can provide information to members.| ![screenshot](documentation/features/faqs-1.png) ![screenshot](documentation/features/faqs-2.png) ![screenshot](documentation/features/faqs-3.png)|
+|  As a site administrator, I would like to approve or delete images added to the gallery so that I can filter out any objectionable material.| ![screenshot](documentation/features/.png) |
+|  As a site administrator, I would like to manage content on the curling network page so that I can keep members informed of other curling venues. | ![screenshot](documentation/features/.png) |
 | repeat for all remaining user stories | x |
 
 ## Automated Testing
@@ -272,8 +272,6 @@ Remember to include screenshots (where possible), and a solution to the issue (i
 This can be used for both "fixed" and "unresolved" issues.
 
 ## Bugs
-
-**PRO TIP**: screenshots of bugs are extremely helpful, and go a long way!
 
 - JS Uncaught ReferenceError: `foobar` is undefined/not defined
 
@@ -346,15 +344,6 @@ Any remaining open issues can be tracked [here](https://github.com/Adam-Alive/ca
 | [Python `E501 line too long` (93 > 79 characters)](https://github.com/Adam-Alive/camden-curling-club/issues/5) | Open |
 
 ## Unfixed Bugs
-
-You will need to mention unfixed bugs and why they were not fixed.
-This section should include shortcomings of the frameworks or technologies used.
-Although time can be a big variable to consider, paucity of time and difficulty understanding
-implementation is not a valid reason to leave bugs unfixed.
-
-If you've identified any unfixed bugs, no matter how small, be sure to list them here.
-It's better to be honest and list them, because if it's not documented and an assessor finds the issue,
-they need to know whether or not you're aware of them as well, and why you've not corrected/fixed them.
 
 Some examples:
 
