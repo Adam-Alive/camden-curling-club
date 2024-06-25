@@ -92,7 +92,7 @@ img {
   color: blue;  
 }
 
-.bookings-main {
+.bookings-div {
   width: 90%;
   max-width: 800px;
   margin-left: auto;
@@ -160,7 +160,7 @@ font-weight: 600;
 }
 
 /* Gallery page */
-.gallery-main {
+.gallery-div {
   width: 90%;
   max-width: 800px;
   margin-left: auto;
