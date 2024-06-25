@@ -5,8 +5,8 @@ from django.contrib.auth.models import User
 
 
 WHEELCHAIR_ACCESS = (
-('Yes', 'Yes'), 
-('No', 'No')
+    ('Yes', 'Yes'),
+    ('No', 'No')
 )
 
 
@@ -19,7 +19,7 @@ class Network(models.Model):
     location = models.CharField(max_length=200)
     website = models.CharField(max_length=200)
     email = models.EmailField(max_length=200)
-    wheelchair_access =models.CharField(choices=WHEELCHAIR_ACCESS, max_length=150)
+    wheelchair_access = models.CharField(choices=WHEELCHAIR_ACCESS, max_length=150)
 
     def __str__(self):
         return self.club_name

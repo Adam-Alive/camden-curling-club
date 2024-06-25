@@ -4,6 +4,7 @@ from django.urls import reverse
 
 # Create your tests here.
 
+
 class TestHomeViews(TestCase):
 
     def test_render_home_page(self):

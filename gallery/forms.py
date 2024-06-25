@@ -1,6 +1,7 @@
 from django import forms
 from .models import GalleryImage
 
+
 class GalleryForm(forms.ModelForm):
     """
     This enables users to upload images and

@@ -5,6 +5,7 @@ from .models import Network
 
 # Create your tests here.
 
+
 class TestNetworkViews(TestCase):
     """
     Tests for login of site administrator
@@ -14,9 +15,10 @@ class TestNetworkViews(TestCase):
     def setUp(self):
         self.user = User.objects.create_superuser(
             username="myUsername",
-            password="myPassword",            
+            password="myPassword",
         )
-        self.network = Network(club_name="X Curling Club", 
+        self.network = Network(
+                        club_name="X Curling Club",
                         location="Anytown",
                         website="curling.website.com",
                         email="club@curling.com",
@@ -33,7 +35,3 @@ class TestNetworkViews(TestCase):
         self.assertIn(b"curling.website.com", response.content)
         self.assertIn(b"club@curling.com", response.content)
         self.assertIn(b"Yes", response.content)
-        
-
-    
-

@@ -5,6 +5,7 @@ from .models import Faq
 
 # Create your tests here.
 
+
 class TestFaqsViews(TestCase):
     """
     Tests for login of site administrator
@@ -14,9 +15,10 @@ class TestFaqsViews(TestCase):
     def setUp(self):
         self.user = User.objects.create_superuser(
             username="myUsername",
-            password="myPassword",            
+            password="myPassword",
         )
-        self.faq = Faq(question="A Question",
+        self.faq = Faq(
+                        question="A Question",
                         answer="An Answer"
                     )
         self.faq.save()

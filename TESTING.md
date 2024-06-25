@@ -11,13 +11,13 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | Template | Result| Screenshot | Notes |
 | --- | --- | --- | --- |
 | index (public) | Pass | ![screenshot](documentation/validation/html/index-public.png) | Errors due to extension of base.html. |
-| index (logged-in) | Pass | ![screenshot](documentation/validation/html/index-logged-in.png) | Errors due to extension of base.html.  |
-| booking_list | Pass | ![screenshot](documentation/validation/html/booking-list.png) | | Errors due to extension of base.html.
-| edit_bookings|  Pass| ![screenshot](documentation/validation/html/edit-bookings.png) | Errors due to extension of base.html.  |
+| index (logged-in) | Pass | ![screenshot](documentation/validation/html/index-logged-in.png) | Errors due to extension of base html. |
+| booking_list | Pass | ![screenshot](documentation/validation/html/booking-list.png) | | Errors due to extension of base.html.|
+| edit_bookings|  Pass| ![screenshot](documentation/validation/html/edit-bookings.png) | Errors due to extension of base.html. |
 | my_bookings | Pass | ![screenshot](documentation/validation/html/my-bookings.png) | Errors due to extension of base.html. |
-| faq_list | Pass | ![screenshot](documentation/validation/html/faqs.png) | |
+| faq_list | Pass | ![screenshot](documentation/validation/html/faqs.png) | Errors due to extension of base.html.|
 | edit_caption | Pass | ![screenshot](documentation/validation/html/edit-caption.png) |Errors due to extension of base.html. |
-| galleryimage_list |  | ![screenshot](documentation/validation/html/gallery-image-list.png) | | Errors due to extension of base.html.
+| galleryimage_list | Pass | ![screenshot](documentation/validation/html/gallery-image-list.png) | |Errors due to extension of base.html.|
 | my_pictures | Pass | ![screenshot](documentation/validation/html/my-pictures.png) | Errors due to extension of base.html.|
 | network_list |  | ![screenshot](documentation/validation/html/network.png) | Errors due to extension of base.html. |
 
@@ -40,28 +40,28 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 | File | Screenshot | Notes |
 | --- |--- | --- |
 | settings.py |![screenshot](documentation/validation/py/settings.png) | No errors |
-| bookings/models.py |![screenshot](documentation/validation/py/bookings-models.png) | |
-| bookings/test_forms.py |![screenshot](documentation/validation/py/bookings-test-forms.png) | |
-| bookings/testviews.py |![screenshot](documentation/validation/py/bookings-test-views.png) | |
-| bookings/urls.py |![screenshot](documentation/validation/py/bookings-urls.png) | |
-| bookings/views.py |![screenshot](documentation/validation/py/bookings-views.png) | |
-| .py |![screenshot](documentation/validation/py/.png) | |
-| .py |![screenshot](documentation/validation/py/.png) | |
-| .py |![screenshot](documentation/validation/py/.png) | |
-| .py |![screenshot](documentation/validation/py/.png) | |
-| .py |![screenshot](documentation/validation/py/.png) | |
-| .py |![screenshot](documentation/validation/py/.png) | |
-| .py |![screenshot](documentation/validation/py/.png) | |
-| .py |![screenshot](documentation/validation/py/.png) | |
-| .py |![screenshot](documentation/validation/py/.png) | |
-| .py |![screenshot](documentation/validation/py/.png) | |
-| .py |![screenshot](documentation/validation/py/.png) | |
-| .py |![screenshot](documentation/validation/py/.png) | |
-| .py |![screenshot](documentation/validation/py/.png) | |
-| .py |![screenshot](documentation/validation/py/.png) | |
-| .py |![screenshot](documentation/validation/py/.png) | |
-| .py |![screenshot](documentation/validation/py/.png) | |
-| .py |![screenshot](documentation/validation/py/.png) | |
+| bookings/models.py |![screenshot](documentation/validation/py/bookings-models.png) | L28, E122 continuation line missing indentation or outdented.|
+| bookings/test_forms.py |![screenshot](documentation/validation/py/bookings-test-forms.png) | no errors |
+| bookings/testviews.py |![screenshot](documentation/validation/py/bookings-test-views.png) |no errors |
+| bookings/urls.py |![screenshot](documentation/validation/py/bookings-urls.png) |no errors |
+| bookings/views.py |![screenshot](documentation/validation/py/bookings-views.png) | no errors|
+| faqs/test_views.py |![screenshot](documentation/validation/py/test-views.png) | no errors|
+| faqs/urls.py |![screenshot](documentation/validation/py/faqs-urls.png) | no errors|
+| faqs/views.py |![screenshot](documentation/validation/py/faqs-views.png) | no errors|
+| faqs/models.py |![screenshot](documentation/validation/py/models.png) |no errors |
+| gallery/forms.py |![screenshot](documentation/validation/py/gallery-forms.png) | no errors|
+| gallery/models.py |![screenshot](documentation/validation/py/gallery-models.png) |no errrors |
+| galery/test_forms.py |![screenshot](documentation/validation/py/gallery-test-forms.png) |no errors |
+| gallery/urls.py |![screenshot](documentation/validation/py/.png) | TBC|
+| gallery/views.py |![screenshot](documentation/validation/py/.png) | TBC|
+| home/test_views.py |![screenshot](documentation/validation/py/home-test-views.png) | no errors|
+| home/urls.py |![screenshot](documentation/validation/py/home-urls.png) |no errors |
+| home/views.py |![screenshot](documentation/validation/py/home-views.png) |no errors |
+| network/models.py |![screenshot](documentation/validation/py/.png) | TBC|
+| network/test_views.py |![screenshot](documentation/validation/py/.png) | TBC|
+| network/urls.py |![screenshot](documentation/validation/py/network-urls.png) |no errors |
+| network/views.py |![screenshot](documentation/validation/py/network-views.png) | no errors|
+
 
 
 
