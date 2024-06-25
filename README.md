@@ -221,11 +221,6 @@ Progress on each user story was tracked on a weekly basis with overall project-p
 
 ![screenshot](documentation/testing-user-stories/milestones.png)
 
-- [Open Issues](https://github.com/Adam-Alive/camden-curling-club/issues) [![GitHub issues](https://img.shields.io/github/issues/Adam-Alive/camden-curling-club)](https://github.com/Adam-Alive/camden-curling-club/issues)
-
-
-- [Closed Issues](https://github.com/Adam-Alive/camden-curling-club/issues?q=is%3Aissue+is%3Aclosed) [![GitHub closed issues](https://img.shields.io/github/issues-closed/Adam-Alive/camden-curling-club)](https://github.com/Adam-Alive/camden-curling-club/issues?q=is%3Aissue+is%3Aclosed)
-
 ### MoSCoW Prioritisation
 
 I also used the MoSCow prioritisation model to add labels to my user stories within the Issues tab:
@@ -234,6 +229,12 @@ I also used the MoSCow prioritisation model to add labels to my user stories wit
 - **Should Have**: adds significant value, but not vital.
 - **Could Have**: has small impact if left out.
 - **Won't Have**: not a priority for this iteration.
+
+A summary of open and closed issues can be accessed via these tabs:
+
+- [![GitHub issues](https://img.shields.io/github/issues/Adam-Alive/camden-curling-club)](https://github.com/Adam-Alive/camden-curling-club/issues)
+
+- [![GitHub closed issues](https://img.shields.io/github/issues-closed/Adam-Alive/camden-curling-club)](https://github.com/Adam-Alive/camden-curling-club/issues?q=is%3Aissue+is%3Aclosed)
 
 ## Testing
 
@@ -384,25 +385,21 @@ You can fork this repository by using the following steps:
 
 | Source | Location | Notes |
 | --- | --- | --- |
-| [Markdown Builder](https://tim.2bn.dev/markdown-builder) | README and TESTING | tool to help generate the Markdown files |
-| [Chris Beams](https://chris.beams.io/posts/git-commit) | version control | "How to Write a Git Commit Message" |
-| [W3Schools](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) | entire site | responsive HTML/CSS/JS navbar |
-| [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp) | contact page | interactive pop-up (modal) |
-| [StackOverflow](https://stackoverflow.com/a/2450976) | quiz page | Fisher-Yates/Knuth shuffle in JS |
-| [YouTube](https://www.youtube.com/watch?v=YL1F4dCUlLc) | leaderboard | using `localStorage()` in JS for high scores |
-| [WhiteNoise](http://whitenoise.evans.io) | entire site | hosting static files on Heroku temporarily |
+| [Markdown Builder](https://tim.2bn.dev/markdown-builder) | README and TESTING | An excellent tool to help generate the Markdown files |
+| [John Abdsho](https://www.youtube.com/watch?v=s5xbtuo9pR0) | bookings | Initial ideas on how to create a booking system with Django|
+| [W3Schools](https://www.w3schools.com/bootstrap5/) | gallery and bookings | Additional support with Bootstrap grids and modals|
+| [Scottish Curling](https://www.scottishcurling.org/) |  home and faqs  | Reference  |
+| [British Curling](https://www.britishcurling.org.uk/) |  home and faqs  | Reference  |
 
 ### Media
 
 | Source | Location | Type | Notes |
 | --- | --- | --- | --- |
-| [Pexels](https://www.pexels.com) | entire site | image | favicon on all pages |
-| [Lorem Picsum](https://picsum.photos) | home page | image | hero image background |
-| [Unsplash](https://unsplash.com) | product page | image | sample of fake products |
-| [Pixabay](https://pixabay.com) | gallery page | image | group of photos for gallery |
-| [Wallhere](https://wallhere.com) | footer | image | background wallpaper image in the footer |
-| [This Person Does Not Exist](https://thispersondoesnotexist.com) | testimonials | image | headshots of fake testimonial images |
-| [TinyPNG](https://tinypng.com) | entire site | image | tool for image compression |
+| [Free Images](https://www.freeimages.com/) | home and gallery | images | Various images of curling |
+| [Pexels](https://www.pexels.com/) | home and gallery  | images | Various images of curling  |
+| [Pixelied](https://pixelied.com/convert/jpg-converter/jpg-to-webp) | home and gallery  | images | Convert png to webp |
+
+
 
 ### Acknowledgements
 - I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN), for his invaluable guidance and support throughout the development of this project.
