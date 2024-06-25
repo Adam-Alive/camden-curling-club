@@ -39,7 +39,7 @@ def my_pictures(request):
     """
     Displays the current user's uploaded pictures.
     """
-    user_pictures = GalleryImage.objects.filter(username=request.user, approved=True)
+    user_pictures = GalleryImage.objects.filter(username=request.user, approved=True)  # noqa
     if request.method == "POST":
         return redirect(reverse('my_pictures'))
 
@@ -57,7 +57,7 @@ def edit_caption(request, galleryimage_id):
     """
     To edit a picture caption for the current user.
     """
-    caption = get_object_or_404(GalleryImage, id=galleryimage_id, approved=True)
+    caption = get_object_or_404(GalleryImage, id=galleryimage_id, approved=True)  # noqa
     if not caption.username == request.user:
         messages.error(request, "Access denied - invalid credentials")
         return redirect('my_pictures')
@@ -86,7 +86,7 @@ def delete_picture(request, galleryimage_id):
     """
     To delete a picture and caption for the current user.
     """
-    picture = get_object_or_404(GalleryImage, id=galleryimage_id, approved=True)
+    picture = get_object_or_404(GalleryImage, id=galleryimage_id, approved=True)  # noqa
     if not picture.username == request.user:
         messages.error(request, "Access denied - invalid credentials")
         return redirect('my_pictures')

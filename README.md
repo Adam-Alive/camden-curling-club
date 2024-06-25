@@ -146,10 +146,8 @@ The following features would add to the user experience:
 - [JavaScript](https://www.javascript.com) used for user interaction on the site.
 - [jQuery](https://jquery.com) used for user interaction on the site.
 - [Python](https://www.python.org) used as the back-end programming language.
-- [GitHub Pages](https://pages.github.com) used for hosting the deployed front-end site.
 - [Heroku](https://www.heroku.com) used for hosting the deployed back-end site.
 - [Bootstrap](https://img.shields.io/badge/Bootstrap-grey?logo=bootstrap&logoColor=7952B3) used as the front-end CSS framework for modern responsiveness and pre-built components.
-- [Jest](https://jestjs.io) used for automated JavaScript testing.
 - [Django](https://www.djangoproject.com) used as the Python framework for the site.
 - [PostgreSQL](https://www.postgresql.org) used as the relational database management.
 - [Neon](https://neon.tech/) used to host the PostgreSQL database.
@@ -174,25 +172,49 @@ I then constructed an ERD for each model:
 
 At project completion I auto-generated a more comprehensive ERD, using `pygraphviz` and `django-extensions`.
 
-These are the steps to follow:
-- In the terminal: `sudo apt update`
-- Then: `sudo apt-get install python3-dev graphviz libgraphviz-dev pkg-config`
-- Then type `Y` to proceed
-- Then: `pip3 install django-extensions pygraphviz`
-- In `settings.py` file, add the following to `INSTALLED_APPS`:
-```python
-INSTALLED_APPS = [
-    ...
-    'django_extensions',
-    ...
-]
-```
-- Back in the terminal: `python3 manage.py graph_models -a -o erd.png`
-- Drag the new `erd.png` file into `documentation/` folder
-- Remove `'django_extensions',` from `INSTALLED_APPS`
-- Finally, in the terminal: `pip3 uninstall django-extensions pygraphviz -y`
+```mermaid
+erDiagram
+    User {
+        int id
+        string username
+        string password
+        string email
+        // Other fields specific to the User model
+    }
 
-Source: [medium.com](https://medium.com/@yathomasi1/1-using-django-extensions-to-visualize-the-database-diagram-in-django-application-c5fa7e710e16)
+    Booking {
+        int id
+        date date
+        string sheet_time
+        string wheelchair_sheet
+    }
+    Booking }o--|| User : "username"
+
+    Faq {
+        int id
+        text question
+        text answer
+    }
+
+    GalleryImage {
+        int id
+        string gallery_image
+        string caption
+        datetime added_on
+        datetime caption_updated_on
+        boolean approved
+    }
+    GalleryImage }o--|| User : "username (author)"
+
+    Network {
+        int id
+        string club_name
+        string location
+        string website
+        string email
+        string wheelchair_access
+    }
+```
 
 
 ## Project Planning & Agile Development Process

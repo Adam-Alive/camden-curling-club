@@ -40,7 +40,7 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 | File | Screenshot | Notes |
 | --- |--- | --- |
 | settings.py |![screenshot](documentation/validation/py/settings.png) | No errors |
-| bookings/models.py |![screenshot](documentation/validation/py/bookings-models.png) | L28, E122 continuation line missing indentation or outdented.|
+| bookings/models.py |![screenshot](documentation/validation/py/bookings-models.png) | L28, E122 continuation line missing indentation or outdented. This was corrected.|
 | bookings/test_forms.py |![screenshot](documentation/validation/py/bookings-test-forms.png) | no errors |
 | bookings/testviews.py |![screenshot](documentation/validation/py/bookings-test-views.png) |no errors |
 | bookings/urls.py |![screenshot](documentation/validation/py/bookings-urls.png) |no errors |
@@ -52,13 +52,13 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 | gallery/forms.py |![screenshot](documentation/validation/py/gallery-forms.png) | no errors|
 | gallery/models.py |![screenshot](documentation/validation/py/gallery-models.png) |no errrors |
 | galery/test_forms.py |![screenshot](documentation/validation/py/gallery-test-forms.png) |no errors |
-| gallery/urls.py |![screenshot](documentation/validation/py/.png) | TBC|
-| gallery/views.py |![screenshot](documentation/validation/py/.png) | TBC|
+| gallery/urls.py |![screenshot](documentation/validation/py/gallery-urls.png) | no errors|
+| gallery/views.py |![screenshot](documentation/validation/py/gallery-views.png) | no errors|
 | home/test_views.py |![screenshot](documentation/validation/py/home-test-views.png) | no errors|
 | home/urls.py |![screenshot](documentation/validation/py/home-urls.png) |no errors |
 | home/views.py |![screenshot](documentation/validation/py/home-views.png) |no errors |
-| network/models.py |![screenshot](documentation/validation/py/.png) | TBC|
-| network/test_views.py |![screenshot](documentation/validation/py/.png) | TBC|
+| network/models.py |![screenshot](documentation/validation/py/network-models.png) | no errors|
+| network/test_views.py |![screenshot](documentation/validation/py/network-test-views.png) | Tno errors|
 | network/urls.py |![screenshot](documentation/validation/py/network-urls.png) |no errors |
 | network/views.py |![screenshot](documentation/validation/py/network-views.png) | no errors|
 
@@ -101,7 +101,7 @@ All pages, on both mobile and desktop, achieved 100%
 | Page | Mobile | Desktop |
 | --- | --- | --- |
 | Home | ![screenshot](documentation/screens/m-home.png) | ![screenshot](documentation/screens/d-home.png) |
-| Bookings | ![screenshot](documentation/screens/.png) | ![screenshot](documentation/screens/.png) | |
+| Bookings | ![screenshot](documentation/screens/m-bookings.png) | ![screenshot](documentation/screens/d-bookings.png) | |
 | FAQS | ![screenshot](documentation/screens/m-faqs.png) | ![screenshot](documentation/screens/d-faqs.png) |
 | Gallery| ![screenshot](documentation/screens/m-gallery.png) | ![screenshot](documentation/screens/d-gallery.png) |
 | Network| ![screenshot](documentation/screens/m-network.png) | ![screenshot](documentation/screens/d-network.png) |

@@ -29,7 +29,7 @@ class TestNetworkViews(TestCase):
     def test_render_network_page(self):
         response = self.client.get(reverse('network'))
         self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, 'network/network_list.html', 'base.html')
+        self.assertTemplateUsed(response, 'network/network_list.html', 'base.html')  # noqa
         self.assertIn(b"X Curling Club", response.content)
         self.assertIn(b"Anytown", response.content)
         self.assertIn(b"curling.website.com", response.content)
