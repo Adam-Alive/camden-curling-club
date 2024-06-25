@@ -203,42 +203,37 @@ I began with a series of brainstorming sessions and then drew up a project plan 
 
 ![screenshot](documentation/milestones.png)
 
-### GitHub Projects
+### GitHub Projects and Issues
 
 [GitHub Projects](https://github.com/Adam-Alive/camden-curling-club/projects) served as an Agile tool for this project.
 
-Through it, user stories, issues, and milestone tasks were planned, then tracked on a weekly basis using the basic Kanban board.
+Through it, epics, user stories, issues, and milestone tasks were planned, then tracked on a weekly basis using the basic Kanban board.
 
-Consider adding a basic screenshot of your Projects Board.
+I created two GitHub projects within the repository, and then created issues within each:
+- [Curling Club User Stories](https://github.com/users/Adam-Alive/projects/6)
+- [Curling Club Development and Testing](https://github.com/users/Adam-Alive/projects/8)
 
-![screenshot](documentation/gh-projects.png)
+I used my own **User Story Template** to manage user stories and provide an example of a completed issue here:
 
-### GitHub Issues
+![screenshot](documentation/testing-user-stories/sample.png)
 
-[GitHub Issues](https://github.com/Adam-Alive/camden-curling-club/issues) served as an another Agile tool.
-There, I used my own **User Story Template** to manage user stories.
+Progress on each user story was tracked on a weekly basis with overall project-progress monitored on the milestones board, as shown below, where a list of open and closed milestones can be seen:
 
-It also helped with milestone iterations on a weekly basis.
-
-Consider adding a screenshot of your Open and Closed Issues.
+![screenshot](documentation/testing-user-stories/milestones.png)
 
 - [Open Issues](https://github.com/Adam-Alive/camden-curling-club/issues) [![GitHub issues](https://img.shields.io/github/issues/Adam-Alive/camden-curling-club)](https://github.com/Adam-Alive/camden-curling-club/issues)
 
-    ![screenshot](documentation/gh-issues-open.png)
 
 - [Closed Issues](https://github.com/Adam-Alive/camden-curling-club/issues?q=is%3Aissue+is%3Aclosed) [![GitHub closed issues](https://img.shields.io/github/issues-closed/Adam-Alive/camden-curling-club)](https://github.com/Adam-Alive/camden-curling-club/issues?q=is%3Aissue+is%3Aclosed)
 
-    ![screenshot](documentation/gh-issues-closed.png)
+### MoSCoW Prioritisation
 
-### MoSCoW Prioritization
+I also used the MoSCow prioritisation model to add labels to my user stories within the Issues tab:
 
-I've decomposed my Epics into stories prior to prioritizing and implementing them.
-Using this approach, I was able to apply the MoSCow prioritization and labels to my user stories within the Issues tab.
-
-- **Must Have**: guaranteed to be delivered (*max 60% of stories*)
-- **Should Have**: adds significant value, but not vital (*the rest ~20% of stories*)
-- **Could Have**: has small impact if left out (*20% of stories*)
-- **Won't Have**: not a priority for this iteration
+- **Must Have**: guaranteed to be delivered.
+- **Should Have**: adds significant value, but not vital.
+- **Could Have**: has small impact if left out.
+- **Won't Have**: not a priority for this iteration.
 
 ## Testing
 
