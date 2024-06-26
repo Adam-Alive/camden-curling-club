@@ -17,9 +17,7 @@ The target audience is existing and potential members of the Camden Curling Club
 ## UX
 ### Initial Design and Wireframes
 
-For small screens I wanted to centre the content and I present here the primary wireframes for each page: [WIREFRAMES.md](WIREFRAMES.md).
-
-For larger screens the content, where appropriate, will display as three columns from left to right and I present here the relevant wireframes.
+Content will be centred for small screens; for larger screens, where appropriate, content will display as two or three columns from left to right. I present here the primary wireframes for all pages on small screens with relevant samples for larger screens: : [WIREFRAMES.md](WIREFRAMES.md).
 
 ### Colour Scheme
 
@@ -224,25 +222,23 @@ I began with a series of brainstorming sessions and then drew up a project plan 
 
 ### GitHub Projects and Issues
 
-[GitHub Projects](https://github.com/Adam-Alive/camden-curling-club/projects) served as an Agile tool for this project.
+[GitHub Projects](https://github.com/Adam-Alive/camden-curling-club/projects) served as an Agile tool for this project where epics, user stories, issues, and milestone tasks were planned and then tracked on the Kanban board.
 
-Through it, epics, user stories, issues, and milestone tasks were planned, then tracked on a weekly basis using the basic Kanban board.
-
-I created two GitHub projects within the repository, and then created issues within each:
+Using GitHub's projects and issues framework I created two GitHub projects within the repository, and then developed issues within each:
 - [Curling Club User Stories](https://github.com/users/Adam-Alive/projects/6)
 - [Curling Club Development and Testing](https://github.com/users/Adam-Alive/projects/8)
 
-I used my own **User Story Template** to manage user stories and provide an example of a completed issue here:
+I created a **User Story Template** to manage user stories and provide here an example of a completed issue:
 
 ![screenshot](documentation/testing-user-stories/sample.png)
 
-Progress on each user story was tracked on a weekly basis with overall project-progress monitored on the milestones board, as shown below, where a list of open and closed milestones can be seen:
+Progress on each user story was tracked on a weekly basis with overall project progress monitored on the milestones board, as shown below, where a list of open and closed milestones can be seen:
 
 ![screenshot](documentation/testing-user-stories/milestones.png)
 
 ### MoSCoW Prioritisation
 
-I also used the MoSCow prioritisation model to add labels to my user stories within the Issues tab:
+I also used the MoSCow prioritisation model to add labels to my user stories within the issues tab:
 
 - **Must Have**: guaranteed to be delivered.
 - **Should Have**: adds significant value, but not vital.
