@@ -19,7 +19,7 @@ The target audience is existing and potential members of the Camden Curling Club
 
 For small screens I wanted to centre the content and I present here the primary wireframes for each page: [WIREFRAMES.md](WIREFRAMES.md).
 
-For larger screens the content, where appropriate, will display as three columns from left to right and I present here the relevant wireframes.
+For larger screens, where appropriate, the content will display as two or three columns from left to right and I present here the relevant wireframes.
 
 ### Colour Scheme
 
