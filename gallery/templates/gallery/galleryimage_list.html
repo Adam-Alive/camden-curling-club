@@ -20,7 +20,7 @@
           {{ gallery_form | crispy }}
           <!--A csrf_token tag is required for each form-->
           {% csrf_token %}
-          <button type="submit" class="btn btn-success-sub">Submit</button>
+          <button type="submit" class="btn btn-lav mb-3">Submit</button>
         </form>
       </div>
     </div>
@@ -30,7 +30,7 @@
   <section>
     <h4>View, change or delete your pictures here:</h4>
     <div>
-      <a href="{% url 'my_pictures' %}" class="btn btn-lg btn-success mb-3 mt-3">My Pictures</a>
+      <a href="{% url 'my_pictures' %}" class="btn btn-lg btn-lav mb-3 mt-3">My Pictures</a>
     </div>
   </section>
 

@@ -38,11 +38,11 @@
     <div class="text-start break-div">
       <div class="row row-cols-2">
         <div class="col-6 text-end">
-          <a href="{% url 'edit_booking' booking.id %}" class="btn btn-success">Edit</a>
+          <a href="{% url 'edit_booking' booking.id %}" class="btn btn-lav">Edit</a>
         </div>
         <div class="col-6">
           <!-- Modal to confirm cancel booking -->
-          <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+          <button type="button" class="btn btn-pink" data-bs-toggle="modal"
             data-bs-target="#cancel-modal-{{ booking.id }}">Cancel</button>
           <div class="modal fade" id="cancel-modal-{{ booking.id }}" tabindex="-1">
             <div class="modal-dialog">
