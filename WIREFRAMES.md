@@ -25,3 +25,9 @@
 
 - ## Logout
 ![screenshot](documentation/wf-8.png)
+
+- ## Home (Large Screen)
+![screenshot](documentation/wf-9.png)
+
+- ## Gallery (Large Screen)
+![screenshot](documentation/wf-10.png)

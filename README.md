@@ -17,9 +17,7 @@ The target audience is existing and potential members of the Camden Curling Club
 ## UX
 ### Initial Design and Wireframes
 
-For small screens I wanted to centre the content and I present here the primary wireframes for each page: [WIREFRAMES.md](WIREFRAMES.md).
-
-For larger screens the content, where appropriate, will display as three columns from left to right and I present here the relevant wireframes.
+Content will be centred for small screens; for larger screens, where appropriate, content will display as two or three columns from left to right. I present here the primary wireframes for all pages on small screens with relevant samples for larger screens: [WIREFRAMES.md](WIREFRAMES.md).
 
 ### Colour Scheme
 
@@ -170,7 +168,7 @@ I then constructed an ERD for each model:
 
 ![screenshot](documentation/erd.png)
 
-At project completion I auto-generated a more comprehensive ERD, using `Mermaid`.
+At project completion I auto-generated an ERD, using `Mermaid`, to portray the final project:
 
 ```mermaid
 erDiagram
