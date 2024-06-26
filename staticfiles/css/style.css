@@ -177,7 +177,11 @@ font-weight: 600;
 
 .network-stars {
   color:rgb(10, 13, 17);
-  font-weight: 600;
+  font-weight: 700;
+}
+
+.break-div-net {
+  padding: 10px 0 5px;
 }
 
 /* Footer */
