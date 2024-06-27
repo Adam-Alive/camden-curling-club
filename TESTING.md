@@ -107,75 +107,83 @@ I tested the deployed project using the Lighthouse Audit tool to check for any m
 
 ## Defensive Programming
 
-Forms:
-- Users cannot submit an empty form
-- Users must enter valid email addresses
-
-
-MS3 (Flask) | MS4/PP4/PP5 (Django):
-- Users cannot brute-force a URL to navigate to a restricted page
-- Users cannot perform CRUD functionality while logged-out
-- User-A should not be able to manipulate data belonging to User-B, or vice versa
-- Non-Authenticated users should not be able to access pages that require authentication
-- Standard users should not be able to access pages intended for superusers
-
-You'll want to test all functionality on your application, whether it's a standard form,
-or uses CRUD functionality for data manipulation on a database.
-Make sure to include the `required` attribute on any form-fields that should be mandatory.
-Try to access various pages on your site as different user types (User-A, User-B, guest user, admin, superuser).
-
-You should include any manual tests performed, and the expected results/outcome.
-
-Testing should be replicable.
-Ideally, tests cases should focus on each individual section of every page on the website.
-Each test case should be specific, objective, and step-wise replicable.
-
-Instead of adding a general overview saying that everything works fine,
-consider documenting tests on each element of the page
-(ie. button clicks, input box validation, navigation links, etc.) by testing them in their happy flow,
-and also the bad/exception flow, mentioning the expected and observed results,
-and drawing a parallel between them where applicable.
-
 **Defensive programming has been manually tested and the Pass/Fail outcomes summarised below.**
 
 | Page | User Action | Expected Result | Pass/Fail | Comments | Screenshot |
 | --- | --- | --- | --- | --- | --- |
 | Register | | | | | |
 | | Click on Register in Navbar. | Registration menu opens. | Pass | | ![screenshot](documentation/features/register.png) | |
-| | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/dp/register-blank.png)  |
+| | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/register-blank.png) |
+| | Click on Register with incorrect email address format.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/register-email.png) |
+| | Click on Register with all data correct. | Display a successful sign-in message with username and access given to all site features. | Pass | | ![screenshot](documentation/testing/dp/register-correct.png) ![screenshot](documentation/testing/dp/register-success.png)|
+| Login| | | | | |
+| | Click on Login in Navbar. | Login menu opens. | Pass | | ![screenshot](documentation/features/login.png) |
+| | Click on Login with any field left blank. | Alert message and login incomplete. | Pass | | ![screenshot](documentation/testing/dp/login-incorrect.png) |
+| |Click on Login with incorrect password (either mistakenly by a genuine user or a malicious user). | Alert message and login incomplete. | Pass | | ![screenshot](documentation/testing/dp/login-pword-wrong.png) |
+| |Click on Login with correct password. | Redirect to Home page with login-success message. | Pass | | ![screenshot](documentation/testing/dp/login-success.png) |
+| Bookings | | | | | |
+| | Click on Bookings in Navbar. | Redirect to Bookings page with a blank bookings form. | Pass | | ![screenshot](documentation/features/bookings.png) |
+| | Click on Submit with any field left blank. | Alert message and booking incomplete. | Pass | | ![screenshot](documentation/testing/dp/booking-incorrect.png) |
+| | Click on Submit with all data correct.| Display a booking-confirmed message and blank bookings form. | Pass | | ![screenshot](documentation/testing/dp/booking-all-data.png) ![screenshot](documentation/testing/dp/booking-confirmed.png) |
+| | Click on My Bookings. | Redirect to My Bookings page.| Pass | | ![screenshot](documentation/features/bookings-my-bookings.png) |
+
+
+| My Bookings | | | | | |
+| | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/.png) |
+| | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/.png) |
+| | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/.png) |
+| | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/.png) |
+| | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/.png) |
+| | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/.png) |
+| | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/.png) |
+
+
+| FAQs | | | | | |
+| | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/.png) |
+
+
 | Gallery | | | | | |
-| | Click on Gallery link in navbar | Redirection to Gallery page | Pass | | |
-| | Load gallery images | All images load as expected | Pass | |
-| Gallery | | | | | |
-| | Click on Gallery link in navbar | Redirection to Gallery page | Pass | | |
-| | Load gallery images | All images load as expected | Pass | |
-| Gallery | | | | | |
-| | Click on Gallery link in navbar | Redirection to Gallery page | Pass | | |
-| | Load gallery images | All images load as expected | Pass | |
-| Gallery | | | | | |
-| | Click on Gallery link in navbar | Redirection to Gallery page | Pass | | |
-| | Load gallery images | All images load as expected | Pass | |
-| Gallery | | | | | |
-| | Click on Gallery link in navbar | Redirection to Gallery page | Pass | | |
-| | Load gallery images | All images load as expected | Pass | |
-| Gallery | | | | | |
-| | Click on Gallery link in navbar | Redirection to Gallery page | Pass | | |
-| | Load gallery images | All images load as expected | Pass | |
-| Gallery | | | | | |
-| | Click on Gallery link in navbar | Redirection to Gallery page | Pass | | |
-| | Load gallery images | All images load as expected | Pass | |
-| Gallery | | | | | |
-| | Click on Gallery link in navbar | Redirection to Gallery page | Pass | | |
-| | Load gallery images | All images load as expected | Pass | |
-| Gallery | | | | | |
-| | Click on Gallery link in navbar | Redirection to Gallery page | Pass | | |
-| | Load gallery images | All images load as expected | Pass | |
-| Gallery | | | | | |
-| | Click on Gallery link in navbar | Redirection to Gallery page | Pass | | |
-| | Load gallery images | All images load as expected | Pass | |
-| Gallery | | | | | |
-| | Click on Gallery link in navbar | Redirection to Gallery page | Pass | | |
-| | Load gallery images | All images load as expected | Pass | |
+| | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/.png) |
+| | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/.png) |
+| | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/.png) |
+| | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/.png) |
+| | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/.png) |
+
+
+| My Pictures| | | | | |
+| | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/.png) |
+| | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/.png) |
+| | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/.png) |
+| | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/.png) |
+| | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/.png) |
+| | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/.png) |
+| | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/.png) |
+| | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/.png) |
+
+
+| Network | | | | | |
+| |   |       | Pass | | ![screenshot](documentation/testing/dp/.png) |
+
+
+| Logout| | | | | |
+| |   |       | Pass | | ![screenshot](documentation/testing/dp/.png) |
+| |   |       | Pass | | ![screenshot](documentation/testing/dp/.png) |
+
+
+
+| Admin Portal | | | | | |
+| |   |       | Pass | | ![screenshot](documentation/testing/dp/.png) |
+| |   |       | Pass | | ![screenshot](documentation/testing/dp/.png) |
+| |   |       | Pass | | ![screenshot](documentation/testing/dp/.png) |
+
+
+
+
+
+
+
+
+
 | repeat for all remaining pages | x | x | x | x | x |
 
 ## User Story Testing
