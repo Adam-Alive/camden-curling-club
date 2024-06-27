@@ -19,7 +19,8 @@ class Network(models.Model):
     location = models.CharField(max_length=200)
     website = models.CharField(max_length=200)
     email = models.EmailField(max_length=200)
-    wheelchair_access = models.CharField(choices=WHEELCHAIR_ACCESS, max_length=150)  # noqa
+    wheelchair_access = models.CharField(choices=WHEELCHAIR_ACCESS,
+                                         max_length=150)
 
     def __str__(self):
         return self.club_name
