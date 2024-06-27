@@ -45,10 +45,10 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 | bookings/testviews.py |![screenshot](documentation/validation/py/bookings-test-views.png) |no errors |
 | bookings/urls.py |![screenshot](documentation/validation/py/bookings-urls.png) |no errors |
 | bookings/views.py |![screenshot](documentation/validation/py/bookings-views.png) | no errors|
-| faqs/test_views.py |![screenshot](documentation/validation/py/test-views.png) | no errors|
+| faqs/test_views.py |![screenshot](documentation/validation/py/faqs-test-views.png) | no errors|
 | faqs/urls.py |![screenshot](documentation/validation/py/faqs-urls.png) | no errors|
 | faqs/views.py |![screenshot](documentation/validation/py/faqs-views.png) | no errors|
-| faqs/models.py |![screenshot](documentation/validation/py/models.png) |no errors |
+| faqs/models.py |![screenshot](documentation/validation/py/faqs-models.png) |no errors |
 | gallery/forms.py |![screenshot](documentation/validation/py/gallery-forms.png) | no errors|
 | gallery/models.py |![screenshot](documentation/validation/py/gallery-models.png) |no errrors |
 | galery/test_forms.py |![screenshot](documentation/validation/py/gallery-test-forms.png) |no errors |
