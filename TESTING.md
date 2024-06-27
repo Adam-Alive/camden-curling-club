@@ -126,18 +126,15 @@ I tested the deployed project using the Lighthouse Audit tool to check for any m
 | | Click on Submit with any field left blank. | Alert message and booking incomplete. | Pass | | ![screenshot](documentation/testing/dp/booking-incorrect.png) |
 | | Click on Submit with all data correct.| Display a booking-confirmed message and blank bookings form. | Pass | | ![screenshot](documentation/testing/dp/booking-all-data.png) ![screenshot](documentation/testing/dp/booking-confirmed.png) |
 | | Click on My Bookings. | Redirect to My Bookings page.| Pass | | ![screenshot](documentation/features/bookings-my-bookings.png) |
-
-
 | My Bookings | | | | | |
-| | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/.png) |
-| | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/.png) |
-| | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/.png) |
-| | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/.png) |
-| | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/.png) |
-| | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/.png) |
-| | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/.png) |
-
-
+| | Click on Edit for any booking.| Redirect to Change Your Booking page. | Pass | | ![screenshot](documentation/testing/dp/booking-change-booking.png) |
+| | Click on Update with any field left blank. | Alert message and updated booking incomplete. | Pass | | ![screenshot](documentation/testing/dp/new-booking-incomplete.png) |
+| | Click on Update with amended booking data. | Redirect to My Bookings page with a new-booking-confirmed message.| Pass | | ![screenshot](documentation/testing/dp/new-booking-success.png) |
+| | Click on Update without inputting new data.| Alert message asking for new data.| Fail – the booking is submitted with redirection to My Bookings page with a new-booking-confirmed message. | TBC This will be listed as a new issue to be resolved in a future iteration? Or, need to add a modal: You have not entered a new booking, do you want to go back? Yes > Go back to current booking. No > Go back to My Bookings Page. | ![screenshot](documentation/testing/dp/new-booking-success.png) |
+| | Click on Cancel for any booking. | Pop up modal with Close btn and Cancel Booking btn. | Pass | | ![screenshot](documentation/testing/dp/booking-modal.png) |
+| Cancel Modal| | | | | |
+| | Click on Close. | Pop up closes, My Bookings still displayed.| Pass | | ![screenshot](documentation/features/bookings-my-bookings.png) |
+| | Click on Cancel Booking. | My Bookings page still displayed along with a your-booking-cancelled message.| Pass | | ![screenshot](documentation/testing/dp/booking-cancelled.png) |
 | FAQs | | | | | |
 | | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/.png) |
 
