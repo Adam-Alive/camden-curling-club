@@ -135,23 +135,23 @@ The following features would add to the user experience:
 
 ## Tools & Technologies Used
 
-- [Markdown Builder](https://tim.2bn.dev/markdown-builder) used to generate README and TESTING templates.
-- [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
-- [GitHub](https://github.com) used for secure online code storage.
-- [Gitpod](https://gitpod.io) used as a cloud-based IDE for development.
-- [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
-- [CSS](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
-- [JavaScript](https://www.javascript.com) used for user interaction on the site.
-- [jQuery](https://jquery.com) used for user interaction on the site.
-- [Python](https://www.python.org) used as the back-end programming language.
-- [Heroku](https://www.heroku.com) used for hosting the deployed back-end site.
-- [Bootstrap](https://img.shields.io/badge/Bootstrap-grey?logo=bootstrap&logoColor=7952B3) used as the front-end CSS framework for modern responsiveness and pre-built components.
-- [Django](https://www.djangoproject.com) used as the Python framework for the site.
-- [PostgreSQL](https://www.postgresql.org) used as the relational database management.
-- [Neon](https://neon.tech/) used to host the PostgreSQL database.
-- [Cloudinary](https://cloudinary.com) used for online static file storage.
-- [WhiteNoise](https://whitenoise.readthedocs.io) used for serving static files with Heroku.
-- [Font Awesome](https://fontawesome.com) used for icons.
+- [Markdown Builder](https://tim.2bn.dev/markdown-builder) to generate README and TESTING templates.
+- [Git](https://git-scm.com) for version control. (`git add`, `git commit`, `git push`)
+- [GitHub](https://github.com) for secure online code storage.
+- [Gitpod](https://gitpod.io) as a cloud-based IDE for development.
+- [HTML](https://en.wikipedia.org/wiki/HTML) for the main site content.
+- [CSS](https://en.wikipedia.org/wiki/CSS) for the main site design and layout.
+- [JavaScript](https://www.javascript.com) for user interaction on the site.
+- [Python](https://www.python.org) for back-end programming.
+- [Heroku](https://www.heroku.com) for hosting the deployed back-end site.
+- [Bootstrap](https://img.shields.io/badge/Bootstrap-grey?logo=bootstrap&logoColor=7952B3) for the front-end CSS framework with modern responsiveness and pre-built components.
+- [Django](https://www.djangoproject.com) as the Python framework for the site.
+- [PostgreSQL](https://www.postgresql.org) for relational database management.
+- [Neon](https://neon.tech/) to host the PostgreSQL database.
+- [Cloudinary](https://cloudinary.com) for online static file storage.
+- [WhiteNoise](https://whitenoise.readthedocs.io) for serving static files with Heroku.
+- [Font Awesome](https://fontawesome.com) for icons.
+- [Mermaid](https://mermaid.js.org/syntax/entityRelationshipDiagram.html) to generate ERDs for the completed project.
 
 ## Database Design
 
@@ -168,7 +168,7 @@ I then constructed an ERD for each model:
 
 ![screenshot](documentation/erd.png)
 
-At project completion I auto-generated an ERD, using `Mermaid`, to portray the final project:
+At project completion I used [Mermaid](https://mermaid.js.org/syntax/entityRelationshipDiagram.html) to auto-generate ERDs for the final project:
 
 ```mermaid
 erDiagram
@@ -212,7 +212,7 @@ erDiagram
         string wheelchair_access
     }
 ```
-## Project Planning & Agile Development Process
+## Agile Project Management
 
 ### Project Plan and Milestones
 
@@ -230,11 +230,17 @@ Using GitHub's projects and issues framework I created two GitHub projects withi
 
 I created a **User Story Template** to manage user stories and provide here an example of a completed issue:
 
-![screenshot](documentation/testing-user-stories/sample.png)
+![Sample User Story](documentation/testing/sample.png)
 
-Progress on each user story was tracked on a weekly basis with overall project progress monitored on the milestones board, as shown below, where a list of open and closed milestones can be seen:
+Progress on each user story was tracked on a weekly basis with overall project progress monitored on the milestones board, as shown below, where a list of closed and open milestones can be seen:
 
-![screenshot](documentation/testing-user-stories/milestones.png)
+**Closed at the time of writing:**
+
+![Milestones](documentation/testing/milestones-closed.png)
+
+**Open at the time of writing:**
+
+![Milestones](documentation/testing/milestones-open.png)
 
 ### MoSCoW Prioritisation
 
@@ -253,13 +259,13 @@ A summary of open and closed issues can be accessed via these tabs:
 
 ## Testing
 
-> For all testing, please refer to the [TESTING.md](TESTING.md) file.
+For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
 ## Deployment
 
 **IMPORTANT:**
 
-> The live application is deployed on Heroku at: [Heroku](https://camden-curling-club-286959c89917.herokuapp.com).
+The live application is deployed on Heroku at: [Heroku](https://camden-curling-club-286959c89917.herokuapp.com).
 
 ### PostgreSQL Database
 
@@ -279,8 +285,9 @@ Deployment steps are as follows, after account setup:
 - Your app name must be unique, and then choose a region closest to you (EU or USA), and finally, select **Create App**.
 - From the new app **Settings**, click **Reveal Config Vars**, and set your environment variables.
 
-> [!IMPORTANT]  
-> This is a sample only; you would replace the values with your own if cloning/forking my repository.
+**IMPORTANT:**
+
+This is a sample only - please replace the values with your own if cloning/forking this repository.
 
 | Key | Value |
 | --- | --- |
@@ -339,8 +346,9 @@ For either method, you will need to install any applicable packages found within
 You will need to create a new file called `env.py` at the root-level,
 and include the same environment variables listed above from the Heroku deployment steps.
 
-> [!IMPORTANT]  
-> This is a sample only and you would replace the values with your own if cloning/forking my repository.
+**IMPORTANT:**
+
+This is a sample only - please replace the values with your own if cloning/forking this repository.
 
 Sample `env.py` file:
 
@@ -355,7 +363,7 @@ os.environ.setdefault("SECRET_KEY", "user's own value")
 os.environ.setdefault("DEBUG", "True")
 ```
 
-Once the project is cloned or forked, in order to run it locally, you'll need to follow these steps:
+Once the project is cloned or forked, follow these steps run it locally:
 
 - Start the Django app: `python3 manage.py runserver`
 - Stop the app once it's loaded: `CTRL+C` or `⌘+C` (Mac)
@@ -367,7 +375,7 @@ Once the project is cloned or forked, in order to run it locally, you'll need to
 
 #### Cloning
 
-You can clone the repository by following these steps:
+To clone this repository, follow these steps:
 
 1. Go to the [GitHub repository](https://github.com/Adam-Alive/camden-curling-club) 
 2. Locate the Code button above the list of files and click it 
@@ -388,7 +396,7 @@ A tutorial on this can be found [here](https://www.gitpod.io/docs/configure/user
 #### Forking
 
 By forking the GitHub Repository, we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original owner's repository.
-You can fork this repository by using the following steps:
+To fork this repository, follow these steps:
 
 1. Log in to GitHub and locate the [GitHub Repository](https://github.com/Adam-Alive/camden-curling-club)
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.

@@ -94,9 +94,7 @@ I tested the responsiveness of the homepage and each stage of the game and have 
 
 ## Lighthouse Audit
 
-I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
-
-All pages, on both mobile and desktop, achieved 100%
+I tested the deployed project using the Lighthouse Audit tool to check for any major issues and a summary is provided below:
 
 | Page | Mobile | Desktop |
 | --- | --- | --- |
@@ -108,10 +106,6 @@ All pages, on both mobile and desktop, achieved 100%
 | Logout | ![screenshot](documentation/screens/m-logout.png) | ![screenshot](documentation/screens/d-logout.png) |
 
 ## Defensive Programming
-
-Defensive programming (defensive design) is extremely important!
-
-Examples of this could include (not limited to):
 
 Forms:
 - Users cannot submit an empty form
@@ -186,11 +180,7 @@ and drawing a parallel between them where applicable.
 
 ## User Story Testing
 
-Testing user stories is actually quite simple, once you've already got the stories defined on your README.
-
-Most of your project's **features** should already align with the **user stories**,
-so this should as simple as creating a table with the user story, matching with the re-used screenshot
-from the respective feature.
+I conducted manual tests for user stories and a summary is provided below:
 
 | User Story | Screenshot |
 | --- | --- |
@@ -268,31 +258,31 @@ This can be used for both "fixed" and "unresolved" issues.
 
 ## Bugs
 
-- JS Uncaught ReferenceError: `foobar` is undefined/not defined
+- JS 
 
     ![screenshot](documentation/bugs/bug01.png)
 
     - To fix this, I _____________________.
 
-- JS `'let'` or `'const'` or `'template literal syntax'` or `'arrow function syntax (=>)'` is available in ES6 (use `'esversion: 11'`) or Mozilla JS extensions (use moz).
+- JS 
 
     ![screenshot](documentation/bugs/bug02.png)
 
     - To fix this, I _____________________.
 
-- Python `'ModuleNotFoundError'` when trying to import module from imported package
+- Python 
 
     ![screenshot](documentation/bugs/bug03.png)
 
     - To fix this, I _____________________.
 
-- Django `TemplateDoesNotExist` at /appname/path appname/template_name.html
+- Django 
 
     ![screenshot](documentation/bugs/bug04.png)
 
     - To fix this, I _____________________.
 
-- Python `E501 line too long` (93 > 79 characters)
+- Python 
 
     ![screenshot](documentation/bugs/bug04.png)
 
