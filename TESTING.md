@@ -130,25 +130,22 @@ I tested the deployed project using the Lighthouse Audit tool to check for any m
 | | Click on Edit for any booking.| Redirect to Change Your Booking page. | Pass | | ![screenshot](documentation/testing/dp/booking-change-booking.png) |
 | | Click on Update with any field left blank. | Alert message and updated booking incomplete. | Pass | | ![screenshot](documentation/testing/dp/new-booking-incomplete.png) |
 | | Click on Update with amended booking data. | Redirect to My Bookings page with a new-booking-confirmed message.| Pass | | ![screenshot](documentation/testing/dp/new-booking-success.png) |
-| | Click on Update without inputting new data.| Alert message asking for new data.| Fail – the booking is submitted with redirection to My Bookings page with a new-booking-confirmed message. | TBC This will be listed as a new issue to be resolved in a future iteration? Or, need to add a modal: You have not entered a new booking, do you want to go back? Yes > Go back to current booking. No > Go back to My Bookings Page. | ![screenshot](documentation/testing/dp/new-booking-success.png) |
+| | Click on Update without inputting new data.| Alert message asking for new data.| Fail – the booking is submitted with redirection to My Bookings page with a new-booking-confirmed message. | TBC This will be listed as a new issue to be resolved in a future iteration? Or simply add 'required' to the models? Or, need to add a modal: You have not entered a new booking, do you want to go back? Yes > Go back to current booking. No > Go back to My Bookings Page. | ![screenshot](documentation/testing/dp/new-booking-success.png) |
 | | Click on Cancel for any booking. | Pop up modal with Close btn and Cancel Booking btn. | Pass | | ![screenshot](documentation/testing/dp/booking-modal.png) |
 | Cancel Modal| | | | | |
 | | Click on Close. | Pop up closes, My Bookings still displayed.| Pass | | ![screenshot](documentation/features/bookings-my-bookings.png) |
 | | Click on Cancel Booking. | My Bookings page still displayed along with a your-booking-cancelled message.| Pass | | ![screenshot](documentation/testing/dp/booking-cancelled.png) |
 | FAQs | | | | | |
-| | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/.png) |
-
-
+| | Click on FAQs on Navbar.| Redirect to FAQs page. | Pass | | ![screenshot](documentation/features/faqs.png) |
 | Gallery | | | | | |
-| | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/.png) |
-| | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/.png) |
-| | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/.png) |
-| | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/.png) |
-| | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/.png) |
-
-
+| | Click on Gallery in Navbar.	| Redirect to Members' Gallery page. | Pass | | ![screenshot](documentation/features/gallery.png) |
+| | Click on Submit with Caption entry but no image file chosen to upload.|Alert message and image submission incomplete. | Fail – confirmation message is displayed stating that an image has been uploaded for approval. |Need an alert message to upload a file. | ![screenshot](documentation/testing/dp/gallery-image-submitted.png) |
+| | Click on Submit with Caption field left blank, image chosen for upload. | Alert message and image submission incomplete.| Pass | | ![screenshot](documentation/testing/dp/caption-edit-empty.png) |
+| | Click on Submit with image data correct.	| Display image-submitted-confirmation message. | Pass | Note Caption: 'Red and green.' Image/caption are subject to approval by the site administrator before display in the gallery - see third screenshot right. Image then displayed - see fourth screenshot right. | ![screenshot](documentation/testing/dp/gallery-correct-data.png) ![screenshot](documentation/testing/dp/gallery-image-submitted.png) ![screenshot](documentation/testing/dp/gallery-approved-admin.png) ![screenshot](documentation/testing/dp/gallery-image-approved.png) |
+| | Click on My Pictures. | Redirect to My Pictures page. | Pass | See image with Caption 'Red and Green' | ![screenshot](documentation/testing/dp/my-pictures.png) |
 | My Pictures| | | | | |
-| | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/.png) |
+| | Click on Edit. | Edit Caption page is displayed. | Pass | | ![screenshot](documentation/testing/dp/gallery-edit-caption.png) |
+
 | | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/.png) |
 | | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/.png) |
 | | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/.png) |
