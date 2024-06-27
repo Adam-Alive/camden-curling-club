@@ -140,9 +140,9 @@ and drawing a parallel between them where applicable.
 
 | Page | User Action | Expected Result | Pass/Fail | Comments | Screenshot |
 | --- | --- | --- | --- | --- | --- |
-| Home | | | | | |
-| | Click on Logo | Redirection to Home page | Pass |TEST |TEST |
-| | Click on Home link in navbar | Redirection to Home page | Pass | | |
+| Register | | | | | |
+| | Click on Register in Navbar. | Registration menu opens. | Pass | | ![screenshot](documentation/features/register.png) | |
+| | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/dp/register-blank.png)  |
 | Gallery | | | | | |
 | | Click on Gallery link in navbar | Redirection to Gallery page | Pass | | |
 | | Load gallery images | All images load as expected | Pass | |
