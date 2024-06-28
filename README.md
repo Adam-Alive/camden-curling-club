@@ -377,11 +377,11 @@ Once the project is cloned or forked, follow these steps run it locally:
 
 To clone this repository, follow these steps:
 
-1. Go to the [GitHub repository](https://github.com/Adam-Alive/camden-curling-club) 
-2. Locate the Code button above the list of files and click it 
-3. Select if you prefer to clone using HTTPS, SSH, or GitHub CLI and click the copy button to copy the URL to your clipboard
-4. Open Git Bash or Terminal
-5. Change the current working directory to the one where you want the cloned directory
+1. Go to the [GitHub repository](https://github.com/Adam-Alive/camden-curling-club).
+2. Locate the Code button above the list of files and click.
+3. Select if you prefer to clone using HTTPS, SSH, or GitHub CLI and click the copy button to copy the URL to your clipboard.
+4. Open Git Bash or Terminal.
+5. Change the current working directory to the one where you want the cloned directory.
 6. In your IDE Terminal, type the following command to clone my repository:
 	- `git clone https://github.com/Adam-Alive/camden-curling-club.git`
 7. Press Enter to create your local clone.
