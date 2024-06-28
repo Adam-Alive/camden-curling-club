@@ -10,16 +10,17 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 
 | Template | Result| Screenshot | Notes |
 | --- | --- | --- | --- |
-| index (public) | Pass | ![screenshot](documentation/validation/html/ index-public.png) | Errors due to extension of base.html. |
-| index (logged-in) | Pass | ![screenshot](documentation/validation/html/ index-logged-in.png) | Errors due to extension of base html. |
-| booking_list | Pass | ![screenshot](documentation/validation/html/ booking-list.png) | | Errors due to extension of base.html.|
-| edit_bookings|  Pass| ![screenshot](documentation/validation/html/ edit-bookings.png) | Errors due to extension of base.html. |
-| my_bookings | Pass | ![screenshot](documentation/validation/html/ my-bookings.png) | Errors due to extension of base.html. |
-| faq_list | Pass | ![screenshot](documentation/validation/html/ faqs.png) | Errors due to extension of base.html.|
-| edit_caption | Pass | ![screenshot](documentation/validation/ html/edit-caption.png) |Errors due to extension of base.html. |
-| galleryimage_list | Pass | ![screenshot](documentation/validation/ html/gallery-image-list.png) | |Errors due to extension of base.html.|
-| my_pictures | Pass | ![screenshot](documentation/validation/html/ my-pictures.png) | Errors due to extension of base.html.|
-| network_list |  | ![screenshot](documentation/validation/html/ network.png) | Errors due to extension of base.html. |
+| index (public) | Pass | ![screenshot](documentation/validation/html/index-public.png) | |
+| index (logged-in) | Pass | ![screenshot](documentation/validation/html/index-logged-in.png) | |
+| make_bookings | Pass | ![screenshot](documentation/validation/html/make-bookings.png) | |
+| edit_bookings|  Pass| ![screenshot](documentation/validation/html/edit-bookings.png) | |
+| my_bookings | Pass | ![screenshot](documentation/validation/html/my-bookings.png) | |
+| faqs | Pass | ![screenshot](documentation/validation/html/faqs.png) | |
+| gallery | Pass | ![screenshot](documentation/validation/html/gallery.png) | |
+| my_pictures | Pass | ![screenshot](documentation/validation/html/my-pictures.png) | |
+| edit_caption | Pass | ![screenshot](documentation/validation/html/edit-caption.png) | |
+| network|  | ![screenshot](documentation/validation/html/network.png) | |
+| logout |  | ![screenshot](documentation/validation/html/logout.png) | |
 
 ### CSS
 
