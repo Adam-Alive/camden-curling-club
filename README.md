@@ -411,6 +411,7 @@ To fork this repository, follow these steps:
 | [Markdown Builder](https://tim.2bn.dev/markdown-builder) | README and TESTING | An excellent tool to help generate the Markdown files |
 | [John Abdsho](https://www.youtube.com/watch?v=s5xbtuo9pR0) | bookings | Initial ideas on how to create a booking system with Django|
 | [W3Schools](https://www.w3schools.com/bootstrap5/) | gallery and bookings | Additional support with Bootstrap grids and modals|
+| [Stack Overflow](https://stackoverflow.com/questions/21938028/how-to-get-a-favicon-to-show-up-in-my-django-app) | Favicon | How to get favicon to show in Django app |
 | [Scottish Curling](https://www.scottishcurling.org/) |  home and faqs  | Reference  |
 | [British Curling](https://www.britishcurling.org.uk/) |  home and faqs  | Reference  |
 

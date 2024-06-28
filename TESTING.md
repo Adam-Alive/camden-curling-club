@@ -192,7 +192,7 @@ In order to run the tests, I ran the following command in the terminal each time
 
 `python3 manage.py test name-of-app `
 
-To create the coverage report, I would then conducted the following:
+To create the coverage report, I then conducted the following:
 
 `coverage run --source=name-of-app manage.py test`
 
@@ -239,29 +239,66 @@ This can be used for both "fixed" and "unresolved" issues.
 
 ## Bugs
 
-- JS 
+- **Issue:** Favicon only showing on home page.
 
-    ![screenshot](documentation/bugs/bug01.png)
+- **Fix:** Research on Stack Overflow suggested I link to the favicon from the base.html using Django template language, rather than html, and this solved the problem:
 
-    - To fix this, I _____________________.
+    **Before:**
 
-- JS 
+    ![screenshot](documentation/bugs/bug-2.1.png)
 
-    ![screenshot](documentation/bugs/bug02.png)
+    ![screenshot](documentation/bugs/bug-2.2.png)
 
-    - To fix this, I _____________________.
+    ![screenshot](documentation/bugs/image-1.png)
 
-- Python 
+    **After:**
 
-    ![screenshot](documentation/bugs/bug03.png)
+    ![screenshot](documentation/bugs/image.png)
 
-    - To fix this, I _____________________.
+    ![screenshot](documentation/bugs/bug-2.3.png)
 
-- Django 
+- **Issue:** In developing the My Bookings page, when clicking on 'Edit', the following occurred:
 
-    ![screenshot](documentation/bugs/bug04.png)
+    ![screenshot](documentation/bugs/bug-4.2.png)
 
-    - To fix this, I _____________________.
+- **Fix:** I therefore looked at the `edit_booking` view at line 69:
+    
+    ![screenshot](documentation/bugs/bug-4.3.png)
+
+    At lines 69 and 77 I changed `booking.user` to `booking.username` to correspond with the `Booking` model:
+
+    ![screenshot](documentation/bugs/bug-4.4.png)
+
+    And then the view worked as expected:
+
+    ![screenshot](documentation/bugs/bug-4.5.png)
+
+    ![screenshot](documentation/bugs/bug-4.6.png)
+
+- **Issue:** Cancel button not working on My Bookings page - when clicked, nothing happens, so user cannot cancel a booking.
+
+- **Fix:** Investigation in dev tools showed that the actual link was active (the booking was cancelled when clicked) but was not connected to the Cancel button:
+
+    ![screenshot](documentation/bugs/bug-5.2.png)
+
+    I looked at the template `my_bookings.html` and could now see that at line 52/53 I had not included the button code within the anchor element:
+
+    ![screenshot](documentation/bugs/bug-5.3.png)
+
+    Closing anchor tag now added at line 53 and working properly:
+
+    ![screenshot](documentation/bugs/bug-5.4.png)
+
+- **Issue:** 
+
+- **Fix:** 
+
+
+
+
+
+
+
 
 - Python 
 
