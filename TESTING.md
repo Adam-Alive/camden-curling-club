@@ -8,6 +8,12 @@
 
 I have used the recommended [HTML W3C Validator](https://validator.w3.org) to validate all HTML files.
 
+An initial test on the my_bookings.html revealed the following errors:
+
+![screenshot](documentation/validation/html/main-error.png)
+
+I realised that I had used the main element on this and all other templates, forgetting that this would be inherited from the base.html - an important learning point. I therefore addressed this for each template, ran all validation tests, and summarise the results below:
+
 | Template | Result| Screenshot | Notes |
 | --- | --- | --- | --- |
 | index (public) | Pass | ![screenshot](documentation/validation/html/index-public.png) | |
