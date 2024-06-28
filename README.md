@@ -164,7 +164,7 @@ In designing the database I developed four models, in addition to Django's User 
 - Network
 
 ### Entity Relationship Diagrams (ERDs)
-I then constructed an ERD for each model:
+I then constructed an ERD in Excel for each model:
 
 ![screenshot](documentation/erd.png)
 
@@ -222,7 +222,7 @@ I began with a series of brainstorming sessions and then drew up a project plan 
 
 ### GitHub Projects and Issues
 
-[GitHub Projects](https://github.com/Adam-Alive/camden-curling-club/projects) served as an Agile tool for this project where epics, user stories, issues, and milestone tasks were planned and then tracked on the Kanban board.
+[GitHub Projects](https://github.com/Adam-Alive/camden-curling-club/projects) served as an Agile tool for this project where epics, user stories, issues, and milestones were planned and then tracked on the Kanban board.
 
 Using GitHub's projects and issues framework I created two GitHub projects within the repository, and then developed issues within each:
 - [Curling Club User Stories](https://github.com/users/Adam-Alive/projects/6)
@@ -251,7 +251,7 @@ I also used the MoSCow prioritisation model to add labels to my user stories wit
 - **Could Have**: has small impact if left out.
 - **Won't Have**: not a priority for this iteration.
 
-A summary of open and closed issues can be accessed via these tabs:
+**A summary of open and closed issues can be accessed via these tabs:**
 
 - [![GitHub issues](https://img.shields.io/github/issues/Adam-Alive/camden-curling-club)](https://github.com/Adam-Alive/camden-curling-club/issues)
 
@@ -411,7 +411,7 @@ To fork this repository, follow these steps:
 | [Markdown Builder](https://tim.2bn.dev/markdown-builder) | README and TESTING | An excellent tool to help generate the Markdown files |
 | [John Abdsho](https://www.youtube.com/watch?v=s5xbtuo9pR0) | bookings | Initial ideas on how to create a booking system with Django|
 | [W3Schools](https://www.w3schools.com/bootstrap5/) | gallery and bookings | Additional support with Bootstrap grids and modals|
-| [Stack Overflow](https://stackoverflow.com/questions/21938028/how-to-get-a-favicon-to-show-up-in-my-django-app) | Favicon | How to get favicon to show in Django app |
+| [Stack Overflow](https://stackoverflow.com/questions/21938028/how-to-get-a-favicon-to-show-up-in-my-django-app) | favicon | How to get favicon to show in Django app |
 | [Scottish Curling](https://www.scottishcurling.org/) |  home and faqs  | Reference  |
 | [British Curling](https://www.britishcurling.org.uk/) |  home and faqs  | Reference  |
 

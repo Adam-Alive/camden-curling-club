@@ -10,16 +10,16 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 
 | Template | Result| Screenshot | Notes |
 | --- | --- | --- | --- |
-| index (public) | Pass | ![screenshot](documentation/validation/html/index-public.png) | Errors due to extension of base.html. |
-| index (logged-in) | Pass | ![screenshot](documentation/validation/html/index-logged-in.png) | Errors due to extension of base html. |
-| booking_list | Pass | ![screenshot](documentation/validation/html/booking-list.png) | | Errors due to extension of base.html.|
-| edit_bookings|  Pass| ![screenshot](documentation/validation/html/edit-bookings.png) | Errors due to extension of base.html. |
-| my_bookings | Pass | ![screenshot](documentation/validation/html/my-bookings.png) | Errors due to extension of base.html. |
-| faq_list | Pass | ![screenshot](documentation/validation/html/faqs.png) | Errors due to extension of base.html.|
-| edit_caption | Pass | ![screenshot](documentation/validation/html/edit-caption.png) |Errors due to extension of base.html. |
-| galleryimage_list | Pass | ![screenshot](documentation/validation/html/gallery-image-list.png) | |Errors due to extension of base.html.|
-| my_pictures | Pass | ![screenshot](documentation/validation/html/my-pictures.png) | Errors due to extension of base.html.|
-| network_list |  | ![screenshot](documentation/validation/html/network.png) | Errors due to extension of base.html. |
+| index (public) | Pass | ![screenshot](documentation/validation/html/ index-public.png) | Errors due to extension of base.html. |
+| index (logged-in) | Pass | ![screenshot](documentation/validation/html/ index-logged-in.png) | Errors due to extension of base html. |
+| booking_list | Pass | ![screenshot](documentation/validation/html/ booking-list.png) | | Errors due to extension of base.html.|
+| edit_bookings|  Pass| ![screenshot](documentation/validation/html/ edit-bookings.png) | Errors due to extension of base.html. |
+| my_bookings | Pass | ![screenshot](documentation/validation/html/ my-bookings.png) | Errors due to extension of base.html. |
+| faq_list | Pass | ![screenshot](documentation/validation/html/ faqs.png) | Errors due to extension of base.html.|
+| edit_caption | Pass | ![screenshot](documentation/validation/ html/edit-caption.png) |Errors due to extension of base.html. |
+| galleryimage_list | Pass | ![screenshot](documentation/validation/ html/gallery-image-list.png) | |Errors due to extension of base.html.|
+| my_pictures | Pass | ![screenshot](documentation/validation/html/ my-pictures.png) | Errors due to extension of base.html.|
+| network_list |  | ![screenshot](documentation/validation/html/ network.png) | Errors due to extension of base.html. |
 
 ### CSS
 
@@ -119,8 +119,8 @@ I conducted manual tests for defensive programming and the Pass/Fail outcomes ar
 | Login| | | | | |
 | | Click Login in Navbar. | Login menu opens. | Pass | | ![screenshot](documentation/features/login.png) |
 | | Click Login with any field left blank. | Alert message and login incomplete. | Pass | | ![screenshot](documentation/testing/dp/login-incorrect.png) |
-| |Click Login with incorrect password (either mistakenly by a genuine user or a malicious user). | Alert message and login incomplete. | Pass | | ![screenshot](documentation/testing/dp/login-pword-wrong.png) |
-| |Click on Login with correct password. | Redirect to Home page with login-success message. | Pass | | ![screenshot](documentation/testing/dp/login-success.png) |
+| |Click Login with incorrect password (mistakenly or maliciously). | Alert message and login incomplete. | Pass | | ![screenshot](documentation/testing/dp/login-pword-wrong.png) |
+| |Click Login with correct password. | Redirect to Home page with login-success message. | Pass | | ![screenshot](documentation/testing/dp/login-success.png) |
 | Bookings | | | | | |
 | | Click Bookings in Navbar. | Redirect to Bookings page with a blank bookings form. | Pass | | ![screenshot](documentation/features/bookings.png) |
 | | Click Submit with any field left blank. | Alert message and booking incomplete. | Pass | | ![screenshot](documentation/testing/dp/booking-incorrect.png) |
@@ -138,8 +138,8 @@ I conducted manual tests for defensive programming and the Pass/Fail outcomes ar
 | | Click FAQs in Navbar.| Redirect to FAQs page. | Pass | | ![screenshot](documentation/features/faqs.png) |
 | Gallery | | | | | |
 | | Click Gallery in Navbar.	| Redirect to Members' Gallery page. | Pass | | ![screenshot](documentation/features/gallery.png) |
-| | Click Submit with Caption field left blank, image chosen for upload. | Alert message and image submission incomplete.| Pass | | ![screenshot](documentation/testing/dp/caption-edit-empty.png) |
-| | Click Submit with image data correct.	| Display image-submitted-confirmation message. | Pass | Note Caption: 'Red and green.' Image/caption are subject to approval by the site administrator before display in the gallery - see third screenshot down. Image then displayed - see fourth screenshot down. | ![screenshot](documentation/testing/dp/gallery-correct-data.png) ![screenshot](documentation/testing/dp/gallery-image-submitted.png) ![screenshot](documentation/testing/dp/gallery-approved-admin.png) ![screenshot](documentation/testing/dp/gallery-image-approved.png) |
+| | Click Submit with Caption field blank. | Alert message and image submission incomplete.| Pass | | ![screenshot](documentation/testing/dp/caption-edit-empty.png) |
+| | Click Submit with fields correct.	| Display image-submitted-confirmation message. | Pass | Note Caption: 'Red and green.' Image/caption are subject to approval by the site administrator before display in the gallery - see third screenshot down. Image then displayed - see fourth screenshot down. | ![screenshot](documentation/testing/dp/gallery-correct-data.png) ![screenshot](documentation/testing/dp/gallery-image-submitted.png) ![screenshot](documentation/testing/dp/gallery-approved-admin.png) ![screenshot](documentation/testing/dp/gallery-image-approved.png) |
 | | Click My Pictures. | Redirect to My Pictures page. | Pass | See image with Caption 'Red and Green' | ![screenshot](documentation/testing/dp/my-pictures.png) |
 | My Pictures| | | | | |
 | | Click Edit. | Edit Caption page is displayed. | Pass | | ![screenshot](documentation/testing/dp/gallery-edit-caption.png) |
@@ -182,11 +182,11 @@ I conducted manual tests for user stories and a summary is provided below:
 
 ## Automated Testing
 
-I have conducted a series of automated tests on my application and fully acknowledge that, in a real-world scenario, an extensive set of additional tests would be required
+I have conducted a series of automated tests on my application and acknowledge that, in a real-world scenario, an extensive set of additional tests would be required.
 
 ### Python (Unit Testing)
 
-I have used Django's built-in unit testing framework to test the application functionality.
+I have used Django's built-in unit testing framework to test application functionality.
 
 In order to run the tests, I ran the following command in the terminal each time:
 
@@ -210,32 +210,22 @@ Below are the results from the various apps on my application that I've tested:
 | --- | --- | --- | --- |
 | Bag | test_forms.py | 99% | ![screenshot](documentation/tests/py-test-bag-forms.png) |
 | Bag | test_models.py | 89% | ![screenshot](documentation/tests/py-test-bag-models.png) |
-| Bag | test_urls.py | 100% | ![screenshot](documentation/tests/py-test-bag-urls.png) |
-| Bag | test_views.py | 71% | ![screenshot](documentation/tests/py-test-bag-views.png) |
+
 | Checkout | test_forms.py | 99% | ![screenshot](documentation/tests/py-test-checkout-forms.png) |
 | Checkout | test_models.py | 89% | ![screenshot](documentation/tests/py-test-checkout-models.png) |
-| Checkout | test_urls.py | 100% | ![screenshot](documentation/tests/py-test-checkout-urls.png) |
-| Checkout | test_views.py | 71% | ![screenshot](documentation/tests/py-test-checkout-views.png) |
+
 | Home | test_forms.py | 99% | ![screenshot](documentation/tests/py-test-home-forms.png) |
 | Home | test_models.py | 89% | ![screenshot](documentation/tests/py-test-home-models.png) |
-| Home | test_urls.py | 100% | ![screenshot](documentation/tests/py-test-home-urls.png) |
-| Home | test_views.py | 71% | ![screenshot](documentation/tests/py-test-home-views.png) |
-| Products | test_forms.py | 99% | ![screenshot](documentation/tests/py-test-products-forms.png) |
-| Products | test_models.py | 89% | ![screenshot](documentation/tests/py-test-products-models.png) |
+
+
 | Products | test_urls.py | 100% | ![screenshot](documentation/tests/py-test-products-urls.png) |
 | Products | test_views.py | 71% | ![screenshot](documentation/tests/py-test-products-views.png) |
 | Profiles | test_forms.py | 99% | ![screenshot](documentation/tests/py-test-profiles-forms.png) |
 | Profiles | test_models.py | 89% | ![screenshot](documentation/tests/py-test-profiles-models.png) |
-| Profiles | test_urls.py | 100% | ![screenshot](documentation/tests/py-test-profiles-urls.png) |
-| Profiles | test_views.py | 71% | ![screenshot](documentation/tests/py-test-profiles-views.png) |
+
 | x | x | x | repeat for all remaining tested apps/files |
 
 #### Unit Test Issues
-
-Use this section to list any known issues you ran into while writing your unit tests.
-Remember to include screenshots (where possible), and a solution to the issue (if known).
-
-This can be used for both "fixed" and "unresolved" issues.
 
 ## Bugs
 
@@ -245,15 +235,24 @@ This can be used for both "fixed" and "unresolved" issues.
 
     **Before:**
 
-    ![screenshot](documentation/bugs/bug-2.1.png)
+    Favicon displayed on Home page:
+
+    ![screenshot](documentation/bugs/bug-2.1.png)  
+
+    Favicon not displayed on Network page:
+
 
     ![screenshot](documentation/bugs/bug-2.2.png)
+
+    Original html:
 
     ![screenshot](documentation/bugs/image-1.png)
 
     **After:**
 
     ![screenshot](documentation/bugs/image.png)
+
+    Favicon now displayed on all pages:
 
     ![screenshot](documentation/bugs/bug-2.3.png)
 
@@ -273,6 +272,8 @@ This can be used for both "fixed" and "unresolved" issues.
 
     ![screenshot](documentation/bugs/bug-4.5.png)
 
+    Booking confirmed:
+
     ![screenshot](documentation/bugs/bug-4.6.png)
 
 - **Issue:** Cancel button not working on My Bookings page - when clicked, nothing happens, so user cannot cancel a booking.
@@ -289,79 +290,12 @@ This can be used for both "fixed" and "unresolved" issues.
 
     ![screenshot](documentation/bugs/bug-5.4.png)
 
-- **Issue:** 
+- **Issue:** Colour flashing when clicking on buttons ie. although I have added my own colour styling to the Bootstrap btn-success and btn-danger buttons, when clicked, there is a brief flash to green and red respectively since these are the default colours.
 
-- **Fix:** 
+- **Fix:** I simplified the styling further by creating two button classes of btn-lav (lavender) and btn-pink. I then relabelled all buttons in the appropriate templates. Further testing showed this is now resolved. See style.css:
 
-
-
-
-
-
-
-
-- Python 
-
-    ![screenshot](documentation/bugs/bug04.png)
-
-    - To fix this, I _____________________.
-
-### GitHub **Issues**
-
-An improved way to manage bugs is to use the built-in **Issues** tracker on your GitHub repository.
-To access your Issues, click on the "Issues" tab at the top of your repository.
-Alternatively, use this link: https://github.com/Adam-Alive/camden-curling-club/issues
-
-If using the Issues tracker for your bug management, you can simplify the documentation process.
-Issues allow you to directly paste screenshots into the issue without having to first save the screenshot locally,
-then uploading into your project.
-
-You can add labels to your issues (`bug`), assign yourself as the owner, and add comments/updates as you progress with fixing the issue(s).
-
-Once you've sorted the issue, you should then "Close" it.
-
-When showcasing your bug tracking for assessment, you can use the following format:
-
-**Fixed Bugs**
-
-[![GitHub issue custom search](https://img.shields.io/github/issues-search?query=repo%3AAdam-Alive%2Fcamden-curling-club%20label%3Abug&label=bugs)](https://github.com/Adam-Alive/camden-curling-club/issues?q=is%3Aissue+is%3Aclosed+label%3Abug)
-
-All previously closed/fixed bugs can be tracked [here](https://github.com/Adam-Alive/camden-curling-club/issues?q=is%3Aissue+is%3Aclosed).
-
-| Bug | Status |
-| --- | --- |
-| [JS Uncaught ReferenceError: `foobar` is undefined/not defined](https://github.com/Adam-Alive/camden-curling-club/issues/1) | Closed |
-| [Python `'ModuleNotFoundError'` when trying to import module from imported package](https://github.com/Adam-Alive/camden-curling-club/issues/2) | Closed |
-| [Django `TemplateDoesNotExist` at /appname/path appname/template_name.html](https://github.com/Adam-Alive/camden-curling-club/issues/3) | Closed |
-
-**Open Issues**
-
-[![GitHub issues](https://img.shields.io/github/issues/Adam-Alive/camden-curling-club)](https://github.com/Adam-Alive/camden-curling-club/issues)
-[![GitHub closed issues](https://img.shields.io/github/issues-closed/Adam-Alive/camden-curling-club)](https://github.com/Adam-Alive/camden-curling-club/issues?q=is%3Aissue+is%3Aclosed)
-
-Any remaining open issues can be tracked [here](https://github.com/Adam-Alive/camden-curling-club/issues).
-
-| Bug | Status |
-| --- | --- |
-| [JS `'let'` or `'const'` or `'template literal syntax'` or `'arrow function syntax (=>)'` is available in ES6 (use `'esversion: 11'`) or Mozilla JS extensions (use moz).](https://github.com/Adam-Alive/camden-curling-club/issues/4) | Open |
-| [Python `E501 line too long` (93 > 79 characters)](https://github.com/Adam-Alive/camden-curling-club/issues/5) | Open |
+    ![screenshot](documentation/bugs/bugs-btns.png)
 
 ## Unfixed Bugs
-
-Some examples:
-
-- On devices smaller than 375px, the page starts to have `overflow-x` scrolling.
-
-    ![screenshot](documentation/bugs/unfixed-bug01.png)
-
-    - Attempted fix: I tried to add additional media queries to handle this, but things started becoming too small to read.
-
-- When validating HTML with a semantic `section` element, the validator warns about lacking a header `h2-h6`. This is acceptable.
-
-    ![screenshot](documentation/bugs/unfixed-bug03.png)
-
-    - Attempted fix: this is a known warning and acceptable, and my section doesn't require a header since it's dynamically added via JS.
-
-If you legitimately cannot find any unfixed bugs or warnings, then use the following sentence:
 
 > There are no remaining bugs that I am aware of.
