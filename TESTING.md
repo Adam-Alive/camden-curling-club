@@ -107,78 +107,57 @@ I tested the deployed project using the Lighthouse Audit tool to check for any m
 
 ## Defensive Programming
 
-**Defensive programming has been manually tested and the Pass/Fail outcomes summarised below.**
+I conducted manual tests for defensive programming and the Pass/Fail outcomes are summarised below.
 
-| Page | User Action | Expected Result | Pass/Fail | Comments | Screenshot |
+| Page / Feature | User Action | Expected Result | Pass/Fail | Comments | Screenshot |
 | --- | --- | --- | --- | --- | --- |
 | Register | | | | | |
-| | Click on Register in Navbar. | Registration menu opens. | Pass | | ![screenshot](documentation/features/register.png) | |
-| | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/register-blank.png) |
-| | Click on Register with incorrect email address format.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/register-email.png) |
-| | Click on Register with all data correct. | Display a successful sign-in message with username and access given to all site features. | Pass | | ![screenshot](documentation/testing/dp/register-correct.png) ![screenshot](documentation/testing/dp/register-success.png)|
+| | Click Register in Navbar. | Registration menu opens. | Pass | | ![screenshot](documentation/features/register.png) | |
+| | Click Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/register-blank.png) |
+| | Click Register with incorrect email address format.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/register-email.png) |
+| | Click Register with all data correct. | Display a successful sign-in message with username and access given to all site features. | Pass | | ![screenshot](documentation/testing/dp/register-correct.png) ![screenshot](documentation/testing/dp/register-success.png)|
 | Login| | | | | |
-| | Click on Login in Navbar. | Login menu opens. | Pass | | ![screenshot](documentation/features/login.png) |
-| | Click on Login with any field left blank. | Alert message and login incomplete. | Pass | | ![screenshot](documentation/testing/dp/login-incorrect.png) |
-| |Click on Login with incorrect password (either mistakenly by a genuine user or a malicious user). | Alert message and login incomplete. | Pass | | ![screenshot](documentation/testing/dp/login-pword-wrong.png) |
+| | Click Login in Navbar. | Login menu opens. | Pass | | ![screenshot](documentation/features/login.png) |
+| | Click Login with any field left blank. | Alert message and login incomplete. | Pass | | ![screenshot](documentation/testing/dp/login-incorrect.png) |
+| |Click Login with incorrect password (either mistakenly by a genuine user or a malicious user). | Alert message and login incomplete. | Pass | | ![screenshot](documentation/testing/dp/login-pword-wrong.png) |
 | |Click on Login with correct password. | Redirect to Home page with login-success message. | Pass | | ![screenshot](documentation/testing/dp/login-success.png) |
 | Bookings | | | | | |
-| | Click on Bookings in Navbar. | Redirect to Bookings page with a blank bookings form. | Pass | | ![screenshot](documentation/features/bookings.png) |
-| | Click on Submit with any field left blank. | Alert message and booking incomplete. | Pass | | ![screenshot](documentation/testing/dp/booking-incorrect.png) |
-| | Click on Submit with all data correct.| Display a booking-confirmed message and blank bookings form. | Pass | | ![screenshot](documentation/testing/dp/booking-all-data.png) ![screenshot](documentation/testing/dp/booking-confirmed.png) |
-| | Click on My Bookings. | Redirect to My Bookings page.| Pass | | ![screenshot](documentation/features/bookings-my-bookings.png) |
+| | Click Bookings in Navbar. | Redirect to Bookings page with a blank bookings form. | Pass | | ![screenshot](documentation/features/bookings.png) |
+| | Click Submit with any field left blank. | Alert message and booking incomplete. | Pass | | ![screenshot](documentation/testing/dp/booking-incorrect.png) |
+| | Click Submit with all data correct.| Display a booking-confirmed message and blank bookings form. | Pass | | ![screenshot](documentation/testing/dp/booking-all-data.png) ![screenshot](documentation/testing/dp/booking-confirmed.png) |
+| | Click My Bookings. | Redirect to My Bookings page.| Pass | | ![screenshot](documentation/features/bookings-my-bookings.png) |
 | My Bookings | | | | | |
-| | Click on Edit for any booking.| Redirect to Change Your Booking page. | Pass | | ![screenshot](documentation/testing/dp/booking-change-booking.png) |
-| | Click on Update with any field left blank. | Alert message and updated booking incomplete. | Pass | | ![screenshot](documentation/testing/dp/new-booking-incomplete.png) |
-| | Click on Update with amended booking data. | Redirect to My Bookings page with a new-booking-confirmed message.| Pass | | ![screenshot](documentation/testing/dp/new-booking-success.png) |
-| | Click on Update without inputting new data.| Alert message asking for new data.| Fail – the booking is submitted with redirection to My Bookings page with a new-booking-confirmed message. | TBC This will be listed as a new issue to be resolved in a future iteration? Or simply add 'required' to the models? Or, need to add a modal: You have not entered a new booking, do you want to go back? Yes > Go back to current booking. No > Go back to My Bookings Page. | ![screenshot](documentation/testing/dp/new-booking-success.png) |
-| | Click on Cancel for any booking. | Pop up modal with Close btn and Cancel Booking btn. | Pass | | ![screenshot](documentation/testing/dp/booking-modal.png) |
+| | Click Edit for any booking.| Redirect to Change Your Booking page. | Pass | | ![screenshot](documentation/testing/dp/booking-change-booking.png) |
+| | Click Update with any field left blank. | Alert message and updated booking incomplete. | Pass | | ![screenshot](documentation/testing/dp/new-booking-incomplete.png) |
+| | Click Update with amended booking data. | Redirect to My Bookings page with a new-booking-confirmed message.| Pass | | ![screenshot](documentation/testing/dp/new-booking-success.png) |
+| | Click Cancel for any booking. | Pop up modal with Close btn and Cancel Booking btn. | Pass | | ![screenshot](documentation/testing/dp/booking-modal.png) |
 | Cancel Modal| | | | | |
-| | Click on Close. | Pop up closes, My Bookings still displayed.| Pass | | ![screenshot](documentation/features/bookings-my-bookings.png) |
-| | Click on Cancel Booking. | My Bookings page still displayed along with a your-booking-cancelled message.| Pass | | ![screenshot](documentation/testing/dp/booking-cancelled.png) |
+| | Click Close. | Pop up closes, My Bookings still displayed.| Pass | | ![screenshot](documentation/features/bookings-my-bookings.png) |
+| | Click Cancel Booking. | My Bookings page still displayed along with a your-booking-cancelled message.| Pass | | ![screenshot](documentation/testing/dp/booking-cancelled.png) |
 | FAQs | | | | | |
-| | Click on FAQs on Navbar.| Redirect to FAQs page. | Pass | | ![screenshot](documentation/features/faqs.png) |
+| | Click FAQs in Navbar.| Redirect to FAQs page. | Pass | | ![screenshot](documentation/features/faqs.png) |
 | Gallery | | | | | |
-| | Click on Gallery in Navbar.	| Redirect to Members' Gallery page. | Pass | | ![screenshot](documentation/features/gallery.png) |
-| | Click on Submit with Caption entry but no image file chosen to upload.|Alert message and image submission incomplete. | Fail – confirmation message is displayed stating that an image has been uploaded for approval. |Need an alert message to upload a file. | ![screenshot](documentation/testing/dp/gallery-image-submitted.png) |
-| | Click on Submit with Caption field left blank, image chosen for upload. | Alert message and image submission incomplete.| Pass | | ![screenshot](documentation/testing/dp/caption-edit-empty.png) |
-| | Click on Submit with image data correct.	| Display image-submitted-confirmation message. | Pass | Note Caption: 'Red and green.' Image/caption are subject to approval by the site administrator before display in the gallery - see third screenshot right. Image then displayed - see fourth screenshot right. | ![screenshot](documentation/testing/dp/gallery-correct-data.png) ![screenshot](documentation/testing/dp/gallery-image-submitted.png) ![screenshot](documentation/testing/dp/gallery-approved-admin.png) ![screenshot](documentation/testing/dp/gallery-image-approved.png) |
-| | Click on My Pictures. | Redirect to My Pictures page. | Pass | See image with Caption 'Red and Green' | ![screenshot](documentation/testing/dp/my-pictures.png) |
+| | Click Gallery in Navbar.	| Redirect to Members' Gallery page. | Pass | | ![screenshot](documentation/features/gallery.png) |
+| | Click Submit with Caption field left blank, image chosen for upload. | Alert message and image submission incomplete.| Pass | | ![screenshot](documentation/testing/dp/caption-edit-empty.png) |
+| | Click Submit with image data correct.	| Display image-submitted-confirmation message. | Pass | Note Caption: 'Red and green.' Image/caption are subject to approval by the site administrator before display in the gallery - see third screenshot down. Image then displayed - see fourth screenshot down. | ![screenshot](documentation/testing/dp/gallery-correct-data.png) ![screenshot](documentation/testing/dp/gallery-image-submitted.png) ![screenshot](documentation/testing/dp/gallery-approved-admin.png) ![screenshot](documentation/testing/dp/gallery-image-approved.png) |
+| | Click My Pictures. | Redirect to My Pictures page. | Pass | See image with Caption 'Red and Green' | ![screenshot](documentation/testing/dp/my-pictures.png) |
 | My Pictures| | | | | |
-| | Click on Edit. | Edit Caption page is displayed. | Pass | | ![screenshot](documentation/testing/dp/gallery-edit-caption.png) |
-
-| | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/.png) |
-| | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/.png) |
-| | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/.png) |
-| | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/.png) |
-| | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/.png) |
-| | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/.png) |
-| | Click on Register with any field left blank.| Alert message and registration incomplete. | Pass | | ![screenshot](documentation/testing/dp/.png) |
-
-
+| | Click Edit. | Edit Caption page is displayed. | Pass | | ![screenshot](documentation/testing/dp/gallery-edit-caption.png) |
+| | Delete current Caption, leave Caption blank and click Update. | Alert message and image submission incomplete. | Pass | | ![screenshot](documentation/testing/dp/caption-edit-empty.png) |
+| | Delete current caption, add new caption and click Update. | Display caption-changed-and-awaiting-approval message. | Pass | | ![screenshot](documentation/testing/dp/gallery-caption-changed.png) |
+| | Click Delete. | Display modal for user to confirm picture deletion. | Pass | | ![screenshot](documentation/testing/dp/gallery-modal.png) |
+| Delete Modal | | | | | |
+| | Click Close.	| Modal closes, My Pictures displayed. | Pass | | ![screenshot](documentation/testing/dp/my-pictures.png) |
+| | Click Delete Picture. | Display My Pictures and your-picture-deleted-message.| Pass | | ![screenshot](documentation/testing/dp/gallery-pic-deleted.png) |
 | Network | | | | | |
-| |   |       | Pass | | ![screenshot](documentation/testing/dp/.png) |
-
-
+| |  Click Network in Navbar. | Redirect to Network page. | Pass | | ![screenshot](documentation/features/network.png) |
 | Logout| | | | | |
-| |   |       | Pass | | ![screenshot](documentation/testing/dp/.png) |
-| |   |       | Pass | | ![screenshot](documentation/testing/dp/.png) |
-
-
-
+| | Click Logout in Navbar. | Redirect to Logout page. | Pass | | ![screenshot](documentation/features/logout-1.png) |
+| |  Click Logout. |  Message confirms the current user has logged out. | Pass | | ![screenshot](documentation/features/logout-2.png) |
 | Admin Portal | | | | | |
-| |   |       | Pass | | ![screenshot](documentation/testing/dp/.png) |
-| |   |       | Pass | | ![screenshot](documentation/testing/dp/.png) |
-| |   |       | Pass | | ![screenshot](documentation/testing/dp/.png) |
-
-
-
-
-
-
-
-
-
-| repeat for all remaining pages | x | x | x | x | x |
+| | Append  `/admin` to Home page URL.  | Redirect to Admin portal sign-in. | Pass | | ![screenshot](documentation/features/admin-1.png) |
+| | Click Login with incorrect username or password – accidentally or maliciously. | Access denied and message displayed. | Pass | Site Admin username not shown for security reasons. | ![screenshot](documentation/testing/dp/admin-portal-blocked.png) |
+| | Enter correct admin username and password.  | Admin portal accessed.  | Pass | Admin username not shown for security reasons. | ![screenshot](documentation/testing/dp/admin.png) |
 
 ## User Story Testing
 
