@@ -49,7 +49,7 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 | settings.py |![screenshot](documentation/validation/py/settings.png) | No errors |
 | bookings/models.py |![screenshot](documentation/validation/py/bookings-models.png) | L28, E122 continuation line missing indentation or outdented. This was corrected.|
 | bookings/test_forms.py |![screenshot](documentation/validation/py/bookings-test-forms.png) | no errors |
-| bookings/testviews.py |![screenshot](documentation/validation/py/bookings-test-views.png) |no errors |
+| bookings/test_views.py |![screenshot](documentation/validation/py/bookings-test-views.png) |no errors |
 | bookings/urls.py |![screenshot](documentation/validation/py/bookings-urls.png) |no errors |
 | bookings/views.py |![screenshot](documentation/validation/py/bookings-views.png) | no errors|
 | faqs/test_views.py |![screenshot](documentation/validation/py/faqs-test-views.png) | no errors|
@@ -58,7 +58,8 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 | faqs/models.py |![screenshot](documentation/validation/py/faqs-models.png) |no errors |
 | gallery/forms.py |![screenshot](documentation/validation/py/gallery-forms.png) | no errors|
 | gallery/models.py |![screenshot](documentation/validation/py/gallery-models.png) |no errrors |
-| galery/test_forms.py |![screenshot](documentation/validation/py/gallery-test-forms.png) |no errors |
+| gallery/test_forms.py |![screenshot](documentation/validation/py/gallery-test-forms.png) |no errors |
+| gallery/test_views.py |![screenshot](documentation/validation/py/gallery-test-views.png) |no errors |
 | gallery/urls.py |![screenshot](documentation/validation/py/gallery-urls.png) | no errors|
 | gallery/views.py |![screenshot](documentation/validation/py/gallery-views.png) | no errors|
 | home/test_views.py |![screenshot](documentation/validation/py/home-test-views.png) | no errors|
@@ -189,50 +190,19 @@ I conducted manual tests for user stories and a summary is provided below:
 
 ## Automated Testing
 
-I have conducted a series of automated tests on my application and acknowledge that, in a real-world scenario, an extensive set of additional tests would be required.
+I conducted a series of automated tests on my application and acknowledge that, in a real-world scenario, an extensive set of additional tests would be required.
 
 ### Python (Unit Testing)
 
-I have used Django's built-in unit testing framework to test application functionality.
+I used Django's built-in unit testing framework to test application functionality and present a summary of the results for each app below:
 
-In order to run the tests, I ran the following command in the terminal each time:
-
-`python3 manage.py test name-of-app `
-
-To create the coverage report, I then conducted the following:
-
-`coverage run --source=name-of-app manage.py test`
-
-`coverage report`
-
-To see the HTML version of the reports, and find out whether some pieces of code were missing, I ran the following commands:
-
-`coverage html`
-
-`python3 -m http.server`
-
-Below are the results from the various apps on my application that I've tested:
-
-| App | File | Coverage | Screenshot |
-| --- | --- | --- | --- |
-| Bag | test_forms.py | 99% | ![screenshot](documentation/tests/py-test-bag-forms.png) |
-| Bag | test_models.py | 89% | ![screenshot](documentation/tests/py-test-bag-models.png) |
-
-| Checkout | test_forms.py | 99% | ![screenshot](documentation/tests/py-test-checkout-forms.png) |
-| Checkout | test_models.py | 89% | ![screenshot](documentation/tests/py-test-checkout-models.png) |
-
-| Home | test_forms.py | 99% | ![screenshot](documentation/tests/py-test-home-forms.png) |
-| Home | test_models.py | 89% | ![screenshot](documentation/tests/py-test-home-models.png) |
-
-
-| Products | test_urls.py | 100% | ![screenshot](documentation/tests/py-test-products-urls.png) |
-| Products | test_views.py | 71% | ![screenshot](documentation/tests/py-test-products-views.png) |
-| Profiles | test_forms.py | 99% | ![screenshot](documentation/tests/py-test-profiles-forms.png) |
-| Profiles | test_models.py | 89% | ![screenshot](documentation/tests/py-test-profiles-models.png) |
-
-| x | x | x | repeat for all remaining tested apps/files |
-
-#### Unit Test Issues
+| App | Coverage | Summary Screenshot |
+| --- | --- | --- |
+| bookings | 76% | ![screenshot](documentation/testing/unit/t-bookings.png) |
+| faqs | 98% | ![screenshot](documentation/testing/unit/t-faqs.png) |
+| gallery | 75% | ![screenshot](documentation/testing/unit/t-gallery.png)
+| home | 100% | ![screenshot](documentation/testing/unit/t-home.png) |
+| network | 98% | ![screenshot](documentation/testing/unit/t-network.png) |
 
 ## Bugs
 
