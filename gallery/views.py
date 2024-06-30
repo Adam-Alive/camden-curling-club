@@ -48,6 +48,7 @@ def my_pictures(request):
     template = "gallery/my_pictures.html"
     context = {
         "user_pictures": user_pictures,
+        "gallery_form": gallery_form,
     }
 
     return render(request, template, context)
