@@ -91,7 +91,7 @@ I deployed the project early on and tested on three of my own devices throughout
 
 I also used Dev Tools to test on a tablet device.
 
-I tested the responsiveness of the homepage and each stage of the game and have provided a summary of these tests below with a screenshot of the home or faqs page.
+I tested the responsiveness of the homepage and each stage of the game and have provided a summary of these tests below with a screenshot of the home or faqs page:
 
 | Device | Home/Gallery/Faqs | Notes |
 | --- | --- | --- |
@@ -115,7 +115,7 @@ I tested the deployed project using the Lighthouse Audit tool to check for any m
 
 ## Defensive Programming
 
-I conducted manual tests for defensive programming and the Pass/Fail outcomes are summarised below.
+I conducted manual tests for defensive programming and the Pass/Fail outcomes are summarised below:
 
 | Page / Feature | User Action | Expected Result | Pass/Fail | Comments | Screenshot |
 | --- | --- | --- | --- | --- | --- |
