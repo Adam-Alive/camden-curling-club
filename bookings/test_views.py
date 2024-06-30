@@ -31,7 +31,6 @@ class TestBookingsViews(TestCase):
         self.booking.save()
 
     def test_render_make_booking_page(self):
-        print(self.booking)
         self.client.login(username='Jimmy', password='myPassword')
         response = self.client.get(reverse('make_booking'))
         self.assertEqual(response.status_code, 200)
